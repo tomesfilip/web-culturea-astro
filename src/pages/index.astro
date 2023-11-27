@@ -1,16 +1,28 @@
 ---
+import Layout from '../layouts/Layout.astro';
+import SectionAbout from '../sections/SectionAbout';
+import SectionBlogs from '../sections/SectionBlogs';
+import SectionHistory from '../sections/SectionHistory';
+import SectionLanding from '../sections/SectionLanding';
+import SectionLandingTexts from '../sections/SectionLandingTexts';
+import SectionMap from '../sections/SectionMap';
+import SectionOrganizer from '../sections/SectionOrganizer';
+import SectionProgram from '../sections/SectionProgram';
+import SectionTeam from '../sections/SectionTeam';
 
+import '../styles/headingStyles.css';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Culturea 2023">
+  <SectionLanding client:only />
+  <SectionLandingTexts />
+  <SectionAbout />
+  <SectionProgram client:only />
+  <SectionBlogs client:only />
+  <SectionHistory client:only />
+  <SectionMap client:only />
+  <SectionTeam client:only />
+  <SectionOrganizer />
+</Layout>
+
+<style></style>

@@ -1,0 +1,86 @@
+---
+import CookieBanner from '../components/shared/CookieBanner';
+import Footer from '../components/shared/Footer';
+import Header from '../components/shared/Header';
+
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="Culturea je studentský cestovatelský festival, který přinese do Zlína atmosféru dvou zemí - Dánska a Bhútánu"
+    />
+    <meta property="og:url" content="https://culturea.cz/" />
+    <meta property="og:title" content="Culturea 2023" />
+    <meta
+      property="og:description"
+      content="Culturea je studentský cestovatelský festival, který přinese do Zlína atmosféru dvou zemí - Dánska a Bhútánu"
+    />
+    <meta property="og:image" content="https://culturea.cz/og-image.png" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Header client:only />
+    <slot />
+    <Footer />
+    <CookieBanner client:only />
+  </body>
+</html>
+<style is:global>
+  @font-face {
+    font-family: GalanoGrotesqueBold;
+    src: url('../assets/fonts/GalanoGrotesqueBold.woff2') format('woff2');
+    font-display: swap;
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: GalanoGrotesqueRegular;
+    src: url('../assets/fonts/GalanoGrotesqueMedium.woff2') format('woff2');
+    font-display: swap;
+    font-weight: 500;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: GalanoGrotesqueRegular;
+    font-display: swap;
+  }
+
+  h2,
+  h3 {
+    text-transform: uppercase;
+    font-family: GalanoGrotesqueBold;
+  }
+</style>
