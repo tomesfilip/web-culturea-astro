@@ -27,7 +27,7 @@ const Footer = () => {
         </p>
       </div>
       <p className="mt-12 mb-2 text-center xl:mt-6">
-        © 2023, Všechna práva vyhrazena
+        © 2024, Všechna práva vyhrazena
       </p>
     </footer>
   );
