@@ -14,7 +14,7 @@ const Header = () => {
     <header className="w-full bg-white border-b-2">
       <nav className="relative z-10 flex flex-col items-center h-24 py-6 xl:flex-row xl:justify-between xl:py-4 xl:px-12 xl:h-auto">
         <LogoLink />
-        <HamburgerButton handleToggleMenu={() => setMenuActive(!menuActive)} />
+        {/* <HamburgerButton handleToggleMenu={() => setMenuActive(!menuActive)} />
         <ul
           className={`flex flex-col items-center bg-white py-6 gap-y-4 xl:hidden absolute w-full top-24 transition-all duration-500  ${
             menuActive ? 'right-0' : '-right-[100vw]'
@@ -38,7 +38,7 @@ const Header = () => {
             />
           ))}
           <TicketButton />
-        </ul>
+        </ul> */}
       </nav>
     </header>
   );
