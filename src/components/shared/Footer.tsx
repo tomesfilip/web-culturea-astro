@@ -22,8 +22,8 @@ const Footer = () => {
           <a href="mailto:gartnerova@utb.cz">gartnerova@utb.cz</a>
         </p>
         <p className="font-bold">
-          Technický správce: Martin Kazík,&nbsp;
-          <a href="mailto:kazik@utb.cz">kazik@utb.cz</a>
+          Technický správce: Ondřej Staněk,&nbsp;
+          <a href="mailto:kazik@utb.cz">ostanek@utb.cz</a>
         </p>
       </div>
       <p className="mt-12 mb-2 text-center xl:mt-6">

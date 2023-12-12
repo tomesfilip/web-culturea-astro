@@ -15,7 +15,6 @@ const SocialList = () => {
           />
         ))}
       </div>
-      <h4 className="mt-4 text-2xl font-bold">#letenkunepotrebuješ</h4>
     </div>
   );
 };

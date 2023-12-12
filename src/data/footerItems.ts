@@ -43,9 +43,4 @@ export const socialItems: TSocialItem[] = [
     imgAlt: 'Culturea facebook',
     socLink: 'https://fb.me/e/7nGGaBHnI',
   },
-  {
-    imgSrc: tiktokLogo,
-    imgAlt: 'Culturea tiktok',
-    socLink: 'https://www.tiktok.com/@festivalculturea',
-  },
 ];
