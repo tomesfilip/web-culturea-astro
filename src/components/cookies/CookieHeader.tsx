@@ -1,4 +1,4 @@
-import cookieIcon from '../../assets/img/icons/cookie.svg?url'
+import cookieIcon from '../../assets/img/icons/cookie.svg?url';
 
 const CookieHeader = () => {
   return (
@@ -6,7 +6,7 @@ const CookieHeader = () => {
       <img src={cookieIcon} alt="cookie ikona" width={50} height={50} />
       <h4 className="text-white md:text-2xl text-xl font-bold">Cookies</h4>
     </div>
-  )
-}
+  );
+};
 
-export default CookieHeader
+export default CookieHeader;

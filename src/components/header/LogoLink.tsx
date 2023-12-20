@@ -1,4 +1,4 @@
-import { CULTUREA_YEAR } from "../../lib/constants";
+import { CULTUREA_YEAR } from '../../lib/constants';
 
 const LogoLink = () => {
   return (

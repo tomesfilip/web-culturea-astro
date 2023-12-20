@@ -1,18 +1,18 @@
-import { Pagination, Navigation } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination, Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import 'swiper/css/pagination'
-import 'swiper/css'
-import 'swiper/css/navigation'
-import '../../styles/swiper.css'
+import 'swiper/css/pagination';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import '../../styles/swiper.css';
 
-import type { TTeamMemberItem } from '../../lib/types/TTeamMemberItem'
+import type { TTeamMemberItem } from '../../lib/types/TTeamMemberItem';
 
-import phoneImg from '../../../public/phone.png?url'
-import letterImg from '../../../public/letter.png?url'
+import phoneImg from '../../../public/phone.png?url';
+import letterImg from '../../../public/letter.png?url';
 
 interface Props {
-  teamMembers: TTeamMemberItem[]
+  teamMembers: TTeamMemberItem[];
 }
 
 const TeamMemberList = ({ teamMembers }: Props) => {
@@ -88,7 +88,7 @@ const TeamMemberList = ({ teamMembers }: Props) => {
         </SwiperSlide>
       ))}
     </Swiper>
-  )
-}
+  );
+};
 
-export default TeamMemberList
+export default TeamMemberList;

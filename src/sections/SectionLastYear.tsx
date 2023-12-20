@@ -18,7 +18,7 @@ const SectionLastYear = () => {
 
       {/* <ImageSlider slides={slides}/> */}
     </div>
-  )
-}
+  );
+};
 
-export default SectionLastYear
+export default SectionLastYear;

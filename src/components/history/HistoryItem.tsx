@@ -1,10 +1,10 @@
 import { Navigation } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import 'swiper/css'
-import '../../styles/swiper.css'
+import 'swiper/css';
+import '../../styles/swiper.css';
 
-import type { THistoryItem } from '../../lib/types/THistoryItem'
+import type { THistoryItem } from '../../lib/types/THistoryItem';
 
 const HistoryItem = ({ name, year, photos }: THistoryItem) => {
   return (
@@ -53,7 +53,7 @@ const HistoryItem = ({ name, year, photos }: THistoryItem) => {
       )}
       <div className="my-4 dashed-border xl:my-8"></div>
     </div>
-  )
-}
+  );
+};
 
-export default HistoryItem
+export default HistoryItem;

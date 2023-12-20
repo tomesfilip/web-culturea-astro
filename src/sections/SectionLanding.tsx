@@ -3,7 +3,7 @@ import useMediaQuery from '../hooks/useMediaQuery';
 
 const SectionLanding = () => {
   const isMobile: boolean = useMediaQuery(569);
-  
+
   return (
     <video
       id="bg-video"

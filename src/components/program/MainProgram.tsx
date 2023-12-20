@@ -10,7 +10,7 @@ const MainProgram = () => {
       {programItems.map(
         (
           { time, headline, imgSrc, presenter, place }: TProgramItem,
-          index: number
+          index: number,
         ) => (
           <ProgramItem
             key={time}
@@ -21,7 +21,7 @@ const MainProgram = () => {
             place={place}
             rightColumned={index % 2 !== 0}
           />
-        )
+        ),
       )}
     </div>
   );

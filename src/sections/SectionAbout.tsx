@@ -48,7 +48,7 @@ const SectionAbout = () => {
         className="relative w-full h-[180px] bg-no-repeat -bottom-10"
       ></div>
     </div>
-  )
-}
+  );
+};
 
-export default SectionAbout
+export default SectionAbout;

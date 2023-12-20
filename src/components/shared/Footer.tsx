@@ -1,6 +1,6 @@
-import { CULTUREA_YEAR } from '../../lib/constants'
-import FooterLogo from '../footer/FooterLogo'
-import SocialList from '../footer/SocialList'
+import { CULTUREA_YEAR } from '../../lib/constants';
+import FooterLogo from '../footer/FooterLogo';
+import SocialList from '../footer/SocialList';
 
 const Footer = () => {
   return (
@@ -40,7 +40,7 @@ const Footer = () => {
         © {CULTUREA_YEAR}, Všechna práva vyhrazena
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

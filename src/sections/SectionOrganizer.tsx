@@ -1,10 +1,9 @@
 // SectionOrganizer.tsx
-import Section from '../components/shared/Section'
+import Section from '../components/shared/Section';
 
 const SectionOrganizer = () => {
   return (
     <Section sectionId="kontakty" sectionName="">
-      
       <a
         href="https://fmk.utb.cz/en/"
         target="_blank"
@@ -17,9 +16,9 @@ const SectionOrganizer = () => {
           height={185}
           className="mx-auto"
         />
-      </a> 
+      </a>
     </Section>
-  )
-}
+  );
+};
 
-export default SectionOrganizer
+export default SectionOrganizer;

@@ -75,7 +75,7 @@ const SectionTopics = () => {
         className="relative w-full h-[180px] bg-no-repeat bottom-0 top-32"
       ></div>
     </div>
-  )
-}
+  );
+};
 
-export default SectionTopics
+export default SectionTopics;

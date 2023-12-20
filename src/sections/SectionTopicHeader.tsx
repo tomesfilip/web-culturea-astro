@@ -1,5 +1,5 @@
-import SocialList from '../components/footer/SocialList'
-import Marquee from './Marquee'
+import SocialList from '../components/footer/SocialList';
+import Marquee from './Marquee';
 
 const SectionTopicHeader = () => {
   return (
@@ -23,7 +23,7 @@ const SectionTopicHeader = () => {
       </div>
       <Marquee />
     </div>
-  )
-}
+  );
+};
 
-export default SectionTopicHeader
+export default SectionTopicHeader;

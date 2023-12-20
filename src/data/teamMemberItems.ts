@@ -9,7 +9,7 @@ import LucieVeskrnova from '../assets/img/portrety_manazeru/LucieVeskrnova.jpg?u
 import TerezaHlouzkova from '../assets/img/portrety_manazeru/TerezaHlouzkova.jpg?url';
 import TereziaSrobova from '../assets/img/portrety_manazeru/TereziaSrobova.jpg?url';
 import VeronikaChadimova from '../assets/img/portrety_manazeru/VeronikaChadimova.jpg?url';
-  
+
 export const teamMemberItems: TTeamMemberItem[] = [
   {
     id: 0,
@@ -31,7 +31,7 @@ export const teamMemberItems: TTeamMemberItem[] = [
     id: 2,
     name: 'Kateřina Kalinová',
     position: 'manažer art',
-    email: 't_srobova@utb.cz', 
+    email: 't_srobova@utb.cz',
     img: KaterinaKalinova,
     phone: '773 112 042',
   },
@@ -42,16 +42,16 @@ export const teamMemberItems: TTeamMemberItem[] = [
     email: 't_srobova@utb.cz',
     img: HanaHromkova,
     phone: '776 851 818',
-  }, 
+  },
   {
-    id: 4 ,
+    id: 4,
     name: 'Eva Ševčíkova',
     position: 'manažer produkce',
     email: 'e_sevcikova@utb.cz',
     img: EvaSevcikova,
     phone: '723 457 715',
   },
-  { 
+  {
     id: 5,
     name: 'Lucie Veškrnová',
     position: 'manažer Pr ',

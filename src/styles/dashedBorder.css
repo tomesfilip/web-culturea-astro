@@ -1,5 +1,5 @@
 .dashed-border {
-  transform: scale(var(--ggs,1));
+  transform: scale(var(--ggs, 1));
 }
 
 .dashed-border,
@@ -12,9 +12,9 @@
 }
 
 .dashed-border::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 4px;
   top: 12px;
-  border-top: 12px dashed
+  border-top: 12px dashed;
 }

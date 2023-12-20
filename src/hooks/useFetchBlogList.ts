@@ -16,7 +16,7 @@ const useFetchBlogList = (blogLimit: number = 20) => {
         const blogQueryOrderedLimit = query(
           blogCollectionRef,
           orderBy('createdAt', 'desc'),
-          limit(blogLimit)
+          limit(blogLimit),
         );
 
         const snapshot = await getDocs(blogQueryOrderedLimit);
@@ -27,7 +27,7 @@ const useFetchBlogList = (blogLimit: number = 20) => {
               id: doc.id,
               ...doc.data(),
             };
-          })
+          }),
         );
 
         setError(null);

@@ -20,7 +20,7 @@ const ExtraProgram = () => {
             place,
             additionalInfo,
           }: TProgramItem,
-          index: number
+          index: number,
         ) => (
           <ProgramItem
             key={time}
@@ -32,7 +32,7 @@ const ExtraProgram = () => {
             rightColumned={index % 2 === 0}
             additionalInfo={additionalInfo}
           />
-        )
+        ),
       )}
     </div>
   );

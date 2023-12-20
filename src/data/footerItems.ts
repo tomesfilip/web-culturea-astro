@@ -1,10 +1,10 @@
-import type { TContactItem } from '../lib/types/TContactItem'
-import type { TSocialItem } from '../lib/types/TSocialItem'
+import type { TContactItem } from '../lib/types/TContactItem';
+import type { TSocialItem } from '../lib/types/TSocialItem';
 
-import fbLogo from '../assets/img/icons/facebook.svg?url'
-import igLogo from '../assets/img/icons/instagram.svg?url'
-import sfLogo from '../assets/img/icons/spotify.svg?url'
-import ytLogo from '../assets/img/icons/youtube.svg?url'
+import fbLogo from '../assets/img/icons/facebook.svg?url';
+import igLogo from '../assets/img/icons/instagram.svg?url';
+import sfLogo from '../assets/img/icons/spotify.svg?url';
+import ytLogo from '../assets/img/icons/youtube.svg?url';
 
 export const contactItems: TContactItem[] = [
   {
@@ -31,7 +31,7 @@ export const contactItems: TContactItem[] = [
     contactName: 'Art',
     contactMail: 'art@culturea.cz',
   },
-]
+];
 
 export const socialItems: TSocialItem[] = [
   {
@@ -47,11 +47,12 @@ export const socialItems: TSocialItem[] = [
   {
     imgSrc: sfLogo,
     imgAlt: 'Culturea spotify',
-    socLink: 'https://open.spotify.com/show/63TQbV3BDMi5g65zBR41Se?si=13b34f5416a34b67',
+    socLink:
+      'https://open.spotify.com/show/63TQbV3BDMi5g65zBR41Se?si=13b34f5416a34b67',
   },
   {
     imgSrc: ytLogo,
     imgAlt: 'Culturea youtube',
     socLink: 'https://www.youtube.com/channel/UC1yEl3yhmv0UmVbRhanyeyA',
   },
-]
+];

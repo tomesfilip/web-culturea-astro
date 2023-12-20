@@ -1,20 +1,20 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
-import HamburgerButton from '../header/HamburgerButton'
-import LogoLink from '../header/LogoLink'
-import MenuLink from '../header/MenuLink'
-import TicketButton from '../header/TicketButton'
+import HamburgerButton from '../header/HamburgerButton';
+import LogoLink from '../header/LogoLink';
+import MenuLink from '../header/MenuLink';
+import TicketButton from '../header/TicketButton';
 
-import { menuItems } from '../../data/menuItems'
+import { menuItems } from '../../data/menuItems';
 
 const Header = () => {
-  const [menuActive, setMenuActive] = useState(false)
+  const [menuActive, setMenuActive] = useState(false);
 
   return (
     <header className="w-full bg-transparent">
       <nav className="relative z-10 flex flex-col items-center h-24 py-4 xl:flex-row xl:justify-between xl:py-4 xl:px-12 ">
         <LogoLink />
-        
+
         <HamburgerButton handleToggleMenu={() => setMenuActive(!menuActive)} />
         <ul
           className={`flex flex-col items-center bg-white py-6 gap-y-4 xl:hidden absolute w-full top-24 transition-all duration-500 ${
@@ -42,7 +42,7 @@ const Header = () => {
         </ul>
       </nav>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

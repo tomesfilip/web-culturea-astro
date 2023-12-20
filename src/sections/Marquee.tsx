@@ -1,14 +1,14 @@
-import './Marquee.css'
+import './Marquee.css';
 
 const Marquee = () => {
-  const text = ['KUBA', 'MAROKO']
-  const marqueeText = Array(10).fill(text).flat()
+  const text = ['KUBA', 'MAROKO'];
+  const marqueeText = Array(10).fill(text).flat();
 
   const content = marqueeText.map((word, index) => (
     <span key={index} className={`${word.toLowerCase()}`}>
       {word}
     </span>
-  ))
+  ));
 
   return (
     <div
@@ -28,7 +28,7 @@ const Marquee = () => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Marquee
+export default Marquee;
