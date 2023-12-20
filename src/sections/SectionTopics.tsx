@@ -1,12 +1,12 @@
 export const SectionTopics = () => {
   return (
     <div className="px-20 pb-20 flex flex-col flex-wrap">
-      <h1 className="text-5xl text-center px-20 pb-20 mt-10 mb-16 font-bold font-bold">
+      <h1 className="text-5xl text-center px-20 pb-20 mt-10 mb-16 font-bold">
         Témata, na která se můžete těšit
       </h1>
       <div className="grid grid-cols-2 grid-rows-3 gap-20 mx-40">
         <div>
-          <img src="../../public/foto_kuba.jpg" alt="" />
+          <img src="/foto_kuba.jpg" alt="Kuba" />
         </div>
         <div
           style={{ width: '2fr', height: '1fr' }}
@@ -44,10 +44,10 @@ export const SectionTopics = () => {
           </p>
         </div>
         <div style={{ width: '2fr', height: '1fr' }} className="">
-          <img src="../../public/foto_maroko.jpg" alt="" />
+          <img src="./foto_maroko.jpg" alt="Maroko" />
         </div>
         <div style={{ width: '2fr', height: '1fr' }} className="">
-          <img src="../../public/foto_slow_travel.jpg" alt="" />
+          <img src="./foto_slow_travel.jpg" alt="Slow travel" />
         </div>
         <div style={{ width: '2fr', height: '1fr' }} className="">
           <h2 className="pb-5">Slow Travel</h2>

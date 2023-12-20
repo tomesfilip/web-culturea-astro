@@ -9,11 +9,7 @@ export const SectionTopicHeader = () => {
       </div>
 
       <div className="flex flex-col items-center m-auto ">
-        <img
-          src="../public/logo_znak.svg"
-          alt="Logo"
-          className="mb-8 w-32 h-auto"
-        />
+        <img src="/logo_znak.svg" alt="Logo" className="mb-8 w-32 h-auto" />
         <h2 className="text-8xl font-bold mb-4">Kuba a Maroko</h2>
         <div className="text-3xl flex content-between gap-14 pb-20 mb-20">
           <p>3. dubna</p>

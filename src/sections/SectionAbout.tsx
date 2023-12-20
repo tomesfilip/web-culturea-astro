@@ -27,13 +27,13 @@ export const SectionAbout = () => {
         <div className="lg:w-1/2 flex flex-col items-start justify-start relative">
           <div className="flex items-end justify-end">
             <img
-              src="../public/oFestivaluPhoto.jpg"
+              src="/oFestivaluPhoto.jpg"
               alt="Galerie"
-              className=" w-4/5 h-auto w-3/4"
+              className="h-auto w-3/4"
             />
           </div>
           <img
-            src="../public/foto_ofestivalu_mensi.jpg"
+            src="/foto_ofestivalu_mensi.jpg"
             alt="O festivalu"
             className="absolute bottom-4 mt-8 w-1/2"
           />

@@ -12,7 +12,7 @@ export const Marquee = () => {
     >
       <div className="marquee">
         {[...Array(10)].map((_, index) => (
-          <div key={index} className="text">
+          <div key={index} className="flex">
             <span className="kuba font-bold text-[#19777A]">KUBA&nbsp;</span>
             <span className="maroko font-bold text-[#FE8133]">
               MAROKO&nbsp;

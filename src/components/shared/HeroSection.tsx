@@ -1,6 +1,5 @@
 import type { ReactNode } from 'react';
 import Header from './Header';
-import SectionTopicHeader from '../../sections/SectionTopicHeader';
 
 type Props = {
   children: ReactNode;
@@ -8,7 +7,7 @@ type Props = {
 
 export const HeroSection = ({ children }: Props) => {
   const backgroundStyle = {
-    backgroundImage: "url('../../public/pozadi_.jpg')",
+    backgroundImage: "url('/pozadi_.jpg')",
     backgroundSize: 'cover',
     backgroundPosition: 'center center',
     backgroundRepeat: 'no-repeat',
