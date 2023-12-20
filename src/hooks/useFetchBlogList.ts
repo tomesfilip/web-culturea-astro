@@ -1,52 +1,54 @@
-import { getDocs, limit, orderBy, query } from 'firebase/firestore';
-import { useEffect, useState } from 'react';
+// NOTE: not used
 
-import { blogCollectionRef } from '../config/firebase';
+// import { getDocs, limit, orderBy, query } from 'firebase/firestore';
+// import { useEffect, useState } from 'react';
 
-const useFetchBlogList = (blogLimit: number = 20) => {
-  const [data, setData] = useState<any>(null);
-  const [error, setError] = useState<string | null>(null);
-  const [isLoading, setIsLoading] = useState<boolean>(true);
+// import { blogCollectionRef } from '../config/firebase';
 
-  useEffect(() => {
-    const abortController = new AbortController();
+// const useFetchBlogList = (blogLimit: number = 20) => {
+//   const [data, setData] = useState<any>(null);
+//   const [error, setError] = useState<string | null>(null);
+//   const [isLoading, setIsLoading] = useState<boolean>(true);
 
-    const getData = async () => {
-      try {
-        const blogQueryOrderedLimit = query(
-          blogCollectionRef,
-          orderBy('createdAt', 'desc'),
-          limit(blogLimit),
-        );
+//   useEffect(() => {
+//     const abortController = new AbortController();
 
-        const snapshot = await getDocs(blogQueryOrderedLimit);
+//     const getData = async () => {
+//       try {
+//         const blogQueryOrderedLimit = query(
+//           blogCollectionRef,
+//           orderBy('createdAt', 'desc'),
+//           limit(blogLimit),
+//         );
 
-        setData(
-          snapshot.docs.map((doc) => {
-            return {
-              id: doc.id,
-              ...doc.data(),
-            };
-          }),
-        );
+//         const snapshot = await getDocs(blogQueryOrderedLimit);
 
-        setError(null);
-      } catch (err) {
-        if (err instanceof Error) {
-          setError(err.message);
-        } else {
-          setError('Unexpected error');
-        }
-      } finally {
-        setIsLoading(false);
-      }
-    };
+//         setData(
+//           snapshot.docs.map((doc) => {
+//             return {
+//               id: doc.id,
+//               ...doc.data(),
+//             };
+//           }),
+//         );
 
-    getData();
-    return () => abortController.abort();
-  }, []);
+//         setError(null);
+//       } catch (err) {
+//         if (err instanceof Error) {
+//           setError(err.message);
+//         } else {
+//           setError('Unexpected error');
+//         }
+//       } finally {
+//         setIsLoading(false);
+//       }
+//     };
 
-  return { data, isLoading, error };
-};
+//     getData();
+//     return () => abortController.abort();
+//   }, []);
 
-export default useFetchBlogList;
+//   return { data, isLoading, error };
+// };
+
+// export default useFetchBlogList;

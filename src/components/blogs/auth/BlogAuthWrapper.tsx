@@ -1,40 +1,42 @@
-import { useStore } from '@nanostores/react';
+// NOTE: not used
 
-import useMonitorAuthUser from '../../../hooks/useMonitorAuthUser';
-import { isAuthModalOpen } from '../../../stores/authModalStore';
-import { isCreateModalOpen } from '../../../stores/createModalStore';
-import ActionBlogButton from '../admin/ActionBlogButton';
-import BlogCreateEditForm from '../admin/BlogCreateEditForm';
-import BlogAuthForm from './BlogAuthForm';
-import BlogAuthLoginButton from './BlogAuthLoginButton';
-import BlogAuthLogoutButton from './BlogAuthLogoutButton';
+// import { useStore } from '@nanostores/react';
 
-interface Props {
-  children: React.ReactNode;
-}
+// import useMonitorAuthUser from '../../../hooks/useMonitorAuthUser';
+// import { isAuthModalOpen } from '../../../stores/authModalStore';
+// import { isCreateModalOpen } from '../../../stores/createModalStore';
+// import ActionBlogButton from '../admin/ActionBlogButton';
+// import BlogCreateEditForm from '../admin/BlogCreateEditForm';
+// import BlogAuthForm from './BlogAuthForm';
+// import BlogAuthLoginButton from './BlogAuthLoginButton';
+// import BlogAuthLogoutButton from './BlogAuthLogoutButton';
 
-export const BlogAuthWrapper = ({ children }: Props) => {
-  const $isAuthModalOpen = useStore(isAuthModalOpen);
-  const $isCreateModalOpen = useStore(isCreateModalOpen);
-  const { loggedUser, isLoading, error } = useMonitorAuthUser();
+// interface Props {
+//   children: React.ReactNode;
+// }
 
-  return (
-    <>
-      {isAuthModalOpen.get() && <BlogAuthForm />}
-      {loggedUser && isCreateModalOpen.get() && <BlogCreateEditForm />}
-      {children}
-      <div className="auth-action-buttons flex flex-col fixed gap-y-4 bottom-4 right-4">
-        {loggedUser ? (
-          <>
-            <ActionBlogButton onClick={() => isCreateModalOpen.set(true)}>
-              Přidat blog
-            </ActionBlogButton>
-            <BlogAuthLogoutButton />
-          </>
-        ) : (
-          <BlogAuthLoginButton />
-        )}
-      </div>
-    </>
-  );
-};
+// export const BlogAuthWrapper = ({ children }: Props) => {
+//   const $isAuthModalOpen = useStore(isAuthModalOpen);
+//   const $isCreateModalOpen = useStore(isCreateModalOpen);
+//   const { loggedUser, isLoading, error } = useMonitorAuthUser();
+
+//   return (
+//     <>
+//       {isAuthModalOpen.get() && <BlogAuthForm />}
+//       {loggedUser && isCreateModalOpen.get() && <BlogCreateEditForm />}
+//       {children}
+//       <div className="auth-action-buttons flex flex-col fixed gap-y-4 bottom-4 right-4">
+//         {loggedUser ? (
+//           <>
+//             <ActionBlogButton onClick={() => isCreateModalOpen.set(true)}>
+//               Přidat blog
+//             </ActionBlogButton>
+//             <BlogAuthLogoutButton />
+//           </>
+//         ) : (
+//           <BlogAuthLoginButton />
+//         )}
+//       </div>
+//     </>
+//   );
+// };
