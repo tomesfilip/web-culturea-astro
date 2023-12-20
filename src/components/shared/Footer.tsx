@@ -12,7 +12,7 @@ const Footer = () => {
       }}
       className="py-8 xl:px-24"
     >
-      <div className=" flex flex-wrap items-start justify-between mx-auto mt-20 mb-6 xl:flex-row xl:justify-between xl:mb-24 xl:gap-y-0">
+      <div className="flex flex-wrap items-start justify-between mx-auto mt-20 mb-6 xl:flex-row xl:justify-between xl:mb-24 xl:gap-y-0">
         <SocialList />
         <div className="flex flex-col justify-between xl:px-0 text-white text-xl">
           <p className="pb-5 ">

@@ -1,15 +1,12 @@
-import { Pagination, Navigation } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import 'swiper/css/pagination';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import '../../styles/swiper.css';
 
 import type { TTeamMemberItem } from '../../lib/types/TTeamMemberItem';
-
-import phoneImg from '../../../public/phone.png?url';
-import letterImg from '../../../public/letter.png?url';
 
 interface Props {
   teamMembers: TTeamMemberItem[];
@@ -40,7 +37,7 @@ const TeamMemberList = ({ teamMembers }: Props) => {
           <figure className="flex flex-col justify-center mx-2 2xl:mx-8 text-center rounded-lg">
             <div>
               <img
-                className="object-cover object-center rounded-t-lg opacity-70 hover:opacity-100 transition-opacity duration-300 "
+                className="object-cover object-center rounded-t-lg opacity-70 hover:opacity-100 transition-opacity duration-300"
                 src={img}
                 width={400}
                 height={500}
@@ -49,7 +46,7 @@ const TeamMemberList = ({ teamMembers }: Props) => {
               />
 
               <figcaption
-                className="py-2 text-lg font-bold text-white bg-flushOrange rounded-b-lg capitalize  text-left pl-5"
+                className="py-2 text-lg font-bold text-white bg-flushOrange rounded-b-lg capitalize text-left pl-5"
                 style={{
                   backgroundColor: index % 2 === 0 ? '#DE5C0F' : '#19777A',
                 }}
@@ -63,10 +60,9 @@ const TeamMemberList = ({ teamMembers }: Props) => {
                   href={`mailto:${email}`}
                 >
                   <img
-                    src={letterImg}
-                    alt=""
-                    style={{ width: '24px', height: '24px' }}
-                    className="inline-block mr-2 mb-2"
+                    src="./letter.png"
+                    alt="Mail ikona"
+                    className="inline-block mr-2 mb-2 w-6 h-6"
                   />
                   {email}
                 </a>
@@ -75,10 +71,9 @@ const TeamMemberList = ({ teamMembers }: Props) => {
                   href={`tel:${phone}`}
                 >
                   <img
-                    src={phoneImg}
-                    alt=""
-                    style={{ width: '24px', height: '24px' }}
-                    className="inline-block mr-2"
+                    src="./phone.png"
+                    alt="Telefon ikona"
+                    className="inline-block mr-2 w-6 h-6"
                   />
                   {phone}
                 </a>
