@@ -1,6 +1,6 @@
-import './Marquee.css';
+import '../../styles/marquee.css';
 
-const Marquee = () => {
+export const Marquee = () => {
   return (
     <div
       style={{
@@ -23,5 +23,3 @@ const Marquee = () => {
     </div>
   );
 };
-
-export default Marquee;

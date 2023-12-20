@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+
 import '../../styles/swiper.css';
 
 import type { TTeamMemberItem } from '../../lib/types/TTeamMemberItem';

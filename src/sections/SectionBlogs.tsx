@@ -1,7 +1,7 @@
 import BlogListLimited from '../components/blogs/BlogListLimited';
-import Section from '../components/shared/Section';
+import { Section } from '../components/shared/Section';
 
-const SectionBlogs = () => {
+export const SectionBlogs = () => {
   return (
     <Section sectionId="clanky" sectionName="Články">
       <BlogListLimited />
@@ -14,5 +14,3 @@ const SectionBlogs = () => {
     </Section>
   );
 };
-
-export default SectionBlogs;

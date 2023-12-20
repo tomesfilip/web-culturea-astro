@@ -1,7 +1,6 @@
-import { useEffect, useState } from 'react';
 import useMediaQuery from '../hooks/useMediaQuery';
 
-const SectionLanding = () => {
+export const SectionLanding = () => {
   const isMobile: boolean = useMediaQuery(569);
 
   return (
@@ -20,5 +19,3 @@ const SectionLanding = () => {
     </video>
   );
 };
-
-export default SectionLanding;

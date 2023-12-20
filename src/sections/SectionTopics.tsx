@@ -1,4 +1,4 @@
-const SectionTopics = () => {
+export const SectionTopics = () => {
   return (
     <div className="px-20 pb-20 flex flex-col flex-wrap">
       <h1 className="text-5xl text-center px-20 pb-20 mt-10 mb-16 font-bold font-bold">
@@ -77,5 +77,3 @@ const SectionTopics = () => {
     </div>
   );
 };
-
-export default SectionTopics;

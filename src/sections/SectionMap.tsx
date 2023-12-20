@@ -1,7 +1,7 @@
 import MapSvg from '../components/map/MapSvg';
-import Section from '../components/shared/Section';
+import { Section } from '../components/shared/Section';
 
-const SectionMap = () => {
+export const SectionMap = () => {
   return (
     <Section sectionId="mapa" sectionName="">
       <h2 className="text-center hidden md:flex">
@@ -11,5 +11,3 @@ const SectionMap = () => {
     </Section>
   );
 };
-
-export default SectionMap;

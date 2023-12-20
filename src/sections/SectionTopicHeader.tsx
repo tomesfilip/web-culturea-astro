@@ -1,7 +1,7 @@
 import SocialList from '../components/footer/SocialList';
-import Marquee from './Marquee';
+import { Marquee } from '../components/header/Marquee';
 
-const SectionTopicHeader = () => {
+export const SectionTopicHeader = () => {
   return (
     <div className="bg-cover bg-center bg-no-repeat py-16 flex items-center flex-wrap  text-center text-white my-10">
       <div className="pl-14">
@@ -25,5 +25,3 @@ const SectionTopicHeader = () => {
     </div>
   );
 };
-
-export default SectionTopicHeader;

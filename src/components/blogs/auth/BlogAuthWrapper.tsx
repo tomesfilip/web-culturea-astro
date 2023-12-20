@@ -13,7 +13,7 @@ interface Props {
   children: React.ReactNode;
 }
 
-const BlogAuthWrapper = ({ children }: Props) => {
+export const BlogAuthWrapper = ({ children }: Props) => {
   const $isAuthModalOpen = useStore(isAuthModalOpen);
   const $isCreateModalOpen = useStore(isCreateModalOpen);
   const { loggedUser, isLoading, error } = useMonitorAuthUser();
@@ -38,5 +38,3 @@ const BlogAuthWrapper = ({ children }: Props) => {
     </>
   );
 };
-
-export default BlogAuthWrapper;

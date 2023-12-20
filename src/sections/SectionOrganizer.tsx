@@ -1,7 +1,6 @@
-// SectionOrganizer.tsx
-import Section from '../components/shared/Section';
+import { Section } from '../components/shared/Section';
 
-const SectionOrganizer = () => {
+export const SectionOrganizer = () => {
   return (
     <Section sectionId="kontakty" sectionName="">
       <a
@@ -20,5 +19,3 @@ const SectionOrganizer = () => {
     </Section>
   );
 };
-
-export default SectionOrganizer;

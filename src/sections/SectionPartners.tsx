@@ -1,5 +1,5 @@
 import PartnerList from '../components/partners/PartnerList';
-import Section from '../components/shared/Section';
+import { Section } from '../components/shared/Section';
 
 import { partnerList } from '../data/partners';
 
@@ -10,5 +10,3 @@ const SectionPartners = () => {
     </Section>
   );
 };
-
-export default SectionPartners;

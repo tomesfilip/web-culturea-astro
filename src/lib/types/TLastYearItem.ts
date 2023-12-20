@@ -1,4 +1,4 @@
-export type THistoryItem = {
+export type TLastYearItem = {
   year: string;
   name: string;
   photos?: string[];

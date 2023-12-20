@@ -1,4 +1,4 @@
-const SectionAbout = () => {
+export const SectionAbout = () => {
   return (
     <div>
       <div className="flex text-white mx-40 mt-20 pb-40">
@@ -50,5 +50,3 @@ const SectionAbout = () => {
     </div>
   );
 };
-
-export default SectionAbout;

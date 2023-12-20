@@ -1,6 +1,6 @@
-import Section from '../components/shared/Section';
+import { Section } from '../components/shared/Section';
 
-const SectionLandingTexts = () => {
+export const SectionLandingTexts = () => {
   return (
     <Section sectionId="landing-texty">
       <div className="mx-auto w-full lg:w-3/5 xl:w-2/5 text-center">
@@ -30,5 +30,3 @@ const SectionLandingTexts = () => {
     </Section>
   );
 };
-
-export default SectionLandingTexts;
