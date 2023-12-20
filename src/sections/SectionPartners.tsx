@@ -3,7 +3,7 @@ import { Section } from '../components/shared/Section';
 
 import { partnerList } from '../data/partners';
 
-const SectionPartners = () => {
+export const SectionPartners = () => {
   return (
     <Section sectionId="partneri" sectionName="Partneři">
       <PartnerList partners={partnerList} />

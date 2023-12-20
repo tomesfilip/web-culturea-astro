@@ -2,7 +2,6 @@
 import Layout from '../layouts/Layout.astro';
 
 import { SectionAbout } from '../sections/SectionAbout';
-import { SectionBlogs } from '../sections/SectionBlogs';
 import { SectionMap } from '../sections/SectionMap';
 import { SectionOrganizer } from '../sections/SectionOrganizer';
 import { SectionTeam } from '../sections/SectionTeam';
@@ -22,7 +21,6 @@ import '../styles/headingStyles.css';
   <SectionAbout slot="HeroSection" />
   <SectionTopics />
   <!-- <SectionProgram client:only /> -->
-  <SectionBlogs client:only />
   <SectionLastYear client:only />
   <SectionMap client:only />
   <SectionTeam client:only />
@@ -30,4 +28,3 @@ import '../styles/headingStyles.css';
 </Layout>
 
 <style></style>
- ../sections/SectionLastYear
