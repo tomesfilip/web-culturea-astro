@@ -5,7 +5,7 @@ import SocialItem from './SocialItem';
 const SocialList = () => {
   return (
     <div className="socials-container">
-      <div className="space-y-6 opacity-50">
+      <div className="flex flex-row lg:flex-col space-y-6 opacity-50">
         {socialItems.map(({ imgSrc, imgAlt, socLink }) => (
           <SocialItem
             key={socLink}

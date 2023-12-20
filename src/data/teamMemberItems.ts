@@ -13,7 +13,7 @@ import VeronikaChadimova from '../assets/img/portrety_manazeru/VeronikaChadimova
 export const teamMemberItems: TTeamMemberItem[] = [
   {
     id: 0,
-    name: 'Terézia Šrobova',
+    name: 'Terézia Šrobová',
     position: 'hl. manažer',
     email: 't_srobova@utb.cz',
     img: TereziaSrobova,
@@ -21,7 +21,7 @@ export const teamMemberItems: TTeamMemberItem[] = [
   },
   {
     id: 1,
-    name: 'Tereza Hloužkova',
+    name: 'Tereza Hloužková',
     position: 'hl. manažer',
     email: 't_hlouzkova@utb.cz',
     img: TerezaHlouzkova,
@@ -45,7 +45,7 @@ export const teamMemberItems: TTeamMemberItem[] = [
   },
   {
     id: 4,
-    name: 'Eva Ševčíkova',
+    name: 'Eva Ševčíková',
     position: 'manažer produkce',
     email: 'e_sevcikova@utb.cz',
     img: EvaSevcikova,
@@ -77,7 +77,7 @@ export const teamMemberItems: TTeamMemberItem[] = [
   },
   {
     id: 8,
-    name: 'Kristyna Lexová',
+    name: 'Kristýna Lexová',
     position: 'manažer Proma',
     email: 'k_lexova@utb.cz',
     img: KristynaLexova,
