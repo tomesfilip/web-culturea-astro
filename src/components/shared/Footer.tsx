@@ -6,10 +6,10 @@ const Footer = () => {
     <footer
       id="kontakt"
       style={{
-        backgroundImage: 'url(/pozadi_paticka.jpg)',
+        backgroundImage: 'url(./pozadi_paticka.jpg)',
         backgroundSize: 'cover',
       }}
-      className=" py-8 xl:px-24"
+      className="py-8 xl:px-24"
     >
       <div className=" flex flex-wrap items-start justify-between mx-auto mt-20 mb-6 xl:flex-row xl:justify-between xl:mb-24 xl:gap-y-0">
         <SocialList />
