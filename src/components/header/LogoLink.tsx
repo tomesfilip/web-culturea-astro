@@ -3,9 +3,9 @@ const LogoLink = () => {
     <a className="logo" href="/">
       <h1 className="hidden">Culturea 2024</h1>
       <img
-        src="/culturea-logo.svg"
+        src="../../../public/logo_slovo.svg"
         alt="culturea 2024 logo"
-        width={164}
+        width={200}
         height={46}
       />
     </a>

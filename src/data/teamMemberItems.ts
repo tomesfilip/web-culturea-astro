@@ -1,77 +1,86 @@
 import type { TTeamMemberItem } from '../lib/types/TTeamMemberItem';
 
-import imgAlzbetaBlahova from '../assets/img/team/alzbeta-blahova.webp';
-import imgAndreaZylova from '../assets/img/team/andrea-zylova.webp';
-import imgHelenaPham from '../assets/img/team/helena-pham.webp';
-import imgLucieMakovska from '../assets/img/team/lucie-makovska.webp';
-import imgSaraMaskova from '../assets/img/team/sara-maskova.webp';
-import imgSimonValovic from '../assets/img/team/simon-valovic.webp';
-import imgTerezaSimova from '../assets/img/team/tereza-simova.webp';
-import imgVendulaKorinkova from '../assets/img/team/vendula-korinkova.webp';
-
+import EvaSevcikova from '../assets/img/portrety_manazeru/EvaSevcikova.jpg?url';
+import HanaHromkova from '../assets/img/portrety_manazeru/HanaHromkova.jpg?url';
+import JiriZapalac from '../assets/img/portrety_manazeru/JiriZapalac.jpg?url';
+import KaterinaKalinova from '../assets/img/portrety_manazeru/KaterinaKalinova.jpg?url';
+import KristynaLexova from '../assets/img/portrety_manazeru/KristynaLexova.jpg?url';
+import LucieVeskrnova from '../assets/img/portrety_manazeru/LucieVeskrnova.jpg?url';
+import TerezaHlouzkova from '../assets/img/portrety_manazeru/TerezaHlouzkova.jpg?url';
+import TereziaSrobova from '../assets/img/portrety_manazeru/TereziaSrobova.jpg?url';
+import VeronikaChadimova from '../assets/img/portrety_manazeru/VeronikaChadimova.jpg?url';
+  
 export const teamMemberItems: TTeamMemberItem[] = [
   {
     id: 0,
-    name: 'Lucie Makovská',
+    name: 'Terézia Šrobova',
     position: 'hl. manažer',
-    email: 'ahoj@culturea.cz',
-    img: imgLucieMakovska,
-    phone: '602 424 990',
+    email: 't_srobova@utb.cz',
+    img: TereziaSrobova,
+    phone: '(+421) 915 113 097',
   },
   {
     id: 1,
-    name: 'Andrea Žylová',
+    name: 'Tereza Hloužkova',
     position: 'hl. manažer',
-    email: 'ahoj@culturea.cz',
-    img: imgAndreaZylova,
-    phone: '725 617 303',
+    email: 't_hlouzkova@utb.cz',
+    img: TerezaHlouzkova,
+    phone: '776 400 069',
   },
   {
     id: 2,
-    name: 'Alžběta Blahová',
-    position: 'manažerka PR',
-    email: 'pr@culturea.cz',
-    img: imgAlzbetaBlahova,
-    phone: '773 952 690',
+    name: 'Kateřina Kalinová',
+    position: 'manažer art',
+    email: 't_srobova@utb.cz', 
+    img: KaterinaKalinova,
+    phone: '773 112 042',
   },
   {
     id: 3,
-    name: 'Vendula Kořínková',
-    position: 'manažerka Fundraisingu',
-    email: 'fundraising@culturea.cz',
-    img: imgVendulaKorinkova,
-    phone: '736 428 059',
-  },
-  {
-    id: 4,
-    name: 'Helena Pham',
-    position: 'manažerka Proma',
-    email: 'promo@culturea.cz',
-    img: imgHelenaPham,
+    name: 'Hana Hromková',
+    position: 'manažer Promo',
+    email: 't_srobova@utb.cz',
+    img: HanaHromkova,
     phone: '776 851 818',
-  },
+  }, 
   {
+    id: 4 ,
+    name: 'Eva Ševčíkova',
+    position: 'manažer produkce',
+    email: 'e_sevcikova@utb.cz',
+    img: EvaSevcikova,
+    phone: '723 457 715',
+  },
+  { 
     id: 5,
-    name: 'Tereza Šímová ',
-    position: 'manažerka Produkce',
-    email: 'produkce@culturea.cz',
-    img: imgTerezaSimova,
-    phone: '736 428 635',
+    name: 'Lucie Veškrnová',
+    position: 'manažer Pr ',
+    email: 'l_veskrnova@utb.cz',
+    img: LucieVeskrnova,
+    phone: '',
   },
   {
     id: 6,
-    name: 'Šimon Valovič',
-    position: 'manažer Artu',
-    email: 'art@culturea.cz',
-    img: imgSimonValovic,
-    phone: '+421 907 158 538 ',
+    name: 'Jiří Zapalač',
+    position: 'manažer Produkce',
+    email: 'j_zapalac@utb.cz',
+    img: JiriZapalac,
+    phone: '775 388 092',
   },
   {
     id: 7,
-    name: 'Sára Mašková',
-    position: 'manažerka Proma',
-    email: 'promo@culturea.cz',
-    img: imgSaraMaskova,
-    phone: '774 323 834',
+    name: 'Veronika Chadimová',
+    position: 'manažer Promo',
+    email: 'v_chadimova@utb.cz',
+    img: VeronikaChadimova,
+    phone: '720 988 661',
+  },
+  {
+    id: 8,
+    name: 'Kristyna Lexová',
+    position: 'manažer Proma',
+    email: 'k_lexova@utb.cz',
+    img: KristynaLexova,
+    phone: '792 765 456',
   },
 ];

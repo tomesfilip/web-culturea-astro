@@ -9,15 +9,22 @@ import SectionMap from '../sections/SectionMap';
 import SectionOrganizer from '../sections/SectionOrganizer';
 import SectionProgram from '../sections/SectionProgram';
 import SectionTeam from '../sections/SectionTeam';
+import SectionTopics from '../sections/SectionTopics';
+import SectionLastYear from '../sections/SectionLastYear'
+import SectionTopicHeader from '../sections/SectionTopicHeader';
+
 
 import '../styles/headingStyles.css';
 ---
 
 <Layout title="Culturea 2024">
-  <SectionLanding client:only />
-  <SectionLandingTexts />
-  <SectionAbout />
-  <SectionProgram client:only />
+  <!-- <SectionLanding client:only />
+  <SectionLandingTexts /> -->
+  <SectionTopicHeader slot="HeroSection"/>
+  <SectionAbout  slot="HeroSection"/>
+  <SectionTopics/>
+  <SectionLastYear/>
+  <!-- <SectionProgram client:only /> -->
   <SectionBlogs client:only />
   <SectionHistory client:only />
   <SectionMap client:only /> 

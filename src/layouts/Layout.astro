@@ -2,6 +2,7 @@
 import CookieBanner from '../components/shared/CookieBanner';
 import Footer from '../components/shared/Footer';
 import Header from '../components/shared/Header';
+import { HeroSection } from '../components/shared/HeroSection';
 
 export interface Props {
   title: string;
@@ -40,7 +41,10 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <Header client:only />
+    <HeroSection>
+      <slot name="HeroSection"/>
+    </HeroSection>
+    
     <slot />
     <Footer />
     <CookieBanner client:only />

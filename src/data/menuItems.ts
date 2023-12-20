@@ -5,14 +5,14 @@ export const menuItems: TMenuLink[] = [
     url: '/#o-festivalu',
     title: 'O festivalu',
   },
-  {
-    url: '/#program',
-    title: 'Program',
-  },
-  {
-    url: '/#clanky',
-    title: 'Články',
-  },
+  // {
+  //   url: '/#program',
+  //   title: 'Program',
+  // },
+  // {
+  //   url: '/#clanky',
+  //   title: 'Články',
+  // },
   {
     url: '/partneri',
     title: 'Partneři',

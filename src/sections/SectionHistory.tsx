@@ -22,9 +22,9 @@ const SectionHistory = () => {
     <Section
       sectionId="historie"
       sectionName="Minulý ročník"
-      className="mx-auto max-w-7xl"
+      // className="mx-auto max-w-7xl"
     >
-      <div className="mb-4 dashed-border xl:mb-8"></div>
+      <div className="mb-4  xl:mb-8"></div>
 
       <div className="w-full transition-all duration-500 history-items">
         {historyItems.slice(0, showMaxCount).map(({ name, year, photos }) => (
@@ -39,9 +39,9 @@ const SectionHistory = () => {
         >
           <span>{isShowMore ? 'Méně' : 'Další'}</span>
           <svg
-            width="34"
-            height="30"
-            viewBox="0 0 34 30"
+            width="90"
+            height="90"
+            viewBox="0 0 90 30"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
