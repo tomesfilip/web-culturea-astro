@@ -6,9 +6,10 @@ import Layout from '../layouts/Layout.astro';
 import { mediaItems } from '../../src/data/mediaDownloads';
 
 import '../styles/headingStyles.css';
+import { CULTUREA_YEAR } from '../lib/constants';
 ---
 
-<Layout title="Culturea 2024">
+<Layout title=`Culturea ${CULTUREA_YEAR}`>
   <Section sectionId="media-downloadss" sectionName="KE STAŽENÍ">
     <MediaList mediaList={mediaItems} />
   </Section>

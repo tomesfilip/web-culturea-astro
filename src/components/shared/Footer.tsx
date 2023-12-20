@@ -1,3 +1,4 @@
+import { CULTUREA_YEAR } from '../../lib/constants'
 import FooterLogo from '../footer/FooterLogo'
 import SocialList from '../footer/SocialList'
 
@@ -36,7 +37,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-white text-center">
-        © 2024, Všechna práva vyhrazena
+        © {CULTUREA_YEAR}, Všechna práva vyhrazena
       </div>
     </footer>
   )

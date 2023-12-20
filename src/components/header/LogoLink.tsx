@@ -1,14 +1,12 @@
-const getCurrentYear = (): number => {
-  return new Date().getFullYear();
-};
+import { CULTUREA_YEAR } from "../../lib/constants";
 
 const LogoLink = () => {
   return (
     <a className="logo" href="/">
-      <h1 className="hidden">Culturea {getCurrentYear()}</h1>
+      <h1 className="hidden">Culturea {CULTUREA_YEAR}</h1>
       <img
         src="./logo_slovo.svg"
-        alt={`culturea ${getCurrentYear()} logo`}
+        alt={`culturea ${CULTUREA_YEAR} logo`}
         width={200}
         height={46}
       />

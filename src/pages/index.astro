@@ -3,31 +3,28 @@ import Layout from '../layouts/Layout.astro';
 import SectionAbout from '../sections/SectionAbout';
 import SectionBlogs from '../sections/SectionBlogs';
 import SectionHistory from '../sections/SectionHistory';
-import SectionLanding from '../sections/SectionLanding';
-import SectionLandingTexts from '../sections/SectionLandingTexts';
 import SectionMap from '../sections/SectionMap';
 import SectionOrganizer from '../sections/SectionOrganizer';
-import SectionProgram from '../sections/SectionProgram';
 import SectionTeam from '../sections/SectionTeam';
 import SectionTopics from '../sections/SectionTopics';
-import SectionLastYear from '../sections/SectionLastYear'
+import SectionLastYear from '../sections/SectionLastYear';
 import SectionTopicHeader from '../sections/SectionTopicHeader';
 
-
 import '../styles/headingStyles.css';
+import { CULTUREA_YEAR } from '../lib/constants';
 ---
 
-<Layout title="Culturea 2024">
+<Layout title=`Culturea ${CULTUREA_YEAR}`>
   <!-- <SectionLanding client:only />
   <SectionLandingTexts /> -->
-  <SectionTopicHeader slot="HeroSection"/>
-  <SectionAbout  slot="HeroSection"/>
-  <SectionTopics/>
-  <SectionLastYear/>
+  <SectionTopicHeader slot="HeroSection" />
+  <SectionAbout slot="HeroSection" />
+  <SectionTopics />
+  <SectionLastYear />
   <!-- <SectionProgram client:only /> -->
   <SectionBlogs client:only />
   <SectionHistory client:only />
-  <SectionMap client:only /> 
+  <SectionMap client:only />
   <SectionTeam client:only />
   <SectionOrganizer />
 </Layout>
