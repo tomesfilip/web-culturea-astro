@@ -1,15 +1,6 @@
 import './Marquee.css';
 
 const Marquee = () => {
-  const text = ['KUBA', 'MAROKO'];
-  const marqueeText = Array(10).fill(text).flat();
-
-  const content = marqueeText.map((word, index) => (
-    <span key={index} className={`${word.toLowerCase()}`}>
-      {word}
-    </span>
-  ));
-
   return (
     <div
       style={{
@@ -17,13 +8,15 @@ const Marquee = () => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
-      className="marquee-container flex items-center "
+      className="relative overflow-hidden whitespace-nowrap text-[70px] w-full h-[220px] flex items-center bg-no-repeat"
     >
-      <div className="marquee ">
+      <div className="marquee">
         {[...Array(10)].map((_, index) => (
           <div key={index} className="text">
-            <span className="kuba font-bold">KUBA&nbsp;</span>
-            <span className="maroko font-bold">MAROKO&nbsp;</span>
+            <span className="kuba font-bold text-[#19777A]">KUBA&nbsp;</span>
+            <span className="maroko font-bold text-[#FE8133]">
+              MAROKO&nbsp;
+            </span>
           </div>
         ))}
       </div>
