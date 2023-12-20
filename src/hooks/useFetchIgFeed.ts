@@ -14,14 +14,14 @@ const useFetchInstagramFeed = () => {
           `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink&access_token=${
             import.meta.env.PUBLIC_INSTAGRAM_TOKEN
           }`,
-          { cache: 'no-store' }
+          { cache: 'no-store' },
         );
 
         const { data } = await res.json();
 
         const igPhotoFeed = data.filter(
           (item: any) =>
-            item.media_type === 'CAROUSEL_ALBUM' || item.media_type === 'IMAGE'
+            item.media_type === 'CAROUSEL_ALBUM' || item.media_type === 'IMAGE',
         );
 
         setData(igPhotoFeed);

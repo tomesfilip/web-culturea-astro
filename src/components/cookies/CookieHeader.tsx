@@ -1,4 +1,4 @@
-import cookieIcon from '../../assets/img/icons/cookie-icon.png';
+import cookieIcon from '../../assets/img/icons/cookie.svg?url';
 
 const CookieHeader = () => {
   return (

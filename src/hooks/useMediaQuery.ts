@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 const useMediaQuery = (mediaWidth: number = 569): boolean => {
   const [isMobile, setIsMobile] = useState<boolean>(
-    window.innerWidth < mediaWidth ? true : false
+    window.innerWidth < mediaWidth ? true : false,
   );
 
   useEffect(() => {

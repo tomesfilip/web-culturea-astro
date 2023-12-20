@@ -1,8 +1,9 @@
-import { Navigation, Pagination } from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import '../../styles/swiper.css';
 
 import type { TTeamMemberItem } from '../../lib/types/TTeamMemberItem';
@@ -16,13 +17,12 @@ const TeamMemberList = ({ teamMembers }: Props) => {
     <Swiper
       modules={[Navigation, Pagination]}
       navigation
-      pagination={{ clickable: true }}
-      loop
+      // pagination={{ clickable: true }}
       autoHeight={true}
       grabCursor={true}
       breakpoints={{
         640: {
-          slidesPerView: 2,
+          slidesPerView: 1,
         },
         1024: {
           slidesPerView: 3,
@@ -32,27 +32,53 @@ const TeamMemberList = ({ teamMembers }: Props) => {
         },
       }}
     >
-      {teamMembers.map((teamMember, index) => (
-        <SwiperSlide key={index}>
-          <figure className="flex flex-col justify-center mx-2 2xl:mx-8 text-center">
-            <img
-              className="object-cover object-center"
-              src={teamMember.img}
-              width={400}
-              height={500}
-              loading="lazy"
-              alt={teamMember.name}
-            />
-            <figcaption className="py-2 text-lg font-bold text-white bg-flushOrange">
-              <span className="mb-2 name">{teamMember.name}</span>
-              <h4 className="mb-0 capitalize">{teamMember.position}</h4>
-              <a className="block" href={`mailto:${teamMember.email}`}>
-                {teamMember.email}
-              </a>
-              <a className="block" href={`tel:${teamMember.phone}`}>
-                {teamMember.phone}
-              </a>
-            </figcaption>
+      {teamMembers.map(({ name, img, position, email, phone }, index) => (
+        <SwiperSlide key={`${name}-${index}`}>
+          <figure className="flex flex-col justify-center mx-2 2xl:mx-8 text-center rounded-lg">
+            <div>
+              <img
+                className="object-cover object-center rounded-t-lg opacity-70 hover:opacity-100 transition-opacity duration-300"
+                src={img}
+                width={400}
+                height={500}
+                loading="lazy"
+                alt={name}
+              />
+
+              <figcaption
+                className="py-2 text-lg font-bold text-white bg-flushOrange rounded-b-lg capitalize text-left pl-5"
+                style={{
+                  backgroundColor: index % 2 === 0 ? '#DE5C0F' : '#19777A',
+                }}
+              >
+                <span className="mb-2 name text-bold text-2xl uppercase">
+                  {name}
+                </span>
+                <h4 className="mb-0 uppercase font-normal">{position}</h4>
+                <a
+                  className="block uppercase font-normal"
+                  href={`mailto:${email}`}
+                >
+                  <img
+                    src="./letter.png"
+                    alt="Mail ikona"
+                    className="inline-block mr-2 mb-2 w-6 h-6"
+                  />
+                  {email}
+                </a>
+                <a
+                  className="block uppercase font-normal"
+                  href={`tel:${phone}`}
+                >
+                  <img
+                    src="./phone.png"
+                    alt="Telefon ikona"
+                    className="inline-block mr-2 w-6 h-6"
+                  />
+                  {phone}
+                </a>
+              </figcaption>
+            </div>
           </figure>
         </SwiperSlide>
       ))}

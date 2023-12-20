@@ -1,8 +1,9 @@
+// SectionOrganizer.tsx
 import Section from '../components/shared/Section';
 
 const SectionOrganizer = () => {
   return (
-    <Section sectionId="poradatel" sectionName="Pořadatel">
+    <Section sectionId="kontakty" sectionName="">
       <a
         href="https://fmk.utb.cz/en/"
         target="_blank"

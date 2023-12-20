@@ -1,13 +1,10 @@
 const FooterLogo = () => {
   return (
-    <a href="/">
-      <img
-        src="/logo-footer.svg"
-        alt="Culturea logo"
-        width={182}
-        height={108}
-      />
-    </a>
+    <div>
+      <a href="/">
+        <img src="/logo_slovo2.svg" alt="Culturea logo" width={190} />
+      </a>
+    </div>
   );
 };
 

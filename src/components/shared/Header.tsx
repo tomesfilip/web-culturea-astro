@@ -11,12 +11,13 @@ const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
 
   return (
-    <header className="w-full bg-white border-b-2">
-      <nav className="relative z-10 flex flex-col items-center h-24 py-6 xl:flex-row xl:justify-between xl:py-4 xl:px-12 xl:h-auto">
+    <header className="w-full bg-transparent">
+      <nav className="relative z-10 flex flex-col items-center h-24 py-4 xl:flex-row xl:justify-between xl:py-4 xl:px-12 ">
         <LogoLink />
-        {/* <HamburgerButton handleToggleMenu={() => setMenuActive(!menuActive)} />
+
+        <HamburgerButton handleToggleMenu={() => setMenuActive(!menuActive)} />
         <ul
-          className={`flex flex-col items-center bg-white py-6 gap-y-4 xl:hidden absolute w-full top-24 transition-all duration-500  ${
+          className={`flex flex-col items-center bg-white py-6 gap-y-4 xl:hidden absolute w-full top-24 transition-all duration-500 ${
             menuActive ? 'right-0' : '-right-[100vw]'
           }`}
         >
@@ -29,7 +30,7 @@ const Header = () => {
           ))}
           <TicketButton />
         </ul>
-        <ul className="flex-row items-center hidden space-x-8 bg-white xl:flex">
+        <ul className="flex-row items-center hidden space-x-8 xl:flex text-white ">
           {menuItems.map((menuItem) => (
             <MenuLink
               key={menuItem.title}
@@ -38,7 +39,7 @@ const Header = () => {
             />
           ))}
           <TicketButton />
-        </ul> */}
+        </ul>
       </nav>
     </header>
   );

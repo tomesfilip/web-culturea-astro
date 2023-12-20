@@ -1,9 +1,10 @@
 import type { TContactItem } from '../lib/types/TContactItem';
 import type { TSocialItem } from '../lib/types/TSocialItem';
 
-import fbLogo from '../assets/img/icons/facebook-logo.svg?url';
-import igLogo from '../assets/img/icons/instagram-logo.svg?url';
-import tiktokLogo from '../assets/img/icons/tiktok-logo.svg?url';
+import fbLogo from '../assets/img/icons/facebook.svg?url';
+import igLogo from '../assets/img/icons/instagram.svg?url';
+import sfLogo from '../assets/img/icons/spotify.svg?url';
+import ytLogo from '../assets/img/icons/youtube.svg?url';
 
 export const contactItems: TContactItem[] = [
   {
@@ -44,8 +45,14 @@ export const socialItems: TSocialItem[] = [
     socLink: 'https://fb.me/e/7nGGaBHnI',
   },
   {
-    imgSrc: tiktokLogo,
-    imgAlt: 'Culturea tiktok',
-    socLink: 'https://www.tiktok.com/@festivalculturea',
+    imgSrc: sfLogo,
+    imgAlt: 'Culturea spotify',
+    socLink:
+      'https://open.spotify.com/show/63TQbV3BDMi5g65zBR41Se?si=13b34f5416a34b67',
+  },
+  {
+    imgSrc: ytLogo,
+    imgAlt: 'Culturea youtube',
+    socLink: 'https://www.youtube.com/channel/UC1yEl3yhmv0UmVbRhanyeyA',
   },
 ];

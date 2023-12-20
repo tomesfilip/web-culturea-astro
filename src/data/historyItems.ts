@@ -1,20 +1,20 @@
 import type { THistoryItem } from '../lib/types/THistoryItem';
 
-import Img1 from '../assets/img/history/1-2022.jpg';
-import Img10 from '../assets/img/history/10-2022.jpg';
-import Img2 from '../assets/img/history/2-2022.jpg';
-import Img3 from '../assets/img/history/3-2022.jpg';
-import Img4 from '../assets/img/history/4-2022.jpg';
-import Img5 from '../assets/img/history/5-2022.jpg';
-import Img6 from '../assets/img/history/6-2022.jpg';
-import Img7 from '../assets/img/history/7-2022.jpg';
-import Img8 from '../assets/img/history/8-2022.jpg';
-import Img9 from '../assets/img/history/9-2022.jpg';
+import Img1 from '../../public/galerie_foto1.jpg?url';
+import Img2 from '../../public/galerie_foto2.jpg?url';
+import Img3 from '../../public/galerie_foto3.jpg?url';
+import Img4 from '../../public/galerie_foto4.jpg?url';
+import Img5 from '../../public/galerie_foto5.jpg?url';
+import Img6 from '../../public/galerie_foto1.jpg?url';
+import Img7 from '../../public/galerie_foto1.jpg?url';
+import Img8 from '../../public/galerie_foto1.jpg?url';
+import Img9 from '../../public/galerie_foto1.jpg?url';
+import Img10 from '../../public/galerie_foto1.jpg?url';
 
 export const historyItems: THistoryItem[] = [
   {
-    name: 'FINSKO A TURECKO',
-    year: '2022',
+    name: 'DÁNSKO A BHUTÁN',
+    year: '2023',
     photos: [Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8, Img9, Img10],
   },
   {
