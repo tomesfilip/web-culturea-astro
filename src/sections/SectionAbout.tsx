@@ -1,9 +1,11 @@
+import { Section } from '../components/shared/Section';
+
 export const SectionAbout = () => {
   return (
-    <div>
+    <Section sectionId="o-festivalu">
       <div className="flex text-white mx-40 mt-20 pb-40">
         <div className="w-1/2 flex flex-col pb-20 justify-center">
-          <h2 className=" font-bold  text-left ">O festivalu</h2>
+          <h2 className="font-bold text-left ">O festivalu</h2>
           <p className="mb-8 text-left text-2xl">
             Festival přinášející do Zlína esenci dalekých krajin
           </p>
@@ -18,7 +20,7 @@ export const SectionAbout = () => {
               sebe poměrně vzdálené a na první pohled zcela odlišné, ve skrytu
               jsou si však něčím velmi podobné.
             </p>
-            <p className="mb-4 ">
+            <p className="mb-4">
               Již dvanáctý rok projekt organizují studenti Fakulty
               multimediálních komunikací Univerzity Tomáše Bati ve Zlíně.
             </p>
@@ -39,14 +41,6 @@ export const SectionAbout = () => {
           />
         </div>
       </div>
-      <div
-        style={{
-          backgroundImage: "url('./ripped_paper_top.png')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-        className="relative w-full h-[180px] bg-no-repeat -bottom-10"
-      ></div>
-    </div>
+    </Section>
   );
 };

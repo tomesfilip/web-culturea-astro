@@ -2,7 +2,7 @@ import { Section } from '../components/shared/Section';
 
 export const SectionOrganizer = () => {
   return (
-    <Section sectionId="kontakty" sectionName="">
+    <Section sectionId="kontakty">
       <a
         href="https://fmk.utb.cz/en/"
         target="_blank"

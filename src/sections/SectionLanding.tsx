@@ -1,9 +1,13 @@
 import SocialList from '../components/footer/SocialList';
+import { Section } from '../components/shared/Section';
 
 export const SectionLanding = () => {
   return (
-    <div className="py-16 flex items-center flex-wrap text-center text-white my-10 px-4 lg:px-0">
-      <div className="absolute left-8 hidden lg:block">
+    <Section
+      sectionId="landing"
+      className="text-white px-4 py-12 lg:px-0 relative"
+    >
+      <div className="absolute left-8 top-1/2 -translate-y-1/2 hidden lg:block">
         <SocialList />
       </div>
       <div className="flex flex-col items-center mx-auto max-w-[400px] lg:max-w-none">
@@ -27,6 +31,6 @@ export const SectionLanding = () => {
           <SocialList />
         </div>
       </div>
-    </div>
+    </Section>
   );
 };

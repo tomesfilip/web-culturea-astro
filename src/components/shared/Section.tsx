@@ -2,8 +2,8 @@ import type { ReactNode } from 'react';
 
 type Props = {
   sectionId: string;
-  sectionName?: string;
   children: ReactNode;
+  sectionName?: string;
   className?: string;
   background?: string;
   headlineClassName?: string;
@@ -11,8 +11,8 @@ type Props = {
 
 export const Section = ({
   sectionId,
-  sectionName,
   children,
+  sectionName,
   className,
   background,
   headlineClassName,
@@ -20,7 +20,7 @@ export const Section = ({
   return (
     <section
       id={sectionId}
-      className={`flex flex-col items-center xl:px-12 my-12 ${className}`}
+      className={`flex flex-col items-center my-12 ${className}`}
       style={{
         background: background ? `url(${background})` : '',
         backgroundSize: 'cover',
@@ -31,7 +31,7 @@ export const Section = ({
           {sectionName}
         </h2>
       )}
-      {children}
+      <div className="w-full max-w-screen-2xl mx-auto">{children}</div>
     </section>
   );
 };

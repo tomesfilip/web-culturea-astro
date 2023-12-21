@@ -11,7 +11,7 @@ const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
 
   return (
-    <header className="w-full bg-transparent">
+    <header className="w-full bg-transparent max-w-screen-2xl mx-auto">
       <nav className="relative z-10 flex flex-col items-center h-24 py-4 xl:flex-row xl:justify-between xl:py-4 xl:px-12 ">
         <LogoLink />
 

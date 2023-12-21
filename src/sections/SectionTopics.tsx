@@ -1,6 +1,8 @@
+import { Section } from '../components/shared/Section';
+
 export const SectionTopics = () => {
   return (
-    <div className="px-20 pb-20 flex flex-col flex-wrap">
+    <Section sectionId="temata" className="pb-20">
       <h1 className="text-5xl text-center px-20 pb-20 mt-10 mb-16 font-bold">
         Témata, na která se můžete těšit
       </h1>
@@ -72,6 +74,6 @@ export const SectionTopics = () => {
         }}
         className="relative w-full h-[180px] bg-no-repeat bottom-0 top-32"
       ></div>
-    </div>
+    </Section>
   );
 };
