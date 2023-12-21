@@ -7,11 +7,11 @@ const Footer = () => {
     <footer
       id="kontakt"
       style={{
-        backgroundImage: 'url(./pozadi_paticka.jpg)',
+        backgroundImage: 'url(/pozadi/footer.jpg)',
         backgroundSize: 'cover',
       }}
     >
-      <div className="relative w-full max-w-screen-2xl mx-auto py-12 space-y-8 flex flex-col items-center">
+      <div className="relative w-full max-w-screen-2xl mx-auto pt-24 pb-8 space-y-8 flex flex-col items-center">
         <div className="hidden lg:block lg:absolute left-4">
           <SocialList />
         </div>

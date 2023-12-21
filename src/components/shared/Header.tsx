@@ -17,7 +17,7 @@ const Header = () => {
 
         <HamburgerButton handleToggleMenu={() => setMenuActive(!menuActive)} />
         <ul
-          className={`flex flex-col items-center bg-white py-6 gap-y-4 xl:hidden absolute w-full top-24 transition-all duration-500 ${
+          className={`flex flex-col items-center bg-white py-6 gap-y-4 xl:hidden absolute w-full h-full transition-all duration-500 ${
             menuActive ? 'right-0' : '-right-[100vw]'
           }`}
         >

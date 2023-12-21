@@ -5,9 +5,7 @@ export const SectionTopics = () => {
         Témata, na která se můžete těšit
       </h1>
       <div className="grid grid-cols-2 grid-rows-3 gap-20 mx-40">
-        <div>
-          <img src="/foto_kuba.jpg" alt="Kuba" />
-        </div>
+        <img src="/temata/foto-kuba.jpg" alt="Kuba" />
         <div
           style={{ width: '2fr', height: '1fr' }}
           className="font-bold text-left "
@@ -44,10 +42,10 @@ export const SectionTopics = () => {
           </p>
         </div>
         <div style={{ width: '2fr', height: '1fr' }} className="">
-          <img src="./foto_maroko.jpg" alt="Maroko" />
+          <img src="/temata/foto-maroko.jpg" alt="Maroko" />
         </div>
         <div style={{ width: '2fr', height: '1fr' }} className="">
-          <img src="./foto_slow_travel.jpg" alt="Slow travel" />
+          <img src="./temata/foto-slow-travel.jpg" alt="Slow travel" />
         </div>
         <div style={{ width: '2fr', height: '1fr' }} className="">
           <h2 className="pb-5">Slow Travel</h2>

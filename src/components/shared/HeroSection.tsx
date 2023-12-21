@@ -7,7 +7,7 @@ type Props = {
 
 export const HeroSection = ({ children }: Props) => {
   const backgroundStyle = {
-    backgroundImage: "url('/pozadi_.jpg')",
+    backgroundImage: "url('/pozadi/landing-mobile.jpg')",
     backgroundSize: 'cover',
     backgroundPosition: 'center center',
     backgroundRepeat: 'no-repeat',

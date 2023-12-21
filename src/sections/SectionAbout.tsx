@@ -27,14 +27,14 @@ export const SectionAbout = () => {
         <div className="lg:w-1/2 flex flex-col items-start justify-start relative">
           <div className="flex items-end justify-end">
             <img
-              src="/oFestivaluPhoto.jpg"
-              alt="Galerie"
+              src="/o-festivalu/x-challenge.jpg"
+              alt="X Challenge"
               className="h-auto w-3/4"
             />
           </div>
           <img
-            src="/foto_ofestivalu_mensi.jpg"
-            alt="O festivalu"
+            src="/o-festivalu/tym.jpg"
+            alt="O festivalu - tym"
             className="absolute bottom-4 mt-8 w-1/2"
           />
         </div>

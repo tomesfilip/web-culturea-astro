@@ -9,7 +9,7 @@ export const SectionLastYear = () => {
     <Section
       sectionId="historie"
       sectionName="Minulý ročník"
-      background="./pozadi_galerie.jpg"
+      background="/pozadi/galerie.jpg"
       className="py-8"
       headlineClassName="text-white"
     >

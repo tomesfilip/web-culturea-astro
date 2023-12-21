@@ -6,8 +6,8 @@ import { SectionMap } from '../sections/SectionMap';
 import { SectionOrganizer } from '../sections/SectionOrganizer';
 import { SectionTeam } from '../sections/SectionTeam';
 import { SectionTopics } from '../sections/SectionTopics';
-import { SectionTopicHeader } from '../sections/SectionTopicHeader';
 import { SectionLastYear } from '../sections/SectionLastYear';
+import { SectionLanding } from '../sections/SectionLanding';
 
 import { CULTUREA_YEAR } from '../lib/constants';
 
@@ -15,10 +15,8 @@ import '../styles/headingStyles.css';
 ---
 
 <Layout title={`Culturea ${CULTUREA_YEAR}`}>
-  <!-- <SectionLanding client:only />
-  <SectionLandingTexts /> -->
-  <SectionTopicHeader slot="HeroSection" />
-  <SectionAbout slot="HeroSection" />
+  <SectionLanding slot="heroSection" />
+  <SectionAbout slot="heroSection" />
   <SectionTopics />
   <!-- <SectionProgram client:only /> -->
   <SectionLastYear client:only />

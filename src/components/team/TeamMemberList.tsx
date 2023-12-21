@@ -61,7 +61,7 @@ const TeamMemberList = ({ teamMembers }: Props) => {
                   href={`mailto:${email}`}
                 >
                   <img
-                    src="./letter.png"
+                    src="/ikony/letter-icon.png"
                     alt="Mail ikona"
                     className="inline-block mr-2 mb-2 w-6 h-6"
                   />
@@ -72,7 +72,7 @@ const TeamMemberList = ({ teamMembers }: Props) => {
                   href={`tel:${phone}`}
                 >
                   <img
-                    src="./phone.png"
+                    src="/ikony/phone-icon.png"
                     alt="Telefon ikona"
                     className="inline-block mr-2 w-6 h-6"
                   />

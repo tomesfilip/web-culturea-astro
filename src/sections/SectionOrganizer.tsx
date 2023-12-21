@@ -9,7 +9,7 @@ export const SectionOrganizer = () => {
         rel="noopener noreferrer"
       >
         <img
-          src="/fmk-logo.svg"
+          src="/ikony/fmk-logo.svg"
           alt="UTB - Fakulta multimediálních komunikací"
           width={674}
           height={185}
