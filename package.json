@@ -19,6 +19,7 @@
     "@types/swiper": "^6.0.0",
     "astro": "^3.6.0",
     "framer-motion": "^10.16.16",
+    "hamburger-react": "^2.5.0",
     "html-react-parser": "^5.0.6",
     "js-cookie": "^3.0.5",
     "nanostores": "^0.9.5",

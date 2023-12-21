@@ -1,47 +1,80 @@
+import { AnimatePresence, motion } from 'framer-motion';
+import { Twirl as Hamburger } from 'hamburger-react';
 import { useState } from 'react';
 
-import HamburgerButton from '../header/HamburgerButton';
+import { menuItems } from '../../data/menuItems';
 import LogoLink from '../header/LogoLink';
 import MenuLink from '../header/MenuLink';
 import TicketButton from '../header/TicketButton';
 
-import { menuItems } from '../../data/menuItems';
-
 const Header = () => {
-  const [menuActive, setMenuActive] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const menuVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
 
   return (
-    <header className="w-full bg-transparent max-w-screen-2xl mx-auto">
-      <nav className="relative z-10 flex flex-col items-center h-24 py-4 xl:flex-row xl:justify-between xl:py-4 xl:px-12 ">
-        <LogoLink />
-
-        <HamburgerButton handleToggleMenu={() => setMenuActive(!menuActive)} />
-        <ul
-          className={`flex flex-col items-center bg-white py-6 gap-y-4 xl:hidden absolute w-full h-full transition-all duration-500 ${
-            menuActive ? 'right-0' : '-right-[100vw]'
-          }`}
-        >
+    <motion.header className="w-full bg-transparent max-w-screen-2xl mx-auto">
+      <nav className="relative z-10 flex flex-col items-center h-24 xl:flex-row xl:justify-between xl:py-4 xl:px-12">
+        <div className="hidden xl:block">
+          <LogoLink />
+        </div>
+        <div className="z-20 flex w-full justify-between items-center pt-4 px-4 xl:hidden">
+          <LogoLink />
+          <Hamburger
+            rounded
+            toggled={isOpen}
+            toggle={setIsOpen}
+            color="white"
+          />
+        </div>
+        {isOpen && (
+          <AnimatePresence>
+            <motion.ul
+              className="flex flex-col items-center justify-center text-white gap-y-6 xl:hidden absolute w-full h-[62vh]"
+              style={{
+                background:
+                  'linear-gradient(145deg, rgba(254,129,51,1) 20%, rgba(25,119,122,1) 80%)',
+              }}
+              variants={menuVariants}
+              initial="hidden"
+              animate="visible"
+              exit="hidden"
+            >
+              {menuItems.map((menuItem) => (
+                <motion.li key={menuItem.title} variants={menuVariants}>
+                  <MenuLink
+                    menuItem={menuItem}
+                    onClick={() => setIsOpen(false)}
+                  />
+                </motion.li>
+              ))}
+              <motion.li variants={menuVariants} className="mt-6">
+                <TicketButton />
+              </motion.li>
+            </motion.ul>
+          </AnimatePresence>
+        )}
+        <ul className="flex-row items-center hidden space-x-8 xl:flex text-white">
           {menuItems.map((menuItem) => (
             <MenuLink
               key={menuItem.title}
               menuItem={menuItem}
-              onClick={() => setMenuActive(false)}
-            />
-          ))}
-          <TicketButton />
-        </ul>
-        <ul className="flex-row items-center hidden space-x-8 xl:flex text-white ">
-          {menuItems.map((menuItem) => (
-            <MenuLink
-              key={menuItem.title}
-              menuItem={menuItem}
-              onClick={() => setMenuActive(false)}
+              onClick={() => setIsOpen(false)}
             />
           ))}
           <TicketButton />
         </ul>
       </nav>
-    </header>
+    </motion.header>
   );
 };
 
