@@ -57,7 +57,7 @@ export const teamMemberItems: TTeamMemberItem[] = [
     position: 'manažer Pr ',
     email: 'l_veskrnova@utb.cz',
     img: LucieVeskrnova,
-    phone: '',
+    phone: '731 004 947',
   },
   {
     id: 6,
