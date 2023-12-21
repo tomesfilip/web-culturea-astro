@@ -8,15 +8,15 @@ const CookieButtons = ({
   handleAcceptCookies,
 }: Props) => {
   return (
-    <div className="buttons flex gap-x-4 gap-y-2 flex-wrap">
+    <div className="buttons flex gap-x-4 gap-y-2 flex-wrap ">
       <button
-        className="px-6 py-2 text-white bg-flushOrange border-white rounded-lg border-[1px]"
-        onClick={handleDeclineCookies}
+        className="px-6 py-2 text-white border-white rounded-lg border-[1px] hover:bg-flushOrange transition duration-300"
+        onClick={handleDeclineCookies} 
       >
         Odmítnout
       </button>
       <button
-        className="px-6 py-2 text-flushOrange bg-white rounded-lg border-[1px]"
+        className="px-6 py-2 text-flushOrange rounded-lg border-[1px] text-white hover:bg-flushOrange transition duration-300"
         onClick={handleAcceptCookies}
       >
         Přijmout cookies
