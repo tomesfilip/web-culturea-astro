@@ -35,7 +35,7 @@ export const TeamMemberItemSwiper = ({
           isEven ? 'bg-flushOrange' : 'bg-[#19777A]'
         }`}
         animate={{
-          height: isHovered ? '120px' : '80px',
+          height: isHovered ? '132px' : '80px',
         }}
       >
         <span className="mb-2 name text-bold text-xl uppercase">{name}</span>

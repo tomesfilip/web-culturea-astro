@@ -27,7 +27,7 @@ const TeamMemberList = ({ teamMembers }: Props) => {
         ))}
       </div>
 
-      <div className="hidden lg:flex lg:h-[640px]">
+      <div className="hidden lg:flex lg:h-[680px]">
         <Swiper
           modules={[Navigation]}
           navigation
