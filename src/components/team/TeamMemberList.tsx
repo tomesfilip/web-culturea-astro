@@ -1,13 +1,14 @@
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 
 import '../../styles/swiper.css';
 
 import type { TTeamMemberItem } from '../../lib/types/TTeamMemberItem';
+import { TeamMemberItem } from './TeamMemberItem';
+import { TeamMemberItemSwiper } from './TeamMemberItemSwiper';
 
 interface Props {
   teamMembers: TTeamMemberItem[];
@@ -15,75 +16,46 @@ interface Props {
 
 const TeamMemberList = ({ teamMembers }: Props) => {
   return (
-    <Swiper
-      modules={[Navigation, Pagination]}
-      navigation
-      // pagination={{ clickable: true }}
-      autoHeight={true}
-      grabCursor={true}
-      breakpoints={{
-        640: {
-          slidesPerView: 1,
-        },
-        1024: {
-          slidesPerView: 3,
-        },
-        1200: {
-          slidesPerView: 4,
-        },
-      }}
-    >
-      {teamMembers.map(({ name, img, position, email, phone }, index) => (
-        <SwiperSlide key={`${name}-${index}`}>
-          <figure className="flex flex-col justify-center mx-2 2xl:mx-8 text-center rounded-lg">
-            <div>
-              <img
-                className="object-cover object-center rounded-t-lg opacity-70 hover:opacity-100 transition-opacity duration-300"
-                src={img}
-                width={400}
-                height={500}
-                loading="lazy"
-                alt={name}
-              />
+    <>
+      <div className="lg:hidden grid grid-cols-1 sm:grid-cols-2 justify-items-center gap-4 px-4">
+        {teamMembers.map((member, index) => (
+          <TeamMemberItem
+            key={member.id}
+            isEven={index % 2 === 0}
+            {...member}
+          />
+        ))}
+      </div>
 
-              <figcaption
-                className="py-2 text-lg font-bold text-white bg-flushOrange rounded-b-lg capitalize text-left pl-5"
-                style={{
-                  backgroundColor: index % 2 === 0 ? '#DE5C0F' : '#19777A',
-                }}
-              >
-                <span className="mb-2 name text-bold text-2xl uppercase">
-                  {name}
-                </span>
-                <h4 className="mb-0 uppercase font-normal">{position}</h4>
-                <a
-                  className="block uppercase font-normal"
-                  href={`mailto:${email}`}
-                >
-                  <img
-                    src="/ikony/letter-icon.png"
-                    alt="Mail ikona"
-                    className="inline-block mr-2 mb-2 w-6 h-6"
-                  />
-                  {email}
-                </a>
-                <a
-                  className="block uppercase font-normal"
-                  href={`tel:${phone}`}
-                >
-                  <img
-                    src="/ikony/phone-icon.png"
-                    alt="Telefon ikona"
-                    className="inline-block mr-2 w-6 h-6"
-                  />
-                  {phone}
-                </a>
-              </figcaption>
-            </div>
-          </figure>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+      <div className="hidden lg:flex lg:h-[640px]">
+        <Swiper
+          modules={[Navigation]}
+          navigation
+          autoHeight
+          grabCursor
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+            },
+            720: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+            1200: {
+              slidesPerView: 4,
+            },
+          }}
+        >
+          {teamMembers.map((teamMember, index) => (
+            <SwiperSlide key={teamMember.id}>
+              <TeamMemberItemSwiper isEven={index % 2 === 0} {...teamMember} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </>
   );
 };
 
