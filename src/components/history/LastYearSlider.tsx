@@ -2,7 +2,7 @@ import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
-import '../../styles/swiperWhiteArrows.css';
+import '../../styles/swiper.css';
 
 const images = [
   { id: 1, src: './galerie/galerie_foto1.jpg?url' },
