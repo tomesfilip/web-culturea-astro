@@ -17,7 +17,7 @@ export const LastYearSlider = () => {
     <div className="w-full">
       <div className="w-full text-center text-white">
         <p className="text-xl lg:text-[45px] uppercase xl:leading-[60px] font-headline">
-          DÁNSKO A BHUTÁN
+          DÁNSKO A BHÚTÁN
         </p>
         <p className="text-xl lg:text-[45px] font-bold xl:leading-[60px] font-headline">
           2023

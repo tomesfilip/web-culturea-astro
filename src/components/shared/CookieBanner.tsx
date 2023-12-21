@@ -20,7 +20,7 @@ const CookieBanner = () => {
   return (
     <>
       {showCookieBanner && (
-        <div className="fixed top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-col bg-flushOrange p-6 w-[94%] md:max-w-[460px] rounded-lg z-20">
+        <div className="fixed top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-col border-[1px] bg-cookieBg p-6 w-[94%] md:max-w-[460px] rounded-lg z-20">
           <CookieHeader />
           <CookieContent />
           <CookieButtons
