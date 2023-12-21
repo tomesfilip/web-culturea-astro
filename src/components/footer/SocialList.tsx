@@ -4,17 +4,15 @@ import SocialItem from './SocialItem';
 
 const SocialList = () => {
   return (
-    <div className="socials-container">
-      <div className="flex flex-row lg:flex-col space-y-6 opacity-50">
-        {socialItems.map(({ imgSrc, imgAlt, socLink }) => (
-          <SocialItem
-            key={socLink}
-            imgSrc={imgSrc}
-            imgAlt={imgAlt}
-            socLink={socLink}
-          />
-        ))}
-      </div>
+    <div className="flex flex-row lg:flex-col gap-6 opacity-50">
+      {socialItems.map(({ imgSrc, imgAlt, socLink }) => (
+        <SocialItem
+          key={socLink}
+          imgSrc={imgSrc}
+          imgAlt={imgAlt}
+          socLink={socLink}
+        />
+      ))}
     </div>
   );
 };
