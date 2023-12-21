@@ -8,7 +8,7 @@ export const Marquee = () => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
-      className="relative overflow-hidden whitespace-nowrap text-[70px] w-full h-[220px] flex items-center bg-no-repeat"
+      className="relative overflow-hidden whitespace-nowrap text-3xl lg:text-[70px] w-full h-[100px] lg:h-[220px] flex items-center bg-no-repeat"
     >
       <div className="marquee">
         {[...Array(10)].map((_, index) => (
