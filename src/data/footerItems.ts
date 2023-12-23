@@ -1,5 +1,5 @@
-import type { TContactItem } from '../lib/types/TContactItem';
-import type { TSocialItem } from '../lib/types/TSocialItem';
+import type { TContactItem } from '../types/TContactItem';
+import type { TSocialItem } from '../types/TSocialItem';
 
 import fbLogo from '../assets/img/icons/facebook.svg?url';
 import igLogo from '../assets/img/icons/instagram.svg?url';

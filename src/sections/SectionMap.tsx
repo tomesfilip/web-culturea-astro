@@ -1,4 +1,4 @@
-import MapSvg from '../components/map/MapSvg';
+import { MapSvg } from '../components/map/MapSvg';
 import { Section } from '../components/shared/Section';
 
 export const SectionMap = () => {

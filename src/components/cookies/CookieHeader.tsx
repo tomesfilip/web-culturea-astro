@@ -1,6 +1,6 @@
 import cookieIcon from '../../assets/img/icons/cookie.svg?url';
 
-const CookieHeader = () => {
+export const CookieHeader = () => {
   return (
     <div className="cookie-header flex flex-wrap items-center gap-x-4">
       <img src={cookieIcon} alt="cookie ikona" width={100} height={100} />
@@ -8,5 +8,3 @@ const CookieHeader = () => {
     </div>
   );
 };
-
-export default CookieHeader;

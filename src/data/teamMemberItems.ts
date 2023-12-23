@@ -1,14 +1,14 @@
-import type { TTeamMemberItem } from '../lib/types/TTeamMemberItem';
+import type { TTeamMemberItem } from '../types/TTeamMemberItem';
 
-import EvaSevcikova from '../assets/img/portrety_manazeru/EvaSevcikova.jpg?url';
-import HanaHromkova from '../assets/img/portrety_manazeru/HanaHromkova.jpg?url';
-import JiriZapalac from '../assets/img/portrety_manazeru/JiriZapalac.jpg?url';
-import KaterinaKalinova from '../assets/img/portrety_manazeru/KaterinaKalinova.jpg?url';
-import KristynaLexova from '../assets/img/portrety_manazeru/KristynaLexova.jpg?url';
-import LucieVeskrnova from '../assets/img/portrety_manazeru/LucieVeskrnova.jpg?url';
-import TerezaHlouzkova from '../assets/img/portrety_manazeru/TerezaHlouzkova.jpg?url';
-import TereziaSrobova from '../assets/img/portrety_manazeru/TereziaSrobova.jpg?url';
-import VeronikaChadimova from '../assets/img/portrety_manazeru/VeronikaChadimova.jpg?url';
+import EvaSevcikova from '../assets/img/portrety-manazeru/EvaSevcikova.jpg';
+import HanaHromkova from '../assets/img/portrety-manazeru/HanaHromkova.jpg';
+import JiriZapalac from '../assets/img/portrety-manazeru/JiriZapalac.jpg';
+import KaterinaKalinova from '../assets/img/portrety-manazeru/KaterinaKalinova.jpg';
+import KristynaLexova from '../assets/img/portrety-manazeru/KristynaLexova.jpg';
+import LucieVeskrnova from '../assets/img/portrety-manazeru/LucieVeskrnova.jpg';
+import TerezaHlouzkova from '../assets/img/portrety-manazeru/TerezaHlouzkova.jpg';
+import TereziaSrobova from '../assets/img/portrety-manazeru/TereziaSrobova.jpg';
+import VeronikaChadimova from '../assets/img/portrety-manazeru/VeronikaChadimova.jpg';
 
 export const teamMemberItems: TTeamMemberItem[] = [
   {

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const MapSvg = () => {
+export const MapSvg = () => {
   const zoomMinValue: number = 0.8;
   const zoomMaxValue: number = 5;
   const zoomStep: number = 0.2;
@@ -66,11 +66,11 @@ const MapSvg = () => {
   return (
     <div className="map-svg w-full relative justify-center items-center hidden md:flex h-[80vh] overflow-hidden">
       {countryTooltip && (
-        <h2 className="absolute bottom-[30%] left-1/2 -translate-x-1/2 bg-flushOrange text-white rounded-lg px-6 py-4 z-10">
+        <h2 className="absolute bottom-[30%] left-1/2 -translate-x-1/2 bg-orange-1 text-white rounded-lg px-6 py-4 z-10">
           {countryTooltip}
         </h2>
       )}
-      <div className="zoom-controls absolute top-12 right-12 flex flex-col items-center gap-4 bg-flushOrange text-white rounded-lg z-10 text-2xl">
+      <div className="zoom-controls absolute top-12 right-12 flex flex-col items-center gap-4 bg-orange-1 text-white rounded-lg z-10 text-2xl">
         <button onClick={() => handleZoomInClick()} className="px-4 pt-2">
           +
         </button>
@@ -2457,5 +2457,3 @@ const MapSvg = () => {
     </div>
   );
 };
-
-export default MapSvg;

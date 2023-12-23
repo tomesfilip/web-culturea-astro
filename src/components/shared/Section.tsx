@@ -14,17 +14,12 @@ export const Section = ({
   children,
   sectionName,
   className,
-  background,
   headlineClassName,
 }: Props) => {
   return (
     <section
       id={sectionId}
-      className={`flex flex-col items-center my-12 ${className}`}
-      style={{
-        background: background ? `url(${background})` : '',
-        backgroundSize: 'cover',
-      }}
+      className={`flex flex-col items-center my-12 lg:my-16 ${className}`}
     >
       {sectionName && (
         <h2 className={`text-center mb-8 xl:mb-12 ${headlineClassName}`}>

@@ -1,6 +1,6 @@
-import type { TContactItem } from '../../lib/types/TContactItem';
+import type { TContactItem } from '../../types/TContactItem';
 
-const ContactItem = ({ contactName, contactMail }: TContactItem) => {
+export const ContactItem = ({ contactName, contactMail }: TContactItem) => {
   return (
     <div
       className="contact-item text-[19px] text-center xl:text-left"
@@ -11,5 +11,3 @@ const ContactItem = ({ contactName, contactMail }: TContactItem) => {
     </div>
   );
 };
-
-export default ContactItem;

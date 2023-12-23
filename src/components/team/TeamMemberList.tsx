@@ -6,15 +6,15 @@ import 'swiper/css/navigation';
 
 import '../../styles/swiper.css';
 
-import type { TTeamMemberItem } from '../../lib/types/TTeamMemberItem';
+import type { TTeamMemberItem } from '../../types/TTeamMemberItem';
 import { TeamMemberItem } from './TeamMemberItem';
 import { TeamMemberItemSwiper } from './TeamMemberItemSwiper';
 
-interface Props {
+type Props = {
   teamMembers: TTeamMemberItem[];
-}
+};
 
-const TeamMemberList = ({ teamMembers }: Props) => {
+export const TeamMemberList = ({ teamMembers }: Props) => {
   return (
     <>
       <div className="lg:hidden grid grid-cols-1 sm:grid-cols-2 justify-items-center gap-4 px-4">
@@ -58,5 +58,3 @@ const TeamMemberList = ({ teamMembers }: Props) => {
     </>
   );
 };
-
-export default TeamMemberList;

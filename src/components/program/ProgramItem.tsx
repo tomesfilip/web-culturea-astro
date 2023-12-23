@@ -1,14 +1,14 @@
-import type { TProgramItem } from '../../lib/types/TProgramItem';
+import type { TProgramItem } from '../../types/TProgramItem';
 
 type Props = TProgramItem & {
   rightColumned?: boolean;
 };
 
-const ProgramItem = ({
+export const ProgramItem = ({
   time,
   headline,
   presenter,
-  imgSrc,
+  img,
   place,
   rightColumned,
   additionalInfo,
@@ -30,14 +30,14 @@ const ProgramItem = ({
         >
           <p className="font-bold text-lg md:text-xl">{headline}</p>
           {presenter && (
-            <p className="text-flushOrange font-medium">{presenter}</p>
+            <p className="text-orange-1 font-medium">{presenter}</p>
           )}
-          {place && <p className="text-flushOrange font-medium">{place}</p>}
+          {place && <p className="text-orange-1 font-medium">{place}</p>}
           {additionalInfo && <p className="text-sm">{additionalInfo}</p>}
         </div>
-        {imgSrc && (
+        {img && (
           <img
-            src={imgSrc}
+            src={img.src}
             alt={presenter}
             className={`rounded-full w-[90px] h-[90px] ${
               rightColumned ? 'md:order-1' : 'md:order-2'
@@ -48,5 +48,3 @@ const ProgramItem = ({
     </div>
   );
 };
-
-export default ProgramItem;

@@ -1,4 +1,4 @@
-import type { TPartnerItem } from '../lib/types/TPartnerItem';
+import type { TPartnerItem } from '../types/TPartnerItem';
 
 import cestovatelskyObchod from '../assets/img/sponsors/cestovatelsky-obchod.webp';
 import edo from '../assets/img/sponsors/edo.png';
@@ -12,39 +12,39 @@ import zlin from '../assets/img/sponsors/zlin.svg';
 
 export const partnerList: TPartnerItem[] = [
   {
-    imgSrc: zlin,
+    img: zlin,
     imgAlt: 'Zlín',
   },
   {
-    imgSrc: cestovatelskyObchod,
+    img: cestovatelskyObchod,
     imgAlt: 'Cestovatelský obchod',
   },
   {
-    imgSrc: edo,
+    img: edo,
     imgAlt: 'edo',
   },
   {
-    imgSrc: gsi,
+    img: gsi,
     imgAlt: 'gsi',
   },
   {
-    imgSrc: isProdukce,
+    img: isProdukce,
     imgAlt: 'is-produkce',
   },
   {
-    imgSrc: lyofood,
+    img: lyofood,
     imgAlt: 'lyofood',
   },
   {
-    imgSrc: smysluplneRozhovory,
+    img: smysluplneRozhovory,
     imgAlt: 'Smysluplné rozhovory',
   },
   {
-    imgSrc: zlinLuhacovice,
+    img: zlinLuhacovice,
     imgAlt: 'Zlín a Luhačovice',
   },
   {
-    imgSrc: kiss,
+    img: kiss,
     imgAlt: 'rádio Kiss',
   },
 ];

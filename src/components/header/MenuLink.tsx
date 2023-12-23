@@ -1,11 +1,11 @@
-import type { TMenuLink } from '../../lib/types/TMenuLink';
+import type { TMenuLink } from '../../types/TMenuLink';
 
-interface Props {
+type Props = {
   menuItem: TMenuLink;
   onClick: () => void;
-}
+};
 
-const MenuLink = ({ menuItem, onClick }: Props) => {
+export const MenuLink = ({ menuItem, onClick }: Props) => {
   return (
     <li onClick={onClick}>
       <a href={menuItem.url} className="text-[19px] font-headline">
@@ -14,5 +14,3 @@ const MenuLink = ({ menuItem, onClick }: Props) => {
     </li>
   );
 };
-
-export default MenuLink;

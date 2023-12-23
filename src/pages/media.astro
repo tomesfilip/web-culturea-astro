@@ -1,13 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
-import MediaList from '../components/media/MediaList';
+import { MediaList } from '../components/media/MediaList';
 import { Section } from '../components/shared/Section';
 
 import { mediaItems } from '../../src/data/mediaDownloads';
 
 import '../styles/headingStyles.css';
-import { CULTUREA_YEAR } from '../lib/constants';
+import { CULTUREA_YEAR } from '../constants';
 ---
 
 <Layout title={`Culturea ${CULTUREA_YEAR}`}>

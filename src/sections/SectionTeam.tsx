@@ -1,5 +1,5 @@
 import { Section } from '../components/shared/Section';
-import TeamMemberList from '../components/team/TeamMemberList';
+import { TeamMemberList } from '../components/team/TeamMemberList';
 
 import { teamMemberItems } from '../data/teamMemberItems';
 

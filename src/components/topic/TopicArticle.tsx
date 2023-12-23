@@ -1,4 +1,4 @@
-import type { TopicItemTypes } from '../../lib/types/TopicItemTypes';
+import type { TopicItemTypes } from '../../types/TopicItemTypes';
 
 export const TopicArticle = ({
   headline,

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const useFetchInstagramFeed = () => {
+export const useFetchInstagramFeed = () => {
   const [data, setData] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -43,5 +43,3 @@ const useFetchInstagramFeed = () => {
 
   return { data, isLoading, error };
 };
-
-export default useFetchInstagramFeed;

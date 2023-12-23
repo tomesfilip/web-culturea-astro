@@ -2,21 +2,12 @@ import '../../styles/marquee.css';
 
 export const Marquee = () => {
   return (
-    <div
-      style={{
-        backgroundImage: "url('./ripped_paper.png')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
-      className="relative overflow-hidden whitespace-nowrap text-3xl lg:text-[70px] w-full h-[100px] lg:h-[220px] flex items-center bg-no-repeat"
-    >
+    <div className="relative overflow-hidden whitespace-nowrap text-3xl lg:text-[70px] w-full h-[100px] lg:h-[220px] flex items-center bg-[url('/pozadi/desktop/ripped_paper.png')] bg-cover bg-center bg-no-repeat">
       <div className="marquee">
         {[...Array(10)].map((_, index) => (
           <div key={index} className="flex">
-            <span className="kuba font-bold text-[#19777A]">KUBA&nbsp;</span>
-            <span className="maroko font-bold text-[#FE8133]">
-              MAROKO&nbsp;
-            </span>
+            <span className="kuba font-bold text-blue-1">KUBA&nbsp;</span>
+            <span className="maroko font-bold text-orange-1">MAROKO&nbsp;</span>
           </div>
         ))}
       </div>

@@ -1,4 +1,4 @@
-import PartnerList from '../components/partners/PartnerList';
+import { PartnerList } from '../components/partners/PartnerList';
 import { Section } from '../components/shared/Section';
 
 import { partnerList } from '../data/partners';

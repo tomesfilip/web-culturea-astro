@@ -1,4 +1,4 @@
-import type { TopicItemTypes } from '../lib/types/TopicItemTypes';
+import type { TopicItemTypes } from '../types/TopicItemTypes';
 
 export const topicItems: TopicItemTypes[] = [
   {
@@ -24,6 +24,6 @@ export const topicItems: TopicItemTypes[] = [
       'Slow travel je jako umělecká kompozice, kde každá nota vytváří harmonii zážitků. Jedná se o druh cestování, kde není prioritou navštívit co nejvíce míst, ale naopak zpomalit, zklidnit mysl, nadechnout se a užít si vše, co daná lokalita nabízí.',
       'Slow travel je o trávení co nejvíce času na jednom místě. Zaměřuje se na hloubkové prozkoumání destinace, ducha tamní kultury a na prožívání každodenního života místních lidí. Díky tomu otevírá dveře k autentickým interakcím a novým poznáním.',
     ],
-    image: './temata/foto-slow-travel.jpg',
+    image: '/temata/foto-slow-travel.jpg',
   },
 ];

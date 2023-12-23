@@ -1,21 +1,13 @@
 import type { ReactNode } from 'react';
-import Header from './Header';
+import { Header } from './Header';
 
 type Props = {
   children: ReactNode;
 };
 
 export const HeroSection = ({ children }: Props) => {
-  const backgroundStyle = {
-    backgroundImage: "url('/pozadi/landing-mobile.jpg')",
-    backgroundSize: 'cover',
-    backgroundPosition: 'center center',
-    backgroundRepeat: 'no-repeat',
-    width: '100%',
-    height: '100%',
-  };
   return (
-    <div style={backgroundStyle}>
+    <div className="bg-[url('/pozadi/landing-mobile.jpg')] bg-cover bg-center bg-no-repeat w-full h-full">
       <Header />
       {children}
     </div>

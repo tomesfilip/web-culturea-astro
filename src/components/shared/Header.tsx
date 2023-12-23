@@ -3,11 +3,11 @@ import { Twirl as Hamburger } from 'hamburger-react';
 import { useState } from 'react';
 
 import { menuItems } from '../../data/menuItems';
-import LogoLink from '../header/LogoLink';
-import MenuLink from '../header/MenuLink';
-import TicketButton from '../header/TicketButton';
+import { LogoLink } from '../header/LogoLink';
+import { MenuLink } from '../header/MenuLink';
+import { TicketButton } from '../header/TicketButton';
 
-const Header = () => {
+export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuVariants = {
@@ -77,5 +77,3 @@ const Header = () => {
     </motion.header>
   );
 };
-
-export default Header;

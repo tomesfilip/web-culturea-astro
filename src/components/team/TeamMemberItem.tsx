@@ -1,4 +1,4 @@
-import type { TTeamMemberItem } from '../../lib/types/TTeamMemberItem';
+import type { TTeamMemberItem } from '../../types/TTeamMemberItem';
 
 type Props = {
   isEven: boolean;
@@ -16,7 +16,7 @@ export const TeamMemberItem = ({
     <figure className="rounded-lg">
       <img
         className="object-cover object-center rounded-t-lg opacity-70 hover:opacity-100 transition-opacity duration-300"
-        src={img}
+        src={img.src}
         width={400}
         height={500}
         loading="lazy"
@@ -24,7 +24,7 @@ export const TeamMemberItem = ({
       />
       <figcaption
         className={`py-2 text-lg font-bold text-white rounded-b-lg capitalize text-left pl-5 ${
-          isEven ? 'bg-flushOrange' : 'bg-[#19777A]'
+          isEven ? 'bg-orange-1' : 'bg-blue-1'
         }`}
       >
         <span className="mb-2 name text-bold text-xl uppercase">{name}</span>

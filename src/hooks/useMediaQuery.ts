@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const useMediaQuery = (mediaWidth: number = 569): boolean => {
+export const useMediaQuery = (mediaWidth: number = 569): boolean => {
   const [isMobile, setIsMobile] = useState<boolean>(
     window.innerWidth < mediaWidth ? true : false,
   );
@@ -18,5 +18,3 @@ const useMediaQuery = (mediaWidth: number = 569): boolean => {
 
   return isMobile;
 };
-
-export default useMediaQuery;

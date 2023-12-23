@@ -1,13 +1,13 @@
-import type { TMediaItem } from '../../lib/types/TMediaItem';
+import type { TMediaItem } from '../../types/TMediaItem';
 
-interface Props {
+type Props = {
   mediaList: TMediaItem[];
-}
+};
 
-const MediaList = ({ mediaList }: Props) => {
+export const MediaList = ({ mediaList }: Props) => {
   return (
     <div className="flex flex-col flex-wrap justify-center xl:flex-row gap-y-8">
-      {mediaList.map(({ imgSrc, imgAlt, text, link }) => (
+      {mediaList.map(({ img, imgAlt, text, link }) => (
         <a
           key={text}
           href={link}
@@ -15,12 +15,10 @@ const MediaList = ({ mediaList }: Props) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={imgSrc} alt={imgAlt} width={100} height={100} />
-          <h4 className="text-xl font-bold text-flushOrange">{text}</h4>
+          <img src={img.src} alt={imgAlt} width={100} height={100} />
+          <h4 className="text-xl font-bold text-orange-1">{text}</h4>
         </a>
       ))}
     </div>
   );
 };
-
-export default MediaList;

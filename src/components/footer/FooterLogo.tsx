@@ -1,4 +1,4 @@
-const FooterLogo = () => {
+export const FooterLogo = () => {
   return (
     <div>
       <a href="/">
@@ -7,5 +7,3 @@ const FooterLogo = () => {
     </div>
   );
 };
-
-export default FooterLogo;

@@ -9,8 +9,7 @@ export const SectionLastYear = () => {
     <Section
       sectionId="historie"
       sectionName="Minulý ročník"
-      background="/pozadi/galerie.jpg"
-      className="py-8"
+      className="py-12 lg:py-[120px] xl:py-[160px] bg-[url('/pozadi/desktop/last-year-bg.png')] bg-cover bg-no-repeat"
       headlineClassName="text-white"
     >
       <LastYearSlider />

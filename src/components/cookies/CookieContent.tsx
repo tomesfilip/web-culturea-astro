@@ -1,4 +1,4 @@
-const CookieContent = () => {
+export const CookieContent = () => {
   return (
     <div className="content text-white mt-4 mb-8">
       <p className="mb-2">
@@ -11,5 +11,3 @@ const CookieContent = () => {
     </div>
   );
 };
-
-export default CookieContent;

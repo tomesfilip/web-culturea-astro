@@ -1,6 +1,6 @@
-import { CULTUREA_YEAR } from '../../lib/constants';
+import { CULTUREA_YEAR } from '../../constants';
 
-const LogoLink = () => {
+export const LogoLink = () => {
   return (
     <a className="logo" href="/">
       <h1 className="hidden">Culturea {CULTUREA_YEAR}</h1>
@@ -13,5 +13,3 @@ const LogoLink = () => {
     </a>
   );
 };
-
-export default LogoLink;

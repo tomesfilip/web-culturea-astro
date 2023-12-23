@@ -1,4 +1,4 @@
-import SocialList from '../components/footer/SocialList';
+import { SocialList } from '../components/footer/SocialList';
 import { Marquee } from '../components/header/Marquee';
 import { Section } from '../components/shared/Section';
 

@@ -1,13 +1,13 @@
-import ProgramItem from './ProgramItem';
+import { ProgramItem } from './ProgramItem';
 
-import type { TProgramItem } from '../../lib/types/TProgramItem';
+import type { TProgramItem } from '../../types/TProgramItem';
 
 import { extraProgramItems } from '../../data/programItems';
 
-const ExtraProgram = () => {
+export const ExtraProgram = () => {
   return (
     <div className="my-8">
-      <h4 className="text-flushOrange text-xl md:text-2xl font-bold mb-4">
+      <h4 className="text-orange-1 text-xl md:text-2xl font-bold mb-4">
         DOPROVODNÝ PROGRAM
       </h4>
       {extraProgramItems.map(
@@ -15,7 +15,7 @@ const ExtraProgram = () => {
           {
             time,
             headline,
-            imgSrc,
+            img,
             presenter,
             place,
             additionalInfo,
@@ -26,7 +26,7 @@ const ExtraProgram = () => {
             key={time}
             time={time}
             headline={headline}
-            imgSrc={imgSrc}
+            img={img}
             presenter={presenter}
             place={place}
             rightColumned={index % 2 === 0}
@@ -37,5 +37,3 @@ const ExtraProgram = () => {
     </div>
   );
 };
-
-export default ExtraProgram;
