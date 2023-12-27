@@ -5,11 +5,11 @@ import 'swiper/css';
 import '../../styles/swiper.css';
 
 const images = [
-  { id: 1, src: './galerie/galerie_foto1.jpg?url' },
-  { id: 2, src: './galerie/galerie_foto2.jpg?url' },
-  { id: 3, src: './galerie/galerie_foto3.jpg?url' },
-  { id: 4, src: './galerie/galerie_foto4.jpg?url' },
-  { id: 5, src: './galerie/galerie_foto5.jpg?url' },
+  { id: 1, src: './galerie/galerie_foto1.webp?url' },
+  { id: 2, src: './galerie/galerie_foto2.webp?url' },
+  { id: 3, src: './galerie/galerie_foto3.webp?url' },
+  { id: 4, src: './galerie/galerie_foto4.webp?url' },
+  { id: 5, src: './galerie/galerie_foto5.webp?url' },
 ];
 
 export const LastYearSlider = () => {
