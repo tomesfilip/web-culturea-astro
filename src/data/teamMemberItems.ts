@@ -78,7 +78,7 @@ export const teamMemberItems: TTeamMemberItem[] = [
   {
     id: 8,
     name: 'Kristýna Lexová',
-    position: 'manažer Proma',
+    position: 'manažer Promo',
     email: 'k_lexova@utb.cz',
     img: KristynaLexova,
     phone: '792 765 456',
