@@ -71,7 +71,7 @@ export const Header = () => {
               onClick={() => setIsOpen(false)}
             />
           ))}
-          <TicketButton />
+          {/* <TicketButton /> */}
         </ul>
       </nav>
     </motion.header>

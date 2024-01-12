@@ -23,9 +23,9 @@ export const SectionLanding = () => {
             Kuba a Maroko
           </h2>
           <div className="text-xl lg:text-3xl flex flex-wrap justify-between gap-2 lg:gap-14 pb-20 mb-20 w-4/5 lg:w-max">
-            <p className="order-2 lg:order-1">3. dubna</p>
+            <p className="order-2 lg:order-1">3. dubna 2024</p>
             <p className="order1 lg:order-2 w-full lg:max-w-max">
-              14|15 Baťův insititut kavárna
+              14|15 Baťův insititut kavárna, Zlín
             </p>
             <p className="order-3 lg:order-3">12. ročník</p>
           </div>

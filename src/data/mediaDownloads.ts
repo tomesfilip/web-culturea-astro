@@ -10,7 +10,7 @@ export const mediaItems: TMediaItem[] = [
     img: mediaFile,
     imgAlt: 'soubor',
     text: 'Tiskové zprávy',
-    link: tiskovaZprava,
+    link: "#",
   },
   {
     img: mediaVisual,

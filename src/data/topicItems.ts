@@ -5,7 +5,7 @@ export const topicItems: TopicItemTypes[] = [
     headline: 'Kuba',
     paragraphs: [
       'Krajina jako z Pinterestu. Tak by sa dala označit Kuba, která svou barevností zkrášluje nejen profil na internetu. Očaruje vás svojí jedinečnou atmosférou, kterou si můžete vychutnat na jedné z mnoha písečných pláží při pověstné kubánské cigaretě nebo tradičním kubánském mojitu.',
-      'Hlavním městem tohoto ostrovního státu je Havana, jejímiž uličkami, plných koloniálních památek, se promenádují stylový veteráni. Mimoto mají tyto ulice sílu vtáhnout vás do rytmu a tance, které hýbou nejen Havanou, ale celou krajinou. (Při její návštěvě žádný turista neopomene navštívit promenádu Malecón nebo náměstí Habana Vieja.)',
+      'Hlavním městem tohoto ostrovního státu je Havana, jejímiž uličkami, plných koloniálních památek, se promenádují stylový veteráni. Mimoto mají tyto ulice sílu vtáhnout vás do rytmu a tance, které hýbou nejen Havanou, ale celou krajinou. Při její návštěvě žádný turista neopomene navštívit promenádu Malecón nebo náměstí Habana Vieja.',
     ],
     image: '/temata/foto-kuba.webp',
   },
