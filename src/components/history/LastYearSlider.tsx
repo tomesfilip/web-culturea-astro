@@ -1,18 +1,23 @@
+import { useState } from 'react';
 import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Lightbox from 'yet-another-react-lightbox';
 
 import 'swiper/css';
+import 'yet-another-react-lightbox/styles.css';
 import '../../styles/swiper.css';
 
 const images = [
-  { id: 1, src: './galerie/galerie_foto1.webp?url' },
-  { id: 2, src: './galerie/galerie_foto2.webp?url' },
-  { id: 3, src: './galerie/galerie_foto3.webp?url' },
-  { id: 4, src: './galerie/galerie_foto4.webp?url' },
-  { id: 5, src: './galerie/galerie_foto5.webp?url' },
+  { id: 0, src: './galerie/galerie_foto1.webp?url' },
+  { id: 1, src: './galerie/galerie_foto2.webp?url' },
+  { id: 2, src: './galerie/galerie_foto3.webp?url' },
+  { id: 3, src: './galerie/galerie_foto4.webp?url' },
+  { id: 4, src: './galerie/galerie_foto5.webp?url' },
 ];
 
 export const LastYearSlider = () => {
+  const [selectedImgId, setSelectedImgId] = useState(-1);
+
   return (
     <div className="w-full">
       <div className="w-full text-center text-white">
@@ -23,12 +28,17 @@ export const LastYearSlider = () => {
           2023
         </p>
       </div>
+      <Lightbox
+        index={selectedImgId}
+        open={selectedImgId >= 0}
+        close={() => setSelectedImgId(-1)}
+        slides={images}
+      />
       <Swiper
         modules={[Navigation]}
         navigation
         loop
-        autoHeight={true}
-        grabCursor={true}
+        autoHeight
         breakpoints={{
           640: {
             slidesPerView: 2,
@@ -45,7 +55,7 @@ export const LastYearSlider = () => {
         }}
       >
         {images.map(({ id, src }) => (
-          <SwiperSlide key={id}>
+          <SwiperSlide key={id} onClick={() => setSelectedImgId(id)}>
             <img
               className="object-contain object-center max-w[512px] max-h-[342px] px-4"
               src={src}
