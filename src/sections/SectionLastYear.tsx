@@ -1,4 +1,5 @@
 import { LastYearSlider } from '../components/history/LastYearSlider';
+import { LastYearVideo } from '../components/history/LastYearVideo';
 
 import { Section } from '../components/shared/Section';
 
@@ -13,6 +14,7 @@ export const SectionLastYear = () => {
       headlineClassName="text-white"
     >
       <LastYearSlider />
+      <LastYearVideo/>    
     </Section>
   );
 };
