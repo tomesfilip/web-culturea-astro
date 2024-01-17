@@ -41,7 +41,7 @@ export const teamMemberItems: TTeamMemberItem[] = [
     position: 'Promo Manažerka',
     email: 'promo@culturea.cz',
     img: HanaHromkova,
-    phone: '776 851 818',
+    phone: '721 048 348',
   },
   {
     id: 4,

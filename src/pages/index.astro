@@ -8,6 +8,7 @@ import { SectionTeam } from '../sections/SectionTeam';
 import { SectionTopics } from '../sections/SectionTopics';
 import { SectionLastYear } from '../sections/SectionLastYear';
 import { SectionLanding } from '../sections/SectionLanding';
+import { ScrollToTopButton } from '../components/buttons/ScrollTopButton';
 
 import { CULTUREA_YEAR } from '../constants';
 
@@ -15,6 +16,7 @@ import '../styles/headingStyles.css';
 ---
 
 <Layout title={`Culturea ${CULTUREA_YEAR}`}>
+  <ScrollToTopButton />
   <SectionLanding slot="heroSection" />
   <SectionAbout slot="heroSection" />
   <SectionTopics />
