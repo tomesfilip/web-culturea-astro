@@ -58,7 +58,7 @@ export const Header = () => {
                 </motion.li>
               ))}
               <motion.li variants={menuVariants} className="mt-6">
-                <TicketButton />
+                {/* <TicketButton /> */}
               </motion.li>
             </motion.ul>
           </AnimatePresence>
