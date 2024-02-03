@@ -57,7 +57,7 @@ export const LastYearSlider = () => {
         {images.map(({ id, src }) => (
           <SwiperSlide key={id} onClick={() => setSelectedImgId(id)}>
             <img
-              className="object-contain object-center max-w[512px] max-h-[342px] px-4"
+              className="object-contain object-center max-w-[512px] max-h-[342px] px-4 cursor-pointer"
               src={src}
               width={512}
               height={342}
