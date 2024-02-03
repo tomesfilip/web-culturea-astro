@@ -1,1 +1,2 @@
 export const CULTUREA_YEAR = '2024';
+export const FIREBASE_IMG_FILE_LIMIT = 3145728;
