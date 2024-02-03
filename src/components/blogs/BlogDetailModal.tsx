@@ -1,10 +1,13 @@
 import { motion } from 'framer-motion';
 import parse from 'html-react-parser';
+import { useMonitorAuthUser } from '../../hooks/useMonitorAuthUser';
+import type { TBlogItem } from '../../types/TBlogItem';
+import { ModalHeader } from '../modal/ModalHeader';
 import { Backdrop } from './Backdrop';
 import { Actions } from './admin/Actions';
 
 type Props = {
-  blog: BlogTypes;
+  blog: TBlogItem;
   handleClose: () => void;
 };
 
@@ -14,16 +17,18 @@ const appear = {
     opacity: 0,
   },
   visible: {
-    y: "0",
-    opacity: 1
+    y: '0',
+    opacity: 1,
   },
   exit: {
-    '100vh',
+    y: '100vh',
     opacity: 0,
   },
 };
 
 export const BlogDetailModal = ({ blog, handleClose }: Props) => {
+  const { loggedUser } = useMonitorAuthUser();
+
   return (
     <Backdrop onClick={handleClose}>
       <motion.div

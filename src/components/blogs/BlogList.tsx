@@ -4,7 +4,7 @@ import { Loader } from '../shared/Loader';
 import { BlogListItem } from './BlogListItem';
 
 export const BlogList = () => {
-  const { data: blogs, isLoading, error } = useFetchBlogList();
+  const { data: blogs, isLoading } = useFetchBlogList();
 
   return (
     <>
