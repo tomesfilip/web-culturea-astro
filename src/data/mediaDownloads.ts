@@ -2,7 +2,6 @@ import type { TMediaItem } from '../types/TMediaItem';
 
 import mediaFile from '../assets/img/icons/media-file.svg';
 import mediaVisual from '../assets/img/icons/media-visual.svg';
-import tiskovaZprava from '../assets/pdf/TZ_Culturea_2023.pdf';
 import { CULTUREA_YEAR } from '../constants';
 
 export const mediaItems: TMediaItem[] = [
@@ -10,7 +9,7 @@ export const mediaItems: TMediaItem[] = [
     img: mediaFile,
     imgAlt: 'soubor',
     text: 'Tiskové zprávy',
-    link: "#",
+    link: '#',
   },
   {
     img: mediaVisual,

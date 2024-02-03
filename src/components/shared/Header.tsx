@@ -5,7 +5,6 @@ import { useState } from 'react';
 import { menuItems } from '../../data/menuItems';
 import { LogoLink } from '../header/LogoLink';
 import { MenuLink } from '../header/MenuLink';
-import { TicketButton } from '../header/TicketButton';
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
