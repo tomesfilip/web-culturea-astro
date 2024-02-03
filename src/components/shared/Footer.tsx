@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <footer
       id="kontakt"
-      className="bg-[url('/pozadi/desktop/footer-bg.webp')] bg-cover bg-no-repeat"
+      className="bg-[url('/pozadi/desktop/footer-bg.webp')] bg-cover bg-no-repeat mt-auto"
     >
       <div className="relative w-full max-w-screen-2xl mx-auto pt-24 pb-8 flex flex-col items-center">
         <div className="hidden lg:block lg:absolute left-4">
