@@ -1,10 +1,10 @@
-import { onAuthStateChanged } from 'firebase/auth';
+import { onAuthStateChanged, type User } from 'firebase/auth';
 import { useEffect, useState } from 'react';
 
 import { auth } from '../config/firebase';
 
 export const useMonitorAuthUser = () => {
-  const [loggedUser, setLoggedUser] = useState<any>(null);
+  const [loggedUser, setLoggedUser] = useState<User | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 

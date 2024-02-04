@@ -34,7 +34,7 @@ export const uploadImage = async ({
     const uploadedImgUrl = await getDownloadURL(res.ref);
     setImgUrl(uploadedImgUrl);
   } catch (error) {
-    console.log('File upload error: ' + error);
+    console.error('File upload error: ' + error);
   } finally {
     setIsImageUploading(false);
   }

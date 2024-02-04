@@ -16,7 +16,6 @@ export const BlogAuthForm = () => {
       setAuthError('');
       isAuthModalOpen.set(false);
     } catch (error: any) {
-      // console.log(error.message);
       const errorKey =
         Object.keys(AUTH_ERRORS_MAPPED).find((key) =>
           error.message.includes(key),

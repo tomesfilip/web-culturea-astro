@@ -15,7 +15,7 @@ export const Actions = ({ blogId }: Props) => {
       await deleteDoc(docRef);
       window.location.reload();
     } catch (error) {
-      console.log('Error during deletion: ' + error);
+      console.error('Error during deletion: ' + error);
     }
   };
 
@@ -23,20 +23,20 @@ export const Actions = ({ blogId }: Props) => {
     try {
       const docRef = getDocRef(blogId);
       const docData = await getDoc(docRef);
-      if (!docData.data()) return;
+      if (!docData.data()) {
+        return console.error('Error, no doc data available');
+      }
       editBlogStore.set({ ...docData.data(), blogId });
       isCreateModalOpen.set(true);
     } catch (error) {
-      console.log('Error during editing: ' + error);
+      console.error('Error during editing: ' + error);
     }
   };
 
   return (
     <div className="admin-actions flex gap-x-2">
-      <ActionButton onClick={() => handleDeleteBlog()}>
-        Zmazat blog
-      </ActionButton>
-      <ActionButton onClick={() => handleEditBlog()}>Upravit blog</ActionButton>
+      <ActionButton onClick={handleDeleteBlog}>Zmazat blog</ActionButton>
+      <ActionButton onClick={handleEditBlog}>Upravit blog</ActionButton>
     </div>
   );
 };

@@ -40,8 +40,10 @@ export const BlogDetailModal = ({ blog, handleClose }: Props) => {
         exit="exit"
       >
         <ModalHeader closeModal={handleClose} />
-        <div className="overflow-y-scroll mt-2 max-w-full break-words">
-          <h3 className="text-center lg:text-left">{blog.title}</h3>
+        <div className="overflow-y-auto mt-2 w-full break-words">
+          <h3 className="text-center lg:text-left text-lg pr-4">
+            {blog.title}
+          </h3>
           <img
             className="mt-2 mb-3 w-[300px] h-[300px] rounded-lg object-cover mx-auto sm:mx-0"
             src={blog.bannerImage}
@@ -49,7 +51,7 @@ export const BlogDetailModal = ({ blog, handleClose }: Props) => {
             width={300}
             height={300}
           />
-          <div className="blog-body-text">{parse(blog.body)}</div>
+          <div className="blog-body-text pr-4">{parse(blog.body)}</div>
         </div>
         {loggedUser && <Actions blogId={blog.id} />}
       </motion.div>

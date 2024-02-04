@@ -17,11 +17,8 @@ export const BlogList = () => {
   const { data: blogs, isLoading } = useFetchBlogList();
 
   return (
-    <div className="space-y-6">
+    <div className="flex flex-col gap-y-6 items-center px-4 lg:px-0">
       {isLoading && <Loader />}
-      {!isLoading && (!blogs || blogs.length < 1) && (
-        <p className="text-xl font-bold">Zatím nebyly přidány žádné blogy.</p>
-      )}
       {loggedUser && isCreateModalOpen.get() && <CreateEditForm />}
       {loggedUser && (
         <>
@@ -31,7 +28,10 @@ export const BlogList = () => {
           <ActionButton onClick={logout}>Odhlásit se</ActionButton>
         </>
       )}
-      {blogs.length > 0 && (
+      {!isLoading && (!blogs || blogs.length < 1) && (
+        <p className="text-xl font-bold">Zatím nebyly přidány žádné blogy.</p>
+      )}
+      {blogs && blogs.length > 0 && (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
           {blogs.map((blog: TBlogItem) => (
             <BlogListItem key={blog.id} blog={blog} />
