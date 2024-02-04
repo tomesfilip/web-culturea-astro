@@ -23,7 +23,7 @@ export const TopicArticle = ({
         <h3 className="uppercase text-2xl lg:text-5xl pb-4">{headline}</h3>
         <div className="space-y-4">
           {paragraphs.map((paragraph, index) => (
-            <p key={index} className="uppercase text-lg leading-[22px]">
+            <p key={index} className="uppercase text-lg">
               {paragraph}
             </p>
           ))}

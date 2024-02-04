@@ -1,0 +1,9 @@
+---
+import { BlogAuthForm } from '../../components/blogs/auth/BlogAuthForm';
+import { CULTUREA_YEAR } from '../../constants';
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title={`Culturea ${CULTUREA_YEAR} - Administrator`}>
+  <BlogAuthForm client:only />
+</Layout>
