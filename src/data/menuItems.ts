@@ -9,10 +9,10 @@ export const menuItems: TMenuLink[] = [
   //   url: '/#program',
   //   title: 'Program',
   // },
-  // {
-  //   url: '/#clanky',
-  //   title: 'Články',
-  // },
+  {
+    url: './clanky',
+    title: 'Články',
+  },
   // {
   //   url: '/partneri',
   //   title: 'Partneři',
