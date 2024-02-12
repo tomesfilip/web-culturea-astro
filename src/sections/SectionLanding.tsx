@@ -22,10 +22,10 @@ export const SectionLanding = () => {
           <h2 className="text-[40px] lg:text-8xl font-bold mb-4">
             Kuba a Maroko
           </h2>
-          <div className="text-xl lg:text-3xl flex flex-wrap justify-between gap-2 lg:gap-14 pb-20 mb-20 w-4/5 lg:w-max">
+          <div className="text-xl lg:text-3xl flex flex-wrap justify-around gap-5 lg:gap-14 pb-20 mb-20 w-5/5 lg:w-max">
             <p className="order-2 lg:order-1">3. dubna 2024</p>
             <p className="order1 lg:order-2 w-full lg:max-w-max">
-              14|15 Baťův insititut kavárna, Zlín
+              14|15 Baťův institut kavárna, Zlín
             </p>
             <p className="order-3 lg:order-3">12. ročník</p>
           </div>
