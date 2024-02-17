@@ -2,7 +2,7 @@ import '../../styles/marquee.css';
 
 export const Marquee = () => {
   return (
-    <div className="relative overflow-hidden whitespace-nowrap text-3xl lg:text-[70px] w-full h-[100px] lg:h-[220px] xl:h-[240px] flex items-center bg-[url('/pozadi/desktop/ripped_paper.webp')] bg-cover bg-center bg-no-repeat">
+    <div className="relative overflow-hidden whitespace-nowrap text-3xl lg:text-[70px] w-full h-[100px] lg:h-[220px] xl:h-[240px] flex items-center bg-[url('/pozadi/desktop/ripped-paper.webp')] bg-cover bg-center bg-no-repeat">
       <div className="marquee">
         {[...Array(10)].map((_, index) => (
           <div key={index} className="flex">
