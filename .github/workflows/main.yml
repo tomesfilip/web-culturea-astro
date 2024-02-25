@@ -1,0 +1,36 @@
+name: Deploy website on main push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Node.js 20 and dependencies
+        uses: actions/setup-node@v4.0.2
+        with:
+          node-version: 20
+
+      - name: Build project
+        run: npm ci && npm run build
+
+      - name: List built files (optional)
+        run: find dist/ -print  # Use for debugging or verification
+
+      - name: Deploy to FTP server
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local_path: './dist/*'
+          remote_path: './www/'
+          delete_remote_files: true  # Optionally delete files not present in the local folder
+          skip_sync: true          # Optionally skip syncing if build files exist (e.g., using cache)
