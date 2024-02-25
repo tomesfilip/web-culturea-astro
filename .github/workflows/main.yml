@@ -31,6 +31,6 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local_path: './dist/*'
-          remote_path: './www/'
+          remote_path: './'
           delete_remote_files: true  # Optionally delete files not present in the local folder
           skip_sync: true          # Optionally skip syncing if build files exist (e.g., using cache)
