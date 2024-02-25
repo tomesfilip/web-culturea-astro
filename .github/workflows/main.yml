@@ -31,4 +31,3 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: './dist/'
-          skip_sync: true          # Optionally skip syncing if build files exist (e.g., using cache)
