@@ -9,6 +9,10 @@ jobs:
   web-deploy:
     name: Deploy
     runs-on: ubuntu-latest
+
+    env:
+      PUBLIC_FIREBASE_API_KEY: ${{ secrets.PUBLIC_FIREBASE_API_KEY }}
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
