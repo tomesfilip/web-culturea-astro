@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { menuItems } from '../../data/menuItems';
 import { LogoLink } from '../header/LogoLink';
 import { MenuLink } from '../header/MenuLink';
+import { TicketButton } from '../header/TicketButton';
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,7 +58,7 @@ export const Header = () => {
                 </motion.li>
               ))}
               <motion.li variants={menuVariants} className="mt-6">
-                {/* <TicketButton /> */}
+                <TicketButton />
               </motion.li>
             </motion.ul>
           </AnimatePresence>
@@ -70,7 +71,7 @@ export const Header = () => {
               onClick={() => setIsOpen(false)}
             />
           ))}
-          {/* <TicketButton /> */}
+          <TicketButton />
         </ul>
       </nav>
     </motion.header>
