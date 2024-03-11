@@ -23,11 +23,7 @@ export const Footer = () => {
               Tomáše Bati ve Zlíně.
             </p>
             <p>
-              Obsahový správce: Eva Gartnerová,&nbsp;
-              <a href="mailto:gartnerova@utb.cz">gartnerova@utb.cz</a>
-            </p>
-            <p>
-              Technický správce: Ondřej Staněk,&nbsp;
+              Obsahový a technický správce: Ondřej Staněk,&nbsp;
               <a href="mailto:ostanek@utb.cz">ostanek@utb.cz</a>
             </p>
           </div>
