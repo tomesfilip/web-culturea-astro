@@ -6,6 +6,7 @@ import { SectionMap } from '../sections/SectionMap';
 import { SectionOrganizer } from '../sections/SectionOrganizer';
 import { SectionTeam } from '../sections/SectionTeam';
 import { SectionTopics } from '../sections/SectionTopics';
+import { SectionProgram } from '../sections/SectionProgram';
 import { SectionLastYear } from '../sections/SectionLastYear';
 import { SectionLanding } from '../sections/SectionLanding';
 import { ScrollToTopButton } from '../components/buttons/ScrollTopButton';
@@ -20,7 +21,7 @@ import '../styles/headingStyles.css';
   <SectionLanding slot="heroSection" />
   <SectionAbout slot="heroSection" />
   <SectionTopics />
-  <!-- <SectionProgram client:only /> -->
+  <SectionProgram client:only />
   <SectionLastYear client:only />
   <SectionMap client:only />
   <SectionTeam client:only />

@@ -1,8 +1,8 @@
 export type TProgramItem = {
   time: string;
-  headline?: string;
+  headline: string;
   presenter?: string;
-  img?: ImageMetadata;
+  imgSrc?: string;
   place?: string;
   additionalInfo?: string;
 };

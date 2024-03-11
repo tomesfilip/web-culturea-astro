@@ -1,7 +1,11 @@
 import type { TProgramItem } from '../../types/TProgramItem';
+import { programItemsHov } from '../../data/programItemsHov';
+import { useState } from 'react';
+import type { TProgramItemHov } from '../../data/types/TProgramItemHov';
 
 type Props = TProgramItem & {
   rightColumned?: boolean;
+  index: number;
 };
 
 export const ProgramItem = ({
@@ -12,39 +16,62 @@ export const ProgramItem = ({
   place,
   rightColumned,
   additionalInfo,
+  index,
 }: Props) => {
+  const [isHovered, setIsHovered] = useState(false);
+  const hoverContent = programItemsHov[index]?.content;
+
   return (
     <div
-      className={`flex flex-col items-center gap-1 md:gap-3 text-center md:basis-1/2 md:text-left ${
-        rightColumned ? 'md:pt-8 md:items-start' : 'md:pt-0 md:items-end'
+      className={`border-2 px-5 rounded-md flex flex-col justify-center items-center gap-1 md:gap-3 text-center md:basis-1/2 md:text-left ${
+        rightColumned
+          ? 'md:pt-6 md:items-center border-blue-1'
+          : 'md:pt-6 md:items-center border-orange-1'
       }`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
-      <p className="font-bold text-xl md:text-2xl">{time}</p>
-      <div className="flex flex-wrap flex-col lg:flex-row justify-center lg:justify-start gap-2 gap-x-4 items-center">
-        <div
-          className={`${
-            rightColumned
-              ? 'md:order-2 md:text-left'
-              : 'md:order-1 md:text-right'
-          }`}
-        >
-          <p className="font-bold text-lg md:text-xl">{headline}</p>
-          {presenter && (
-            <p className="text-orange-1 font-medium">{presenter}</p>
-          )}
-          {place && <p className="text-orange-1 font-medium">{place}</p>}
-          {additionalInfo && <p className="text-sm">{additionalInfo}</p>}
-        </div>
-        {img && (
-          <img
-            src={img.src}
-            alt={presenter}
-            className={`rounded-full w-[90px] h-[90px] ${
-              rightColumned ? 'md:order-1' : 'md:order-2'
+      {!isHovered && (
+        <div>
+          <p
+            className={`font-bold text-center text-xl md:text-4xl ${
+              rightColumned ? 'text-blue-1' : 'text-orange-1'
             }`}
-          />
-        )}
-      </div>
+          >
+            {time}
+          </p>
+          <div className="flex lg:justify-start gap-2">
+            <div
+              className={`flex-col text-left ${
+                rightColumned
+                  ? 'md:order-2 md:text-left'
+                  : 'md:order-1 md:text-left'
+              }`}
+            >
+              <p className="text-left font-bold text-lg md:text-xl">
+                {presenter}
+              </p>
+              {headline && <p className="font-medium">{headline}</p>}
+              {place && <p className="text-orange-1 font-medium">{place}</p>}
+              {additionalInfo && <p className="text-sm">{additionalInfo}</p>}
+            </div>
+            {img && (
+              <img
+                src={img.src}
+                alt={presenter}
+                className={`rounded-full w-[90px] h-[90px]`}
+              />
+            )}
+          </div>
+        </div>
+      )}
+
+      {isHovered && hoverContent && 
+      <div className={`p-2 flex justify-center items-center ${
+        rightColumned ? 'text-blue-1' : 'text-orange-1'
+      }`}>
+        {hoverContent}
+      </div>}
     </div>
   );
 };
