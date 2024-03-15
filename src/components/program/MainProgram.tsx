@@ -2,7 +2,7 @@ import { ProgramItem } from './ProgramItem';
 
 import { programItems } from '../../data/programItems';
 
-import type { TProgramItem } from '../../types/TProgramItem';
+import type { TProgramItem } from '../../lib/types/TProgramItem';
 
 export const MainProgram = () => {
   return (
@@ -17,7 +17,7 @@ export const MainProgram = () => {
             key={time}
             time={time}
             headline={headline}
-            img={img?.src}
+            img={img}
             presenter={presenter}
             place={place}
             rightColumned={index % 2 !== 0}
