@@ -1,11 +1,10 @@
-import type { TProgramItem } from '../types/TProgramItem';
+import type { TProgramItem } from '../lib/types/TProgramItem';
 
-import gombaImg from '../assets/img/program/gomba.png';
-import kovarImg from '../assets/img/program/kovar.png';
-import misikovaImg from '../assets/img/program/misikova.png';
-import mlynarDobesImg from '../assets/img/program/mlynar-dobes.png';
-import sebastianImg from '../assets/img/program/sebestian1.png';
-import svaricekImg from '../assets/img/program/svaricek.png';
+import krouzelImg from '../assets/img/program/michal_krouzel.jpg';
+import sebastianImg from '../assets/img/program/sebestian_bok.jpg';
+import vinsImg from '../assets/img/program/matous_vins.jpg';
+import adamdorotaImg from '../assets/img/program/adam_dorota.jpg';
+import rundusImg from '../assets/img/program/adam_rundus.jpg';
 
 export const programItems: TProgramItem[] = [
   {
@@ -22,13 +21,13 @@ export const programItems: TProgramItem[] = [
     time: '15:30 - 16:00',
     headline: 'přednáška" Kuba - země dvojí tváře ',
     presenter: 'Michal Kroužel',
-    img: kovarImg,
+    img: krouzelImg,
   },
   {
     time: '16:30 - 17:00',
     headline: 'přednáška: Proč a jak cestovat chytře, pomalu a dluho',
     presenter: 'Matouš Vinš',
-    img: sebastianImg,
+    img: vinsImg,
   },
   {
     time: '16:45',
@@ -43,12 +42,13 @@ export const programItems: TProgramItem[] = [
     time: '17:30 - 18:15',
     headline: 'diskuze: Cesta po Jižní a Střední Americe ve stylu Slow Travel',
     presenter: 'Adam Rundus a Dorota Dostálová',
-    img: sebastianImg,
+    img: adamdorotaImg,
   },
   {
     time: '18:15 - 19:00',
     headline: 'Adamem Rundusem + MasterChef výzva',
     presenter: 'Live cooking show',
+    img: rundusImg,
   },
   {
     time: '19:00 - 19:15',
