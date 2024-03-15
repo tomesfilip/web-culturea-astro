@@ -1,7 +1,7 @@
-import type { TProgramItem } from '../../types/TProgramItem';
+import type { TProgramItem } from '../../lib/types/TProgramItem';
 import { programItemsHov } from '../../data/programItemsHov';
 import { useState } from 'react';
-import type { TProgramItemHov } from '../../data/types/TProgramItemHov';
+import { motion } from 'framer-motion';
 
 type Props = TProgramItem & {
   rightColumned?: boolean;
@@ -21,9 +21,14 @@ export const ProgramItem = ({
   const [isHovered, setIsHovered] = useState(false);
   const hoverContent = programItemsHov[index]?.content;
 
+  const variants = {
+    visible: { opacity: 1, transition: { duration: 0.3 } },
+    hidden: { opacity: 0, transition: { duration: 1 } },
+  };
+
   return (
     <div
-      className={`border-2 px-5 rounded-md flex flex-col justify-center items-center gap-1 md:gap-3 text-center md:basis-1/2 md:text-left ${
+      className={`w-[300px] h-[200px] lg:w-[400px] lg:h-[250px] border-2 px-5 rounded-md flex flex-col flex-wrap justify-center items-center gap-1 md:gap-3 text-center md:basis-1/2 md:text-left ${
         rightColumned
           ? 'md:pt-6 md:items-center border-blue-1'
           : 'md:pt-6 md:items-center border-orange-1'
@@ -33,13 +38,15 @@ export const ProgramItem = ({
     >
       {!isHovered && (
         <div>
-          <p
-            className={`font-bold text-center text-xl md:text-4xl ${
-              rightColumned ? 'text-blue-1' : 'text-orange-1'
-            }`}
-          >
-            {time}
-          </p>
+          <div className="mb-4">
+            <p
+              className={`font-bold text-center text-xl md:text-4xl ${
+                rightColumned ? 'text-blue-1' : 'text-orange-1'
+              }`}
+            >
+              {time}
+            </p>
+          </div>
           <div className="flex lg:justify-start gap-2">
             <div
               className={`flex-col text-left ${
@@ -66,12 +73,18 @@ export const ProgramItem = ({
         </div>
       )}
 
-      {isHovered && hoverContent && 
-      <div className={`p-2 flex justify-center items-center ${
-        rightColumned ? 'text-blue-1' : 'text-orange-1'
-      }`}>
-        {hoverContent}
-      </div>}
+      {isHovered && hoverContent && (
+        <motion.div
+          initial="hidden"
+          animate={isHovered ? 'visible' : 'hidden'}
+          variants={variants}
+          className={`p-2 flex justify-center items-center ${
+            rightColumned ? 'text-blue-1' : 'text-orange-1'
+          }`}
+        >
+          {hoverContent}
+        </motion.div>
+      )}
     </div>
   );
 };
