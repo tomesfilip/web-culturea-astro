@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 
 import '../../styles/swiper.css';
 
-import type { TTeamMemberItem } from '../../types/TTeamMemberItem';
+import type { TTeamMemberItem } from '../../lib/types/TTeamMemberItem';
 import { TeamMemberItem } from './TeamMemberItem';
 import { TeamMemberItemSwiper } from './TeamMemberItemSwiper';
 

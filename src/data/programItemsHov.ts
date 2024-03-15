@@ -1,6 +1,5 @@
 import type { TProgramItemHov } from "./types/TProgramItemHov";
 
-
 export const programItemsHov: TProgramItemHov[] = [
   {
     content: 'Na přednášce uslyšíte mnoho praktic-kých rad o stopování doplněných řadou fascinujících příběhů z cesty po Maroku. Mimo jiné poznáte, jaké to je bloudit marockou přírodou, ztrácet se v medí-nách nebo zvládnout časově téměř ne-možnou jízdu na Saharu díky osudové náhodě.',

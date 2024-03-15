@@ -1,4 +1,4 @@
-import type { TMenuLink } from '../../types/TMenuLink';
+import type { TMenuLink } from '../../lib/types/TMenuLink';
 
 type Props = {
   menuItem: TMenuLink;

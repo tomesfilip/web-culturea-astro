@@ -1,4 +1,4 @@
-import type { TTeamMemberItem } from '../types/TTeamMemberItem';
+import type { TTeamMemberItem } from '../lib/types/TTeamMemberItem';
 
 import EvaSevcikova from '../assets/img/portrety-manazeru/EvaSevcikova.webp';
 import HanaHromkova from '../assets/img/portrety-manazeru/HanaHromkova.webp';

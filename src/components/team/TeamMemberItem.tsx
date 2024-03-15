@@ -1,4 +1,4 @@
-import type { TTeamMemberItem } from '../../types/TTeamMemberItem';
+import type { TTeamMemberItem } from '../../lib/types/TTeamMemberItem';
 
 type Props = {
   isEven: boolean;

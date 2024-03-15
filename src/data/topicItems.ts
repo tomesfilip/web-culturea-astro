@@ -1,4 +1,4 @@
-import type { TopicItemTypes } from '../types/TopicItemTypes';
+import type { TopicItemTypes } from '../lib/types/TopicItemTypes';
 
 export const topicItems: TopicItemTypes[] = [
   {

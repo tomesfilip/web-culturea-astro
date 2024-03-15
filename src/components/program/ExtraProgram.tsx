@@ -1,6 +1,6 @@
 import { ProgramItem } from './ProgramItem';
 
-import type { TProgramItem } from '../../types/TProgramItem';
+import type { TProgramItem } from '../../lib/types/TProgramItem';
 
 import { extraProgramItems } from '../../data/programItems';
 

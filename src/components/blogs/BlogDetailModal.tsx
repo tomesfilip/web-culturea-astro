@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import parse from 'html-react-parser';
 import { useMonitorAuthUser } from '../../hooks/useMonitorAuthUser';
-import type { TBlogItem } from '../../types/TBlogItem';
+import type { TBlogItem } from '../../lib/types/TBlogItem';
 import { ModalHeader } from '../modal/ModalHeader';
 import { Backdrop } from './Backdrop';
 import { Actions } from './admin/Actions';

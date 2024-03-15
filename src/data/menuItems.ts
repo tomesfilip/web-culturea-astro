@@ -1,4 +1,4 @@
-import type { TMenuLink } from '../types/TMenuLink';
+import type { TMenuLink } from '../lib/types/TMenuLink';
 
 export const menuItems: TMenuLink[] = [
   {

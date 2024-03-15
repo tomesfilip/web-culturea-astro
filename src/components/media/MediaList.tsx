@@ -1,4 +1,4 @@
-import type { TMediaItem } from '../../types/TMediaItem';
+import type { TMediaItem } from '../../lib/types/TMediaItem';
 
 type Props = {
   mediaList: TMediaItem[];
