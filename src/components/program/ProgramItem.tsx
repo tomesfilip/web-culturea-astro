@@ -31,7 +31,7 @@ export const ProgramItem = ({
 
   return (
     <div
-      className={`w-[300px] h-[220px] lg:w-[400px] lg:h-[250px] border-2 rounded-md flex flex-col flex-wrap items-center gap-1 md:gap-3 text-center md:basis-1/2 md:text-left md:items-center ${
+      className={`w-full h-[250px] max-w-[400px] border-2 rounded-md flex flex-col flex-wrap items-center gap-1 md:gap-3 text-center md:basis-1/2 md:text-left md:items-center justify-self-center ${
         rightColumned ? 'border-blue-1' : 'border-orange-1'
       } ${isContentVisible ? 'justify-center p-4' : 'justify-start px-4 py-8'}`}
       onMouseEnter={() => toggleContent(true)}
