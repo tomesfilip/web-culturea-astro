@@ -1,4 +1,5 @@
-import { Navigation } from 'swiper/modules';
+import { useRef } from 'react';
+import SwiperCore from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -7,6 +8,7 @@ import 'swiper/css/navigation';
 import '../../styles/swiper.css';
 
 import type { TTeamMemberItem } from '../../lib/types/TTeamMemberItem';
+import { SwiperNavigationButton } from '../shared/SwiperNavigationButton';
 import { TeamMemberItem } from './TeamMemberItem';
 import { TeamMemberItemSwiper } from './TeamMemberItemSwiper';
 
@@ -15,6 +17,8 @@ type Props = {
 };
 
 export const TeamMemberList = ({ teamMembers }: Props) => {
+  const swiperRef = useRef<SwiperCore>();
+
   return (
     <>
       <div className="lg:hidden grid grid-cols-1 sm:grid-cols-2 justify-items-center gap-4 px-4">
@@ -27,10 +31,22 @@ export const TeamMemberList = ({ teamMembers }: Props) => {
         ))}
       </div>
 
-      <div className="hidden lg:flex lg:h-[680px]">
+      <div className="hidden lg:flex lg:h-[600px] xl:h-[680px] relative">
+        <SwiperNavigationButton
+          direction="left"
+          onClick={() => swiperRef.current?.slidePrev()}
+          isTopOffset
+        />
+        <SwiperNavigationButton
+          direction="right"
+          onClick={() => swiperRef.current?.slideNext()}
+          isTopOffset
+        />
         <Swiper
-          modules={[Navigation]}
-          navigation
+          onBeforeInit={(swiper) => {
+            swiperRef.current = swiper;
+          }}
+          loop
           autoHeight
           grabCursor
           breakpoints={{
