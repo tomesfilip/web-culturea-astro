@@ -63,8 +63,11 @@ export const ProgramItem = ({
             {img && (
               <img
                 src={img.src}
-                alt={presenter}
+                alt={presenter ?? 'prezentující'}
+                width={90}
+                height={90}
                 className="rounded-full w-[90px] h-[90px]"
+                loading="lazy"
               />
             )}
           </div>
