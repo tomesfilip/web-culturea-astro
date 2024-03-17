@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import { useMonitorAuthUser } from '../../hooks/useMonitorAuthUser';
-import type { TBlogItem } from '../../types/TBlogItem';
+import type { TBlogItem } from '../../lib/types/TBlogItem';
 import { BlogDetailModal } from './BlogDetailModal';
 import { Actions } from './admin/Actions';
 

@@ -10,11 +10,11 @@ export const SectionLastYear = () => {
     <Section
       sectionId="historie"
       sectionName="Minulý ročník"
-      className="py-12 lg:py-[120px] xl:py-[160px] bg-[url('/pozadi/desktop/last-year-bg.webp')] bg-cover bg-no-repeat"
+      className="py-12 lg:py-[120px] xl:py-[160px] bg-[url('/pozadi/desktop/last-year-bg.webp')] bg-cover bg-no-repeat px-4"
       headlineClassName="text-white"
     >
       <LastYearSlider />
-      <LastYearVideo/>    
+      <LastYearVideo />
     </Section>
   );
 };

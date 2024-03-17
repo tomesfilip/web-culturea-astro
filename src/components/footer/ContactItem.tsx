@@ -1,4 +1,4 @@
-import type { TContactItem } from '../../types/TContactItem';
+import type { TContactItem } from '../../lib/types/TContactItem';
 
 export const ContactItem = ({ contactName, contactMail }: TContactItem) => {
   return (

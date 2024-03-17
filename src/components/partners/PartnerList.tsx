@@ -1,4 +1,4 @@
-import type { TPartnerItem } from '../../types/TPartnerItem';
+import type { TPartnerItem } from '../../lib/types/TPartnerItem';
 
 type Props = {
   partners: TPartnerItem[];

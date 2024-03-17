@@ -1,4 +1,4 @@
-import type { TopicItemTypes } from '../../types/TopicItemTypes';
+import type { TopicItemTypes } from '../../lib/types/TopicItemTypes';
 
 export const TopicArticle = ({
   headline,
@@ -20,10 +20,10 @@ export const TopicArticle = ({
           isReversed ? 'lg:order-1' : 'lg:order-2'
         }`}
       >
-        <h3 className="uppercase text-2xl lg:text-5xl pb-4">{headline}</h3>
+        <p className="text-2xl lg:text-5xl pb-4">{headline}</p>
         <div className="space-y-4">
           {paragraphs.map((paragraph, index) => (
-            <p key={index} className="uppercase text-lg">
+            <p key={index} className="text-lg">
               {paragraph}
             </p>
           ))}

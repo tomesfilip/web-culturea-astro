@@ -3,7 +3,7 @@ import { useStore } from '@nanostores/react';
 import { useFetchBlogList } from '../../hooks/useFetchBlogList';
 import { useMonitorAuthUser } from '../../hooks/useMonitorAuthUser';
 import { isCreateModalOpen } from '../../stores/createModalStore';
-import type { TBlogItem } from '../../types/TBlogItem';
+import type { TBlogItem } from '../../lib/types/TBlogItem';
 import { logout } from '../../utils/logout';
 import { Loader } from '../shared/Loader';
 import { BlogListItem } from './BlogListItem';

@@ -6,7 +6,7 @@ export const SectionAbout = () => {
     <Section sectionId="o-festivalu">
       <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center text-white pb-40 px-4 lg:px-8 lg:gap-x-16 xl:gap-x-24 gap-y-12">
         <div className="w-full max-w-[500px] xl:max-w-[540px] order-2 lg:order-1">
-          <h2 className="font-bold">O festivalu</h2>
+          <p className="font-bold text-6xl mb-2">O festivalu</p>
           <AboutTextColumn />
         </div>
         <div className="relative order-1 lg:order-2 grid">

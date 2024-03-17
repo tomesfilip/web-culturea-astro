@@ -1,4 +1,4 @@
-import type { TPartnerItem } from '../types/TPartnerItem';
+import type { TPartnerItem } from '../lib/types/TPartnerItem';
 
 import cestovatelskyObchod from '../assets/img/sponsors/cestovatelsky-obchod.webp';
 import edo from '../assets/img/sponsors/edo.png';

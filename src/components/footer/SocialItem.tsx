@@ -1,4 +1,4 @@
-import type { TSocialItem } from '../../types/TSocialItem';
+import type { TSocialItem } from '../../lib/types/TSocialItem';
 
 export const SocialItem = ({ socLink, imgSrc, imgAlt }: TSocialItem) => {
   return (

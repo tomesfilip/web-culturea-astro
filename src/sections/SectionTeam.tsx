@@ -5,7 +5,7 @@ import { teamMemberItems } from '../data/teamMemberItems';
 
 export const SectionTeam = () => {
   return (
-    <Section sectionId="tym" sectionName="Kontakty">
+    <Section sectionId="tym" sectionName="Kontakty" className="px-4">
       <TeamMemberList teamMembers={teamMemberItems} />
     </Section>
   );
