@@ -5,4 +5,5 @@ export type TProgramItem = {
   img?: any;
   place?: string;
   additionalInfo?: string;
+  content?: string;
 };
