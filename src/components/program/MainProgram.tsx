@@ -1,5 +1,4 @@
 import { ProgramItem } from './ProgramItem';
-
 import { programItems } from '../../data/programItems';
 
 export const MainProgram = () => {
