@@ -6,4 +6,5 @@ export type TPartnerList = {
 export type TPartnerItem = {
   img: ImageMetadata;
   alt: string;
+  link?: string;
 };

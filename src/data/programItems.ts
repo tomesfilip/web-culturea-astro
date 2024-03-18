@@ -17,7 +17,7 @@ export const programItems: TProgramItem[] = [
     presenter: 'Šebestian Bok',
     img: sebastianImg,
     content:
-      'Na přednášce uslyšíte mnoho praktic-kých rad o stopování doplněných řadou fascinujících příběhů z cesty po Maroku. Mimo jiné poznáte, jaké to je bloudit marockou přírodou, ztrácet se v medí-nách nebo zvládnout časově téměř ne-možnou jízdu na Saharu díky osudové náhodě.',
+      'Na přednášce uslyšíte mnoho praktických rad o stopování doplněných řadou fascinujících příběhů z cesty po Maroku. Mimo jiné poznáte, jaké to je bloudit marockou přírodou, ztrácet se v medí-nách nebo zvládnout časově téměř ne-možnou jízdu na Saharu díky osudové náhodě.',
   },
   {
     time: '15:30 - 16:00',
@@ -50,7 +50,7 @@ export const programItems: TProgramItem[] = [
     presenter: 'Adam Rundus a Dorota Dostálová',
     img: adamdorotaImg,
     content:
-      'Adam Rundus, známý především jako účastník kulinářské show MasterChef Česko 2023, tentokrát odhodí zástěru. Se svou přítelkyní Dorotkou v rámci diskuze mimo jiné povypráví o společném cesto-vání ve stylu Slow Travel po Jižní a Stře-dní Americe.',
+      'Adam Rundus, známý především jako účastník kulinářské show MasterChef Česko 2023, tentokrát odhodí zástěru. Se svou přítelkyní Dorotou Dostálovou v rámci diskuze mimo jiné povypráví o společném cesto-vání ve stylu Slow Travel po Jižní a Stře-dní Americe.',
   },
   {
     time: '18:15 - 19:00',
