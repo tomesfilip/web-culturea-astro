@@ -1,4 +1,9 @@
+export type TPartnerList = {
+  headline: string;
+  partners: TPartnerItem[];
+};
+
 export type TPartnerItem = {
   img: ImageMetadata;
-  imgAlt: string;
+  alt: string;
 };

@@ -1,10 +1,10 @@
 import type { TProgramItem } from '../lib/types/TProgramItem';
 
-import adamdorotaImg from '../assets/img/program/adam_dorota.jpg';
-import rundusImg from '../assets/img/program/adam_rundus.jpg';
-import vinsImg from '../assets/img/program/matous_vins.jpg';
-import krouzelImg from '../assets/img/program/michal_krouzel.jpg';
-import sebastianImg from '../assets/img/program/sebestian_bok.jpg';
+import adamdorotaImg from '../assets/img/program/adam_dorota.webp';
+import rundusImg from '../assets/img/program/adam_rundus.webp';
+import vinsImg from '../assets/img/program/matous_vins.webp';
+import krouzelImg from '../assets/img/program/michal_krouzel.webp';
+import sebastianImg from '../assets/img/program/sebestian_bok.webp';
 
 export const programItems: TProgramItem[] = [
   {

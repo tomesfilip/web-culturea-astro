@@ -13,10 +13,10 @@ export const menuItems: TMenuLink[] = [
     url: './clanky',
     title: 'Články',
   },
-  // {
-  //   url: '/partneri',
-  //   title: 'Partneři',
-  // },
+  {
+    url: '/partneri',
+    title: 'Partneři',
+  },
   {
     url: '/media',
     title: 'Pro media',
