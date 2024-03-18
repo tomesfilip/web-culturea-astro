@@ -57,7 +57,7 @@ export const ProgramItem = ({
                 {presenter}
               </p>
               {headline && <p className="font-medium">{headline}</p>}
-              {place && <p className="text-orange-1 font-medium">{place}</p>}
+              {place && <p className="text-blue-1 font-medium text-center mt-10">{place}</p>}
               {additionalInfo && <p className="text-sm">{additionalInfo}</p>}
             </div>
             {img && (

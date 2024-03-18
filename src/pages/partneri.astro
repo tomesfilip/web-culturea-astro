@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { PartnerList } from '../components/partners/PartnerList';
+import { InfoPartner } from '../components/partners/InfoPartner';
 
 import '../styles/headingStyles.css';
 
@@ -8,5 +9,6 @@ import { CULTUREA_YEAR } from '../constants';
 ---
 
 <Layout title={`Culturea ${CULTUREA_YEAR}`}>
+  <InfoPartner />
   <PartnerList />
 </Layout>
