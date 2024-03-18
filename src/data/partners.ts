@@ -5,10 +5,13 @@ import co from '../assets/img/partners/basic/co_logo.png';
 import dprMetal from '../assets/img/partners/basic/dpr_metal_logo.png';
 import lyoFood from '../assets/img/partners/basic/lyofood_logo.png';
 import manucafe from '../assets/img/partners/basic/manucafe_logo.png';
+import cokoKral from '../assets/img/partners/basic/coko_kral_logo.png';
+import postaHranic from '../assets/img/partners/basic/posta_bez_hranic_logo.png';
 
 import alza from '../assets/img/partners/general/alza_logo.png';
 import vodarnaZlin from '../assets/img/partners/general/vodarna_zlin_logo.png';
 import zlinGold from '../assets/img/partners/general/zlin_gold_logo.png';
+import isProd from '../assets/img/partners/general/is_produkce_logo.png';
 
 import cpic from '../assets/img/partners/main/cpic_logo.png';
 import nadaceTomaseBati from '../assets/img/partners/main/nadace_tomase_bati_logo.svg';
@@ -41,6 +44,10 @@ export const generalPartners: TPartnerList = {
       img: zlinGold,
       alt: 'Zlín Gold',
     },
+    {
+      img: isProd,
+      alt: 'Is Produkce',
+    },
   ],
 };
 
@@ -62,44 +69,8 @@ export const medialPartners: TPartnerList = {
   headline: 'Mediální partneři',
   partners: [
     {
-      img: gastroin,
-      alt: 'Gastroin',
-    },
-    {
       img: hedvabnaStezka,
       alt: 'Hedvábná stezka',
-    },
-    {
-      img: hexxa,
-      alt: 'Hexxa',
-    },
-    {
-      img: inZlin,
-      alt: 'InZlín',
-    },
-    {
-      img: kiss,
-      alt: 'Kiss',
-    },
-    {
-      img: knihovnaUtb,
-      alt: 'Knihovna UTB',
-    },
-    {
-      img: kudyZNudy,
-      alt: 'Kudy z nudy',
-    },
-    {
-      img: stamgastGurman,
-      alt: 'Stámgast Gurmán',
-    },
-    {
-      img: turistikaCZ,
-      alt: 'Turistika.cz',
-    },
-    {
-      img: zlinCZ,
-      alt: 'Zlín.cz',
     },
     {
       img: zlinskoLuhacovisko,
@@ -108,6 +79,43 @@ export const medialPartners: TPartnerList = {
     {
       img: zlinskyKraj,
       alt: 'Zlínský kraj',
+    },
+    {
+      img: zlinCZ,
+      alt: 'Zlín.cz',
+    },
+    {
+      img: stamgastGurman,
+      alt: 'Stámgast Gurmán',
+    },
+    {
+      img: gastroin,
+      alt: 'Gastroin',
+    },
+    {
+      img: turistikaCZ,
+      alt: 'Turistika.cz',
+    },
+    {
+      img: hexxa,
+      alt: 'Hexxa',
+    },
+    {
+      img: knihovnaUtb,
+      alt: 'Knihovna UTB',
+    },
+    {
+      img: inZlin,
+      alt: 'InZlín',
+    },
+    {
+      img: kudyZNudy,
+      alt: 'Kudy z nudy',
+      link: 'https://www.kudyznudy.cz/',
+    },
+    {
+      img: kiss,
+      alt: 'Kiss',
     },
   ],
 };
@@ -134,6 +142,14 @@ export const basicPartners: TPartnerList = {
     {
       img: manucafe,
       alt: 'manucafe',
+    },
+    {
+      img: cokoKral,
+      alt: 'Čokoládové Království',
+    },
+    {
+      img: postaHranic,
+      alt: 'Pošta bez hranic',
     },
   ],
 };
