@@ -12,7 +12,7 @@ export const programItems: TProgramItem[] = [
     presenter: 'Otevření bran, začátek',
   },
   {
-    time: '13:00 - 15:00',
+    time: '14:00 - 14:30',
     headline: 'přednáška: Stopem do Maroka a zase zpět ',
     presenter: 'Šebestian Bok',
     img: sebastianImg,
@@ -20,7 +20,7 @@ export const programItems: TProgramItem[] = [
       'Na přednášce uslyšíte mnoho praktických rad o stopování doplněných řadou fascinujících příběhů z cesty po Maroku. Mimo jiné poznáte, jaké to je bloudit marockou přírodou, ztrácet se v medínách nebo zvládnout časově téměř nemožnou jízdu na Saharu díky osudové náhodě.',
   },
   {
-    time: '15:30 - 16:00',
+    time: '15:00 - 15:30',
     headline: 'přednáška" Kuba - země dvojí tváře ',
     presenter: 'Michal Kroužel',
     img: krouzelImg,
@@ -28,7 +28,7 @@ export const programItems: TProgramItem[] = [
       'Země známá pro své přírodní krásy, všudypřítomnou salsu, naleštěná auta z 60. let, kvalitní doutníky i vynikající rum. Je Kuba skutečně taková? Jaká je její druhá tvář a jak moc ji ovlivňují turisté, místní nebo postupné uvolňování přísného komunistického režimu? Odpovědi na všechny tyto otázky se dozvíte na přednášce!',
   },
   {
-    time: '16:30 - 17:00',
+    time: '16:00 - 16:30',
     headline: 'přednáška: Proč a jak cestovat chytře, pomalu a dluho',
     presenter: 'Matouš Vinš',
     img: vinsImg,
