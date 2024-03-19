@@ -29,7 +29,7 @@ export const programItems: TProgramItem[] = [
   },
   {
     time: '16:00 - 16:30',
-    headline: 'přednáška: Proč a jak cestovat chytře, pomalu a dluho',
+    headline: 'přednáška: Proč a jak cestovat chytře, pomalu a dlouho',
     presenter: 'Matouš Vinš',
     img: vinsImg,
     content:
@@ -55,7 +55,7 @@ export const programItems: TProgramItem[] = [
   },
   {
     time: '18:15 - 19:00',
-    headline: 'Adamem Rundusem + MasterChef výzva',
+    headline: 'S Adamem Rundusem + MasterChef výzva',
     presenter: 'Live cooking show',
     img: rundusImg,
     content:
