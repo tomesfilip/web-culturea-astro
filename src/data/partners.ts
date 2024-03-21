@@ -10,7 +10,7 @@ import postaHranic from '../assets/img/partners/basic/posta_bez_hranic_logo.png'
 
 import alza from '../assets/img/partners/general/alza_logo.png';
 import vodarnaZlin from '../assets/img/partners/general/vodarna_zlin_logo.png';
-import zlinGold from '../assets/img/partners/general/zlin_gold_logo.png';
+import zlinBlack from '../assets/img/partners/general/zlin_black_logo.png';
 import isProd from '../assets/img/partners/general/is_produkce_logo.png';
 
 import cpic from '../assets/img/partners/main/cpic_logo.png';
@@ -41,8 +41,8 @@ export const generalPartners: TPartnerList = {
       alt: 'Vodárna Zlín',
     },
     {
-      img: zlinGold,
-      alt: 'Zlín Gold',
+      img: zlinBlack,
+      alt: 'Zlín Black',
     },
     {
       img: isProd,
