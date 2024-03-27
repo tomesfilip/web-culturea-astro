@@ -1,6 +1,6 @@
+import videoSrc from "../../assets/videos/Culturea_spot_render_7.mp4"
 
 export const ThisYearVideo = () => {
-  const videoSrc = "src/assets/videos/Culturea_spot_render_7.mp4";
 
   return (
     <div className="w-full flex justify-center mt-10">
