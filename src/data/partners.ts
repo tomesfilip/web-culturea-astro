@@ -1,6 +1,5 @@
 import type { TPartnerItem, TPartnerList } from '../lib/types/TPartnerItem';
 
-import americanClassic from '../assets/img/partners/basic/american_classic_logo.png';
 import co from '../assets/img/partners/basic/co_logo.png';
 import dprMetal from '../assets/img/partners/basic/dpr_metal_logo.png';
 import lyoFood from '../assets/img/partners/basic/lyofood_logo.png';
@@ -123,10 +122,6 @@ export const medialPartners: TPartnerList = {
 export const basicPartners: TPartnerList = {
   headline: 'Partneři',
   partners: [
-    {
-      img: americanClassic,
-      alt: 'American Classic',
-    },
     {
       img: co,
       alt: 'CO',
