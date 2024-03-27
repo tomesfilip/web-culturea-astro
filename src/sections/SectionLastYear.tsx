@@ -1,5 +1,6 @@
 import { LastYearSlider } from '../components/history/LastYearSlider';
 import { LastYearVideo } from '../components/history/LastYearVideo';
+import { ThisYearVideo } from '../components/history/ThisYearVideo';
 
 import { Section } from '../components/shared/Section';
 
@@ -15,6 +16,7 @@ export const SectionLastYear = () => {
     >
       <LastYearSlider />
       <LastYearVideo />
+      <ThisYearVideo />
     </Section>
   );
 };
