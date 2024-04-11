@@ -9,7 +9,7 @@ export const mediaItems: TMediaItem[] = [
     img: mediaFile,
     imgAlt: 'soubor',
     text: 'Tiskové zprávy',
-    link: 'https://docs.google.com/document/d/19k6NNojBlat2RxO0dQCeRRiB14mtTrYnebHvjMJiyFs/edit',
+    link: 'https://drive.google.com/drive/folders/1KfVJSyo5t9LDgNVdmrIyMkPK507j7G-v',
   },
   {
     img: mediaVisual,
