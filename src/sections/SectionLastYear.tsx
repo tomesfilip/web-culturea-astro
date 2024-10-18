@@ -1,5 +1,6 @@
 import { LastYearSlider } from '../components/history/LastYearSlider';
 import { LastYearVideo } from '../components/history/LastYearVideo';
+import { ThisYearVideo } from '../components/history/ThisYearVideo';
 
 import { Section } from '../components/shared/Section';
 
@@ -14,8 +15,7 @@ export const SectionLastYear = () => {
       headlineClassName="text-white"
     >
       <LastYearSlider />
-      <LastYearVideo />
-      {/* <ThisYearVideo /> */}
+      <ThisYearVideo />
       <div className="space-y-8 text-white py-8 flex flex-col items-center max-w-[800px]">
         <div className="space-y-2">
           <h3 className="text-center">Kuba</h3>
