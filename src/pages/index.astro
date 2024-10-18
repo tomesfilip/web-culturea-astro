@@ -21,12 +21,12 @@ import '../styles/headingStyles.css';
   <ScrollToTopButton />
   <SectionLanding slot="heroSection" />
   <SectionAbout slot="heroSection" />
-  <SectionTopics />
-  <SectionProgram client:only />
+  <!-- <SectionTopics /> -->
+  <SectionProgram client:only="react" />
+  <SectionLastYear client:only="react" />
+  <SectionMap client:only="react" />
+  <SectionTeam client:only="react" />
   <SectionPartners />
-  <SectionLastYear client:only />
-  <SectionMap client:only />
-  <SectionTeam client:only />
   <SectionOrganizer />
 </Layout>
 

@@ -1,86 +1,77 @@
 import type { TTeamMemberItem } from '../lib/types/TTeamMemberItem';
 
-import EvaSevcikova from '../assets/img/portrety-manazeru/EvaSevcikova.webp';
-import HanaHromkova from '../assets/img/portrety-manazeru/HanaHromkova.webp';
-import JiriZapalac from '../assets/img/portrety-manazeru/JiriZapalac.webp';
-import KaterinaKalinova from '../assets/img/portrety-manazeru/KaterinaKalinova.webp';
-import KristynaLexova from '../assets/img/portrety-manazeru/KristynaLexova.webp';
-import LucieVeskrnova from '../assets/img/portrety-manazeru/LucieVeskrnova.webp';
-import TerezaHlouzkova from '../assets/img/portrety-manazeru/TerezaHlouzkova.webp';
-import TereziaSrobova from '../assets/img/portrety-manazeru/TereziaSrobova.webp';
-import VeronikaChadimova from '../assets/img/portrety-manazeru/VeronikaChadimova.webp';
+import AnetaSkacelova from '../assets/img/portrety-manazeru/AnetaSkacelova.webp';
+import MartinaBrundova from '../assets/img/portrety-manazeru/MartinaBrundova.webp';
+import NatalieEgartova from '../assets/img/portrety-manazeru/NatalieEgartova.webp';
+import NatalieLambova from '../assets/img/portrety-manazeru/NatalieLambova.webp';
+import NikolUngvari from '../assets/img/portrety-manazeru/NikolUngvari.webp';
+import RenataHucmanova from '../assets/img/portrety-manazeru/RenataHucmanova.webp';
+import VendulaSkalova from '../assets/img/portrety-manazeru/VendulaSkalova.webp';
+import ViktoriaKocmanova from '../assets/img/portrety-manazeru/ViktoriaKocmanova.webp';
 
 export const teamMemberItems: TTeamMemberItem[] = [
   {
     id: 0,
-    name: 'Terézia Šrobová',
-    position: 'Projektová manažerka',
+    name: 'Aneta Skácelová',
+    position: 'Manažerka projektu',
     email: 'ahoj@culturea.cz',
-    img: TereziaSrobova,
-    phone: '(+421) 915 113 097',
+    img: AnetaSkacelova,
+    phone: '724 919 193',
   },
   {
     id: 1,
-    name: 'Tereza Hloužková',
-    position: 'Projektová manažerka',
-    email: 'ahoj@culturea.cz',
-    img: TerezaHlouzkova,
-    phone: '776 400 069',
+    name: 'Renáta Hucmanová',
+    position: 'Manažerka produkce',
+    email: 'produkce@culturea.cz',
+    img: RenataHucmanova,
+    phone: '(+421) 949 357 893',
   },
   {
     id: 2,
-    name: 'Kateřina Kalinová',
-    position: 'Art manažerka',
-    email: 'art@culturea.cz',
-    img: KaterinaKalinova,
-    phone: '773 112 042',
+    name: 'Viktória Kocmanová',
+    position: 'Manažerka produkce',
+    email: 'produkce@culturea.cz',
+    img: ViktoriaKocmanova,
+    phone: '(+421) 948 233 456',
   },
   {
     id: 3,
-    name: 'Hana Hromková',
-    position: 'Promo Manažerka',
-    email: 'promo@culturea.cz',
-    img: HanaHromkova,
-    phone: '721 048 348',
+    name: 'Nikol Ungvári',
+    position: 'PR manažerka',
+    email: 'pr@culturea.cz',
+    img: NikolUngvari,
+    phone: '773 249 592',
   },
   {
     id: 4,
-    name: 'Veronika Chadimová',
+    name: 'Martina Břundová',
     position: 'Promo manažerka',
     email: 'promo@culturea.cz',
-    img: VeronikaChadimova,
-    phone: '720 988 661',
+    img: MartinaBrundova,
+    phone: '702 543 033',
   },
   {
     id: 5,
-    name: 'Lucie Veškrnová',
-    position: 'PR manažerka',
-    email: 'pr@culturea.cz',
-    img: LucieVeskrnova,
-    phone: '731 004 947',
+    name: 'Natalie Lambova',
+    position: 'Promo manažerka',
+    email: 'promo@culturea.cz',
+    img: NatalieLambova,
+    phone: '731 063 867',
   },
   {
     id: 6,
-    name: 'Jiří Zapalač',
-    position: 'Manažer produkce',
-    email: 'produkce@culturea.cz',
-    img: JiriZapalac,
-    phone: '775 388 092',
+    name: 'Natálie Egartová',
+    position: 'Art manažerka (grafika, videospot)',
+    email: 'art@culturea.cz',
+    img: NatalieEgartova,
+    phone: '731 856 863',
   },
   {
     id: 7,
-    name: 'Eva Ševčíková',
-    position: 'manažerka produkce',
-    email: 'e_sevcikova@utb.cz',
-    img: EvaSevcikova,
-    phone: '723 457 715',
-  },
-  {
-    id: 8,
-    name: 'Kristýna Lexová',
-    position: 'Fundraising manažerka',
-    email: 'fundraising@culturea.cz',
-    img: KristynaLexova,
-    phone: '792 765 456',
+    name: 'Vendula Skalová',
+    position: 'Art manažerka (výzdoba, dekorace)',
+    email: 'art@culturea.cz',
+    img: VendulaSkalova,
+    phone: '730 829 330',
   },
 ];

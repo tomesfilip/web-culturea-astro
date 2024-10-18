@@ -16,7 +16,7 @@ export const AboutTextColumn = () => {
           však něčím velmi podobné.
         </p>
         <p>
-          Již dvanáctý rok projekt organizují studenti Fakulty multimediálních
+          Již třináctý rok projekt organizují studenti Fakulty multimediálních
           komunikací Univerzity Tomáše Bati ve Zlíně.
         </p>
       </div>

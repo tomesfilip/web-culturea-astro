@@ -22,8 +22,8 @@ export const Header = () => {
   };
 
   return (
-    <motion.header className="w-full bg-transparent max-w-screen-2xl mx-auto">
-      <nav className="relative z-10 flex flex-col items-center h-24 xl:flex-row xl:justify-between xl:py-4 xl:px-12">
+    <motion.header className="w-full flex justify-center bg-transparent fixed top-0 bg-blue-1 z-20">
+      <nav className="relative z-10 max-w-screen-2xl w-full flex flex-col items-center h-24 xl:flex-row xl:justify-between xl:py-4 xl:px-12 ">
         <div className="hidden xl:block">
           <LogoLink />
         </div>
@@ -57,9 +57,9 @@ export const Header = () => {
                   />
                 </motion.li>
               ))}
-              <motion.li variants={menuVariants} className="mt-6">
+              {/* <motion.li variants={menuVariants} className="mt-6">
                 <TicketButton />
-              </motion.li>
+              </motion.li> */}
             </motion.ul>
           </AnimatePresence>
         )}
@@ -71,7 +71,7 @@ export const Header = () => {
               onClick={() => setIsOpen(false)}
             />
           ))}
-          <TicketButton />
+          {/* <TicketButton /> */}
         </ul>
       </nav>
     </motion.header>

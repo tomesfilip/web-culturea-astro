@@ -13,9 +13,9 @@ export const TeamMemberItem = ({
   isEven,
 }: Props) => {
   return (
-    <figure className="rounded-lg">
+    <figure className="rounded-lg h-full flex flex-col">
       <img
-        className="object-cover object-center rounded-t-lg opacity-70 hover:opacity-100 transition-opacity duration-300"
+        className="object-cover object-center rounded-t-lg opacity-70 hover:opacity-100 transition-opacity duration-300 h-full"
         src={img.src}
         width={400}
         height={500}

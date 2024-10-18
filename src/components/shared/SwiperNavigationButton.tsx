@@ -18,10 +18,7 @@ export const SwiperNavigationButton = ({
           ? 'top-[40%] -translate-y-[40%]'
           : 'top-1/2 -translate-y-1/2'
       }`}
-      onClick={() => {
-        console.log('clicked');
-        onClick();
-      }}
+      onClick={onClick}
       aria-label={
         direction === 'left'
           ? 'zobraz předchozí obrázky'

@@ -20,8 +20,8 @@ export const TeamMemberList = ({ teamMembers }: Props) => {
   const swiperRef = useRef<SwiperCore>();
 
   return (
-    <>
-      <div className="lg:hidden grid grid-cols-1 sm:grid-cols-2 justify-items-center gap-4 px-4">
+    <div className="w-full">
+      <div className="lg:hidden grid grid-cols-1 sm:grid-cols-2 justify-items-center gap-4 px-4 items-stretch">
         {teamMembers.map((member, index) => (
           <TeamMemberItem
             key={member.id}
@@ -71,6 +71,6 @@ export const TeamMemberList = ({ teamMembers }: Props) => {
           ))}
         </Swiper>
       </div>
-    </>
+    </div>
   );
 };
