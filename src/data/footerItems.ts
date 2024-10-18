@@ -45,12 +45,6 @@ export const socialItems: TSocialItem[] = [
     socLink: 'https://www.facebook.com/Culturea',
   },
   {
-    imgSrc: sfLogo,
-    imgAlt: 'Culturea spotify',
-    socLink:
-      'https://open.spotify.com/show/63TQbV3BDMi5g65zBR41Se?si=13b34f5416a34b67',
-  },
-  {
     imgSrc: ytLogo,
     imgAlt: 'Culturea youtube',
     socLink: 'https://www.youtube.com/channel/UC1yEl3yhmv0UmVbRhanyeyA',

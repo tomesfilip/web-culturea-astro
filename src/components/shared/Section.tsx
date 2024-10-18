@@ -26,7 +26,9 @@ export const Section = ({
           {sectionName}
         </h2>
       )}
-      <div className="w-full max-w-screen-2xl mx-auto">{children}</div>
+      <div className="w-full max-w-screen-2xl flex flex-col items-center">
+        {children}
+      </div>
     </section>
   );
 };
