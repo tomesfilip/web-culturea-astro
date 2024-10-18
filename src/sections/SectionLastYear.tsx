@@ -1,5 +1,5 @@
+import { LastYearSlider } from '../components/history/LastYearSlider';
 import { LastYearVideo } from '../components/history/LastYearVideo';
-import { ThisYearVideo } from '../components/history/ThisYearVideo';
 
 import { Section } from '../components/shared/Section';
 
@@ -13,9 +13,9 @@ export const SectionLastYear = () => {
       className="py-12 lg:py-[120px] xl:py-[160px] bg-[url('/pozadi/desktop/last-year-bg.webp')] bg-cover bg-no-repeat px-4"
       headlineClassName="text-white"
     >
-      {/* <LastYearSlider /> */}
+      <LastYearSlider />
       <LastYearVideo />
-      <ThisYearVideo />
+      {/* <ThisYearVideo /> */}
     </Section>
   );
 };
