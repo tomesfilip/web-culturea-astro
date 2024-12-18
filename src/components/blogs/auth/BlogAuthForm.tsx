@@ -56,7 +56,7 @@ export const BlogAuthForm = () => {
       </div>
       <button
         type="submit"
-        className="bg-orange-1 px-4 py-2 rounded-lg text-lg text-white"
+        className="bg-dark-green px-4 py-2 rounded-lg text-lg text-white"
       >
         Přihlásit
       </button>

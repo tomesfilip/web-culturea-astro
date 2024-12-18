@@ -104,13 +104,13 @@ export const CreateEditForm = () => {
       <form
         onSubmit={(e) => handleSubmit(e)}
         onClick={(e) => e.stopPropagation()}
-        className="flex flex-col flex-wrap gap-y-4 w-[90%] md:w-[60%] lg:w-[40%] max-w-4xl bg-white rounded-lg p-4 z-50"
+        className="flex flex-col flex-wrap gap-y-4 w-[90%] md:w-[60%] lg:w-[40%] max-w-4xl bg-beige rounded-lg p-4 z-50"
       >
         <ModalHeader closeModal={closeModal} />
         <h4 className="text-xl text-center">
           {blog ? 'Upravit blog' : 'Přidat blog'}
         </h4>
-        <button className="bg-orange-1 px-2 py-1 text-xl text-white rounded-lg max-w-max self-center">
+        <button className="bg-dark-green px-2 py-1 text-xl text-beige rounded-lg max-w-max self-center">
           Uveřejnit blog
         </button>
         <LabelledInput

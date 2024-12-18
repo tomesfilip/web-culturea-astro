@@ -3,10 +3,10 @@ import { Section } from '../components/shared/Section';
 
 export const SectionAbout = () => {
   return (
-    <Section sectionId="o-festivalu">
-      <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center text-white pb-40 px-4 lg:px-8 lg:gap-x-16 xl:gap-x-24 gap-y-12">
+    <Section sectionId="o-festivalu" className="bg-light-green">
+      <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center text-beige lg:gap-x-16 xl:gap-x-24 gap-y-12 py-52">
         <div className="w-full max-w-[500px] xl:max-w-[540px] order-2 lg:order-1">
-          <p className="font-bold text-6xl mb-2">O festivalu</p>
+          <h3 className="font-bold text-4xl mb-2">O festivalu</h3>
           <AboutTextColumn />
         </div>
         <div className="relative order-1 lg:order-2 grid">

@@ -19,7 +19,7 @@ export const Section = ({
   return (
     <section
       id={sectionId}
-      className={`flex flex-col items-center my-12 lg:my-16 ${className}`}
+      className={`flex flex-col items-center py-12 lg:py-16 px-4 lg:px-8 ${className}`}
     >
       {sectionName && (
         <h2 className={`text-center mb-8 xl:mb-12 ${headlineClassName}`}>
