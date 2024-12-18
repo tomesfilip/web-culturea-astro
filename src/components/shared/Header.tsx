@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { Twirl as Hamburger } from 'hamburger-react';
 import { useState } from 'react';
+import { Twirl as Hamburger } from './hamburger';
 
 import { menuItems } from '../../data/menuItems';
 import { LogoLink } from '../header/LogoLink';
@@ -50,11 +50,12 @@ export const Header = () => {
               exit="hidden"
             >
               {menuItems.map((menuItem) => (
-                <motion.li key={menuItem.title} variants={menuVariants}>
-                  <MenuLink
-                    menuItem={menuItem}
-                    onClick={() => setIsOpen(false)}
-                  />
+                <motion.li
+                  key={menuItem.title}
+                  variants={menuVariants}
+                  onClick={() => setIsOpen(false)}
+                >
+                  <MenuLink {...menuItem} />
                 </motion.li>
               ))}
               {/* <motion.li variants={menuVariants} className="mt-6">
@@ -65,11 +66,9 @@ export const Header = () => {
         )}
         <ul className="flex-row items-center hidden space-x-8 xl:flex text-white">
           {menuItems.map((menuItem) => (
-            <MenuLink
-              key={menuItem.title}
-              menuItem={menuItem}
-              onClick={() => setIsOpen(false)}
-            />
+            <motion.li key={menuItem.title} onClick={() => setIsOpen(false)}>
+              <MenuLink {...menuItem} />
+            </motion.li>
           ))}
           {/* <TicketButton /> */}
         </ul>

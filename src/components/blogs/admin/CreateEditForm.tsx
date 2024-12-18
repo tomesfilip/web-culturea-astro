@@ -1,14 +1,15 @@
 import { addDoc, updateDoc } from 'firebase/firestore';
 import { useEffect, useState } from 'react';
-import ReactQuill from 'react-quill';
 
 import { blogCollectionRef } from '../../../config/firebase';
 import { isCreateModalOpen } from '../../../stores/createModalStore';
 import { editBlogStore } from '../../../stores/editBlogStore';
 import { getDocRef } from '../../../utils/getBlogRef';
 
-import 'react-quill/dist/quill.snow.css';
+import 'react-quill-new/dist/quill.snow.css';
 import '../../../styles/blogTextEditor.css';
+
+import ReactQuill from 'react-quill-new';
 import { uploadImage } from '../../../utils/uploadImage';
 import { ModalHeader } from '../../modal/ModalHeader';
 import { Loader } from '../../shared/Loader';
@@ -17,12 +18,12 @@ import { LabelledInput } from '../auth/LabelledInput';
 
 export const CreateEditForm = () => {
   const [blog] = useState<any>(editBlogStore.get());
-  const [title, setTitle] = useState<string>('');
-  const [body, setBody] = useState<string>('');
+  const [title, setTitle] = useState('');
+  const [body, setBody] = useState('');
   const [image, setImage] = useState<File | null>(null);
   const [imgUrl, setImgUrl] = useState<string | null>(null);
-  const [error, setError] = useState<string>('');
-  const [isImageUploading, setIsImageUploading] = useState<boolean>(false);
+  const [error, setError] = useState('');
+  const [isImageUploading, setIsImageUploading] = useState(false);
 
   const handleImageUpload = async () => {
     await uploadImage({
