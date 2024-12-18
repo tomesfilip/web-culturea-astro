@@ -3,7 +3,7 @@ import { Section } from '../components/shared/Section';
 
 export const SectionMap = () => {
   return (
-    <Section sectionId="mapa" sectionName="">
+    <Section id="mapa" title="">
       <h2 className="text-center hidden md:flex">
         země, které jsme s Cultureou navštívili
       </h2>

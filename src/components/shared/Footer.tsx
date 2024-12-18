@@ -4,12 +4,9 @@ import { SocialList } from '../footer/SocialList';
 
 export const Footer = () => {
   return (
-    <footer
-      id="kontakt"
-      className="bg-[url('/pozadi/desktop/footer-bg.webp')] bg-cover bg-no-repeat mt-auto"
-    >
+    <footer id="kontakt" className="bg-dark-green text-beige">
       <div className="relative w-full max-w-screen-2xl mx-auto pt-24 pb-8 flex flex-col items-center">
-        <div className="hidden lg:block lg:absolute left-4">
+        <div className="hidden lg:block lg:absolute left-4 z-[2]">
           <SocialList />
         </div>
         <div className="flex flex-wrap justify-center lg:justify-between gap-8 lg:gap-12 xl:gap-20 px-4 py-12 sm:px-8 lg:px-20">

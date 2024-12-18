@@ -2,7 +2,7 @@ import { Section } from '../components/shared/Section';
 
 export const SectionProgram = () => {
   return (
-    <Section sectionId="program" sectionName="Program">
+    <Section id="program" title="Program">
       <div className="max-w-[600px] space-y-5 text-lg">
         <p>
           Dvanáctým ročníkem, který proběhl 3. dubna 2024 v kavárně 14|15 Baťova

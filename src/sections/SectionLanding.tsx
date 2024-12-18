@@ -5,7 +5,7 @@ export const SectionLanding = () => {
   return (
     <>
       <Section
-        sectionId="landing"
+        id="landing"
         className="text-white px-4 p-24 pb-12 lg:px-0 relative"
       >
         <div className="absolute left-8 top-1/2 -translate-y-1/2 hidden lg:block z-[2]">
