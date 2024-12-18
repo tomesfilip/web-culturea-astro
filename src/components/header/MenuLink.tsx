@@ -5,7 +5,7 @@ export interface MenuLinkProps {
 
 export const MenuLink = ({ url, title }: MenuLinkProps) => {
   return (
-    <a href={url} className="text-[19px] font-headline">
+    <a href={url} className="text-2xl">
       {title}
     </a>
   );

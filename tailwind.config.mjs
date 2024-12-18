@@ -5,12 +5,11 @@ export default {
     colors: {
       white: '#FFFFFF',
       black: '#000000',
-      'blue-1': '#19777A',
-      'blue-2': '#59BEBF',
-      'blue-3': '#B1F7F9',
-      'orange-1': '#FE8133',
-      'brown-1': '#A8663B',
-      'brown-2': '#FFA878',
+      'dark-green': '#234526',
+      'light-green': '#6A984D',
+      beige: '#FEFAE0',
+      'light-brown': '#DDA15E',
+      'dark-brown': '#BC6C25',
     },
     extend: {
       fontFamily: {

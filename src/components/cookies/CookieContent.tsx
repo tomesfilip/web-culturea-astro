@@ -1,6 +1,6 @@
 export const CookieContent = () => {
   return (
-    <div className="content text-white mt-4 mb-8">
+    <div className="content mt-4 mb-8">
       <p className="mb-2">
         Pro správnou funkci tohoto webu, měření návštěvnosti a personalizaci
         reklam používáme soubory cookies.

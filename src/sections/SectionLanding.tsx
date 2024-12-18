@@ -8,7 +8,7 @@ export const SectionLanding = () => {
         sectionId="landing"
         className="text-white px-4 p-24 pb-12 lg:px-0 relative"
       >
-        <div className="absolute left-8 top-1/2 -translate-y-1/2 hidden lg:block">
+        <div className="absolute left-8 top-1/2 -translate-y-1/2 hidden lg:block z-[2]">
           <SocialList />
         </div>
         <div className="flex flex-col items-center mx-auto max-w-[400px] lg:max-w-none text-center">
@@ -18,7 +18,7 @@ export const SectionLanding = () => {
             className="mb-8 w-32 h-auto"
           />
           <h1 className="hidden">ODHALENÍ ZEMÍ 13. ROČNÍKU JIŽ BRZY!</h1>
-          <h2 className="text-2xl lg:text-6xl font-bold mb-4">
+          <h2 className="text-2xl lg:text-6xl font-bold mb-4 max-w-[600px]">
             ODHALENÍ ZEMÍ 13. ROČNÍKU JIŽ BRZY!
           </h2>
           <div className="text-xl lg:text-3xl flex flex-wrap justify-around gap-5 lg:gap-14 pb-20 mb-20 w-5/5 lg:w-max">
