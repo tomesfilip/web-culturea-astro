@@ -2,7 +2,7 @@ export const ScrollToTopButton = () => {
   return (
     <a
       href="#"
-      className="fixed bottom-4 right-4 m-3 p-4 rounded-full border-4 hover:bg-dark-green border-dark-green duration-300 group"
+      className="fixed bottom-4 right-4 m-3 p-4 rounded-full border-4 hover:bg-dark-green border-dark-green duration-300 group z-[3]"
     >
       <svg
         className="stroke-dark-green group-hover:stroke-beige"

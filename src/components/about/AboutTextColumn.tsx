@@ -13,13 +13,18 @@ export const AboutTextColumn = () => {
           zemí jsou zde na dosah.
         </p>
         <p>
-          Každý ročník představuje dvě země, které svými odlišnostmi i
-          podobnostmi ukazují, co všechno může svět nabídnout. Dvě cizí kultury,
-          jejichž atmosféra má potenciál uchvátit, přitahovat a obohacovat.
+          Každý ročník představuje dvě země, které svými odlišnostmi
+          i&nbsp;podobnostmi ukazují, co všechno může svět nabídnout.
+          <br />
+          Dvě cizí kultury, jejichž atmosféra má potenciál uchvátit, přitahovat
+          a obohacovat.
         </p>
         <p>
-          Projekt Culturea je již třináctým rokem organizován studenty Fakulty
-          multimediálních komunikací Univerzity Tomáše Bati ve Zlíně.
+          Projekt Culturea je již třináctým rokem organizován
+          <br />
+          studenty Fakulty multimediálních komunikací
+          <br />
+          Univerzity Tomáše Bati ve Zlíně.
         </p>
       </div>
     </div>
