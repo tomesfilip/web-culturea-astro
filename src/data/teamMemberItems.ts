@@ -1,13 +1,13 @@
 import type { TTeamMemberItem } from '../lib/types/TTeamMemberItem';
 
-import AnetaSkacelova from '../assets/img/portrety-manazeru/AnetaSkacelova.webp';
-import MartinaBrundova from '../assets/img/portrety-manazeru/MartinaBrundova.webp';
-import NatalieEgartova from '../assets/img/portrety-manazeru/NatalieEgartova.webp';
-import NatalieLambova from '../assets/img/portrety-manazeru/NatalieLambova.webp';
-import NikolUngvari from '../assets/img/portrety-manazeru/NikolUngvari.webp';
-import RenataHucmanova from '../assets/img/portrety-manazeru/RenataHucmanova.webp';
-import VendulaSkalova from '../assets/img/portrety-manazeru/VendulaSkalova.webp';
-import ViktoriaKocmanova from '../assets/img/portrety-manazeru/ViktoriaKocmanova.webp';
+import AnetaSkacelova from '../assets/img/portrety-manazeru/anet-skacelova.webp';
+import MartinaBrundova from '../assets/img/portrety-manazeru/martina-brundova.webp';
+import NatalieEgartova from '../assets/img/portrety-manazeru/naty-egartova.webp';
+import NatalieLambova from '../assets/img/portrety-manazeru/naty-lambova.webp';
+import NikolUngvari from '../assets/img/portrety-manazeru/nikol-ungvari.webp';
+import RenataHucmanova from '../assets/img/portrety-manazeru/renat-hucmanova.webp';
+import VendulaSkalova from '../assets/img/portrety-manazeru/vendy-skalova.webp';
+import ViktoriaKocmanova from '../assets/img/portrety-manazeru/viky-kocmanova.webp';
 
 export const teamMemberItems: TTeamMemberItem[] = [
   {

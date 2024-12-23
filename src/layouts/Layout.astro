@@ -4,6 +4,7 @@ import { Footer } from '../components/shared/Footer';
 import { CULTUREA_YEAR } from '../constants';
 
 import HeroSection from '../components/shared/HeroSection.astro';
+import { HeroBg } from '../components/icons/Hero';
 
 export type Props = {
   title: string;
@@ -75,6 +76,13 @@ const { title } = Astro.props;
     src: url('../assets/fonts/GalanoGrotesqueMedium.woff2') format('woff2');
     font-display: swap;
     font-weight: 500;
+  }
+
+  @font-face {
+    font-family: GalanoGrotesqueSemibold;
+    src: url('../assets/fonts/GalanoGrotesqueSemibold.woff2') format('woff2');
+    font-display: swap;
+    font-weight: 600;
   }
 
   * {

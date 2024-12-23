@@ -1,18 +1,29 @@
-import { socialItems } from '../../data/footerItems';
-
-import { SocialItem } from './SocialItem';
+import { Facebook, Instagram, Youtube } from '../icons/Socials';
 
 export const SocialList = () => {
   return (
-    <div className="flex flex-row lg:flex-col gap-6 opacity-50">
-      {socialItems.map(({ imgSrc, imgAlt, socLink }) => (
-        <SocialItem
-          key={socLink}
-          imgSrc={imgSrc}
-          imgAlt={imgAlt}
-          socLink={socLink}
-        />
-      ))}
+    <div className="flex gap-6">
+      <a
+        href="https://www.instagram.com/culturea/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Instagram />
+      </a>
+      <a
+        href="https://www.facebook.com/Culturea"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Facebook />
+      </a>
+      <a
+        href="https://www.youtube.com/@jsmeculturea"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Youtube />
+      </a>
     </div>
   );
 };

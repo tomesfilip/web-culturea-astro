@@ -22,7 +22,7 @@ export const Header = () => {
   };
 
   return (
-    <motion.header className="w-full flex justify-center bg-dark-green stickygit lfs ls-files top-0 z-20">
+    <motion.header className="w-full flex justify-center bg-dark-green stickygit fixed top-0 z-20">
       <nav className="relative z-10 max-w-screen-2xl w-full flex flex-col items-center h-24 xl:flex-row xl:justify-between xl:py-4 xl:px-12">
         <div className="hidden xl:block">
           <LogoLink />
