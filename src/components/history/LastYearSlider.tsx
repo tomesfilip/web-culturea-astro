@@ -25,14 +25,6 @@ export const LastYearSlider = () => {
 
   return (
     <div className="w-full space-y-16">
-      <div className="w-full text-center text-white">
-        <p className="text-xl leading-none lg:text-[45px] uppercase xl:leading-[60px] font-headline">
-          Kuba a Maroko
-        </p>
-        <p className="text-xl leading-none lg:text-[45px] font-bold xl:leading-[60px] font-headline">
-          2024
-        </p>
-      </div>
       <Lightbox
         index={selectedImgId}
         open={selectedImgId >= 0}

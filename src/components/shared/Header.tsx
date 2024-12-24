@@ -22,17 +22,17 @@ export const Header = () => {
 
   return (
     <motion.header className="w-full flex justify-center bg-dark-green fixed top-0 z-20">
-      <nav className="relative z-10 max-w-screen-2xl w-full flex flex-col items-center h-24 xl:flex-row xl:justify-between xl:py-4 xl:px-12">
+      <nav className="relative z-10 max-w-screen-2xl w-full flex flex-col items-center xl:flex-row xl:justify-between xl:py-4 xl:px-12">
         <div className="hidden xl:block">
           <LogoLink />
         </div>
-        <div className="z-20 flex w-full justify-between items-center pt-4 px-4 xl:hidden">
+        <div className="z-20 flex w-full justify-between items-center p-4 xl:hidden">
           <LogoLink />
           <Hamburger
             rounded
             toggled={isOpen}
             toggle={setIsOpen}
-            color="white"
+            color="beige"
           />
         </div>
         {isOpen && (

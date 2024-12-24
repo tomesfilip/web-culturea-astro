@@ -1,35 +1,32 @@
 import { CULTUREA_YEAR } from '../../constants';
-import { FooterLogo } from '../footer/FooterLogo';
 import { SocialList } from '../footer/SocialList';
+import { LogoLink } from '../header/LogoLink';
 
 export const Footer = () => {
   return (
     <footer id="kontakt" className="bg-dark-green text-beige">
-      <div className="relative w-full max-w-screen-2xl mx-auto pt-24 pb-8 flex flex-col items-center">
-        <div className="hidden lg:block lg:absolute left-4 z-[2]">
-          <SocialList />
+      <div className="relative w-full pt-24 pb-8 flex flex-col max-w-screen-lg px-4 lg:px-0 mx-auto gap-y-12">
+        <div className="text-xl w-full">
+          <p className="pb-5">
+            Tento web není oficiální stránkou Univerzity Tomáše Bati ve Zlíně.
+            Jedná se o web <br />
+            k projektu Culturea, který je spravován studenty v rámci předmětu
+            <br />
+            Komunikační agentura Fakulty multimediálních komunikací Univerzity
+            Tomáše Bati ve Zlíně.
+          </p>
+          <p>
+            Obsahový a technický správce: Ondřej Staněk,&nbsp;
+            <a href="mailto:ostanek@utb.cz" className="underline">
+              ostanek@utb.cz
+            </a>
+          </p>
         </div>
-        <div className="flex flex-wrap justify-center lg:justify-between gap-8 lg:gap-12 xl:gap-20 px-4 py-12 sm:px-8 lg:px-20">
-          <div className="text-white text-xl w-full max-w-[620px] xl:max-w-[796px]">
-            <p className="pb-5">
-              Tento web není oficiální stránkou Univerzity Tomáše Bati ve Zlíně.
-              Jedná se o web <br />
-              k projektu Culturea, který je spravován studenty v rámci předmětu
-              <br />
-              Komunikační agentura Fakulty multimediálních komunikací Univerzity
-              Tomáše Bati ve Zlíně.
-            </p>
-            <p>
-              Obsahový a technický správce: Ondřej Staněk,&nbsp;
-              <a href="mailto:ostanek@utb.cz">ostanek@utb.cz</a>
-            </p>
-          </div>
-          <FooterLogo />
+        <div className="flex justify-between items-center">
+          <LogoLink />
+          <SocialList isWhiteColor />
         </div>
-        <div className="block lg:hidden my-8">
-          <SocialList />
-        </div>
-        <div className="text-white text-center">
+        <div className="text-center">
           © {CULTUREA_YEAR}, Všechna práva vyhrazena
         </div>
       </div>
