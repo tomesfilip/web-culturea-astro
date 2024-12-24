@@ -7,7 +7,7 @@ export const SectionOrganizer = () => {
     <Section id="kontakty" className="bg-beige">
       <div className="w-full max-w-screen-lg mx-auto space-y-20">
         <h3 className="text-dark-green">Kontakt</h3>
-        <div className="w-full grid md:grid-cols-2 gap-10">
+        <div className="w-full flex flex-col md:flex-row justify-between gap-10">
           <ContactItem
             name="Aneta Skácelova"
             position="Manažerka projektu"

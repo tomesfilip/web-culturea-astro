@@ -13,11 +13,13 @@ import { ScrollToTopButton } from '../components/buttons/ScrollTopButton';
 import { CULTUREA_YEAR } from '../constants';
 
 import '../styles/headingStyles.css';
+import { Strip } from '../components/strip/Strip';
 ---
 
 <Layout title={`Culturea ${CULTUREA_YEAR}`}>
   <ScrollToTopButton />
   <SectionLanding slot="heroSection" />
+  <Strip />
   <SectionAbout />
   <SectionCountries />
   <SectionProgram client:only="react" />
