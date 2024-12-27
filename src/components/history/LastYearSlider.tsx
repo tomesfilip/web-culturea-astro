@@ -21,7 +21,7 @@ const images = [
 
 export const LastYearSlider = () => {
   const [selectedImgId, setSelectedImgId] = useState(-1);
-  const swiperRef = useRef<SwiperCore>();
+  const swiperRef = useRef<SwiperCore>(null);
 
   return (
     <div className="w-full space-y-16">

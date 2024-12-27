@@ -1,4 +1,4 @@
-import type { TPartnerItem, TPartnerList } from '../lib/types/TPartnerItem';
+import type { TPartnerList } from '../lib/types/TPartnerItem';
 
 import co from '../assets/img/partners/basic/co_logo.png';
 import cokoKral from '../assets/img/partners/basic/coko_kral_logo.png';
