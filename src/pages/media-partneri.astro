@@ -1,0 +1,68 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import { MediaItem } from '../components/media/MediaItem';
+import { Section } from '../components/shared/Section';
+import { PartnerList } from '../components/partners/PartnerList';
+
+import { CULTUREA_YEAR } from '../constants';
+import '../styles/headingStyles.css';
+
+import pressIcon from '../assets/img/icons/press-icon.svg';
+import visualIcon from '../assets/img/icons/visual-icon.svg';
+import imagesIcon from '../assets/img/icons/images-icon.svg';
+---
+
+<Layout title={`Culturea ${CULTUREA_YEAR} - Media a Partneři`}>
+  <Section
+    id="pro-media"
+    className="mt-12 lg:mt-20 bg-beige"
+    headlineClassName="text-dark-green"
+    title="Pro média"
+  >
+    <div
+      class="flex flex-wrap gap-x-16 gap-y-20 justify-center max-w-[800px] mx-auto"
+    >
+      <MediaItem
+        img={visualIcon}
+        imgAlt="deska na malování"
+        text=`Vizuál ${CULTUREA_YEAR}`
+        link="https://drive.google.com/drive/folders/1j9ad7MkIAUgtWpoTbrjcJCN5QQHbabYU"
+      />
+      <MediaItem
+        img={pressIcon}
+        imgAlt="soubor"
+        text="Tiskové zprávy"
+        link="https://drive.google.com/drive/folders/1KfVJSyo5t9LDgNVdmrIyMkPK507j7G-v"
+      />
+      <MediaItem
+        img={imagesIcon}
+        imgAlt=""
+        text="Fotografie z loňského ročníku"
+        link=""
+      />
+      <MediaItem img={imagesIcon} imgAlt="" link="">
+        <a
+          class="text-base md:text-lg font-semibold underline text-dark-green"
+          href="mailto:pr@culturea.cz"
+        >
+          pr@culturea.cz
+        </a>
+        <a
+          class="text-base md:text-lg font-semibold underline text-dark-green"
+          href="tel:+420773249592"
+        >
+          (+420) 773 249 592
+        </a>
+      </MediaItem>
+    </div>
+  </Section>
+  <Section
+    id="last-year-sponsors"
+    title="Minulý rok nás sponzorovali:"
+    headlineClassName="text-dark-green"
+    className="bg-beige"
+  >
+    <PartnerList />
+  </Section>
+</Layout>

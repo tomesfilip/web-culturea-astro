@@ -21,18 +21,10 @@ const images = [
 
 export const LastYearSlider = () => {
   const [selectedImgId, setSelectedImgId] = useState(-1);
-  const swiperRef = useRef<SwiperCore>();
+  const swiperRef = useRef<SwiperCore>(null);
 
   return (
     <div className="w-full space-y-16">
-      <div className="w-full text-center text-white">
-        <p className="text-xl leading-none lg:text-[45px] uppercase xl:leading-[60px] font-headline">
-          Kuba a Maroko
-        </p>
-        <p className="text-xl leading-none lg:text-[45px] font-bold xl:leading-[60px] font-headline">
-          2024
-        </p>
-      </div>
       <Lightbox
         index={selectedImgId}
         open={selectedImgId >= 0}

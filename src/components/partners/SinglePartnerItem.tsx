@@ -12,7 +12,7 @@ export const SinglePartnerItem = ({ headline, img, alt, link }: Props) => {
         alt={alt}
         width={400}
         height={300}
-        className="h-[90px] object-contain"
+        className="max-h-[90px] object-contain h-auto"
         loading="lazy"
       />
     </a>
@@ -22,7 +22,7 @@ export const SinglePartnerItem = ({ headline, img, alt, link }: Props) => {
       alt={alt}
       width={400}
       height={300}
-      className="h-[90px] object-contain"
+      className="max-h-[90px] object-contain h-auto"
       loading="lazy"
     />
   );

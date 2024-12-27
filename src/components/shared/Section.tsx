@@ -1,32 +1,30 @@
 import type { ReactNode } from 'react';
 
 type Props = {
-  sectionId: string;
+  id: string;
   children: ReactNode;
-  sectionName?: string;
+  title?: string;
   className?: string;
   background?: string;
   headlineClassName?: string;
 };
 
 export const Section = ({
-  sectionId,
+  id,
   children,
-  sectionName,
+  title,
   className,
   headlineClassName,
 }: Props) => {
   return (
     <section
-      id={sectionId}
-      className={`flex flex-col items-center my-12 lg:my-16 ${className}`}
+      id={id}
+      className={`flex flex-col w-full items-center py-12 lg:py-16 px-4 lg:px-20 xl:px-24 ${className}`}
     >
-      {sectionName && (
-        <h2 className={`text-center mb-8 xl:mb-12 ${headlineClassName}`}>
-          {sectionName}
-        </h2>
-      )}
-      <div className="w-full max-w-screen-2xl flex flex-col items-center">
+      <div className="w-full max-w-screen-2xl">
+        {title && (
+          <h2 className={`mb-8 xl:mb-12 ${headlineClassName}`}>{title}</h2>
+        )}
         {children}
       </div>
     </section>

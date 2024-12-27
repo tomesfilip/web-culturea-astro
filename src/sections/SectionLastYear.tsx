@@ -1,5 +1,4 @@
 import { LastYearSlider } from '../components/history/LastYearSlider';
-import { LastYearVideo } from '../components/history/LastYearVideo';
 import { ThisYearVideo } from '../components/history/ThisYearVideo';
 
 import { Section } from '../components/shared/Section';
@@ -9,14 +8,28 @@ import '../styles/dashedBorder.css';
 export const SectionLastYear = () => {
   return (
     <Section
-      sectionId="historie"
-      sectionName="Minulý ročník"
-      className="py-12 lg:py-[120px] xl:py-[160px] bg-[url('/pozadi/desktop/last-year-bg.webp')] bg-cover bg-no-repeat px-4"
+      id="historie"
+      className="py-12 lg:py-[120px] xl:py-[160px] px-4 bg-dark-brown gap-y-12"
       headlineClassName="text-white"
     >
-      <LastYearSlider />
-      <ThisYearVideo />
-      <div className="space-y-8 text-white py-8 flex flex-col items-center max-w-[800px]">
+      <div className="space-y-8">
+        <div className="space-y-4">
+          <h3 className="text-white">Minulý ročník</h3>
+          <LastYearSlider />
+        </div>
+        <div className="space-y-8">
+          <div className="w-full text-center text-white">
+            <p className="text-xl leading-none lg:text-[45px] uppercase xl:leading-[60px] font-headline">
+              Kuba a Maroko
+            </p>
+            <p className="text-xl leading-none lg:text-[45px] font-bold xl:leading-[60px] font-headline">
+              2024
+            </p>
+          </div>
+          <ThisYearVideo />
+        </div>
+      </div>
+      {/* <div className="space-y-8 text-white py-8 flex flex-col items-center max-w-[800px]">
         <div className="space-y-2">
           <h3 className="text-center">Kuba</h3>
           <p>
@@ -60,7 +73,7 @@ export const SectionLastYear = () => {
             k autentickým interakcím a novým poznáním.
           </p>
         </div>
-      </div>
+      </div> */}
     </Section>
   );
 };

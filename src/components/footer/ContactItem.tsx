@@ -1,13 +1,23 @@
-import type { TContactItem } from '../../lib/types/TContactItem';
+interface Props {
+  name: string;
+  position: string;
+  mail: string;
+  phone: string;
+}
 
-export const ContactItem = ({ contactName, contactMail }: TContactItem) => {
+export const ContactItem = ({ name, position, mail, phone }: Props) => {
   return (
-    <div
-      className="contact-item text-[19px] text-center xl:text-left"
-      key={contactName}
-    >
-      <h4 className="font-bold">{contactName}</h4>
-      <a href={`mailto:${contactMail}`}>{contactMail}</a>
+    <div className="space-y-4">
+      <h4 className="font-bold mb-4 text-2xl">{name}</h4>
+      <div className="">
+        <p>{position}</p>
+        <a className="block" href={`mailto:${mail}`}>
+          {mail}
+        </a>
+        <a className="block" href={`tel:${phone}`}>
+          {phone}
+        </a>
+      </div>
     </div>
   );
 };

@@ -1,18 +1,33 @@
-import { socialItems } from '../../data/footerItems';
+import { Facebook, Instagram, Youtube } from '../icons/Socials';
 
-import { SocialItem } from './SocialItem';
+interface Props {
+  isWhiteColor?: boolean;
+}
 
-export const SocialList = () => {
+export const SocialList = ({ isWhiteColor }: Props) => {
   return (
-    <div className="flex flex-row lg:flex-col gap-6 opacity-50">
-      {socialItems.map(({ imgSrc, imgAlt, socLink }) => (
-        <SocialItem
-          key={socLink}
-          imgSrc={imgSrc}
-          imgAlt={imgAlt}
-          socLink={socLink}
-        />
-      ))}
+    <div className="flex gap-6">
+      <a
+        href="https://www.instagram.com/culturea/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Instagram isWhiteFill={isWhiteColor} />
+      </a>
+      <a
+        href="https://www.facebook.com/Culturea"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Facebook isWhiteFill={isWhiteColor} />
+      </a>
+      <a
+        href="https://www.youtube.com/@jsmeculturea"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Youtube isWhiteFill={isWhiteColor} />
+      </a>
     </div>
   );
 };

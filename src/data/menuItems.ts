@@ -1,28 +1,28 @@
-import type { TMenuLink } from '../lib/types/TMenuLink';
+import type { MenuLinkProps } from '../components/header/MenuLink';
 
-export const menuItems: TMenuLink[] = [
-  {
-    url: '/#o-festivalu',
-    title: 'O festivalu',
-  },
+export const menuItems: MenuLinkProps[] = [
+  // {
+  //   url: '/#o-festivalu',
+  //   title: 'O festivalu',
+  // },
   // {
   //   url: '/#program',
   //   title: 'Program',
   // },
+  // {
+  //   url: './blog',
+  //   title: 'Články',
+  // },
+  // {
+  //   url: '/partneri',
+  //   title: 'Partneři',
+  // },
   {
-    url: './clanky',
-    title: 'Články',
+    url: '/kontakty',
+    title: 'Kontakty',
   },
   {
-    url: '/partneri',
-    title: 'Partneři',
-  },
-  {
-    url: '/media',
-    title: 'Pro media',
-  },
-  {
-    url: '/#tym',
-    title: 'Kontakt',
+    url: '/media-partneri',
+    title: 'Pro média a partneři',
   },
 ];

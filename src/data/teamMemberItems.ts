@@ -1,25 +1,21 @@
-import type { TTeamMemberItem } from '../lib/types/TTeamMemberItem';
+import AnetaSkacelova from '../assets/img/portrety-manazeru/anet-skacelova.webp';
+import MartinaBrundova from '../assets/img/portrety-manazeru/martina-brundova.webp';
+import NatalieEgartova from '../assets/img/portrety-manazeru/naty-egartova.webp';
+import NatalieLambova from '../assets/img/portrety-manazeru/naty-lambova.webp';
+import NikolUngvari from '../assets/img/portrety-manazeru/nikol-ungvari.webp';
+import RenataHucmanova from '../assets/img/portrety-manazeru/renat-hucmanova.webp';
+import VendulaSkalova from '../assets/img/portrety-manazeru/vendy-skalova.webp';
+import ViktoriaKocmanova from '../assets/img/portrety-manazeru/viky-kocmanova.webp';
 
-import AnetaSkacelova from '../assets/img/portrety-manazeru/AnetaSkacelova.webp';
-import MartinaBrundova from '../assets/img/portrety-manazeru/MartinaBrundova.webp';
-import NatalieEgartova from '../assets/img/portrety-manazeru/NatalieEgartova.webp';
-import NatalieLambova from '../assets/img/portrety-manazeru/NatalieLambova.webp';
-import NikolUngvari from '../assets/img/portrety-manazeru/NikolUngvari.webp';
-import RenataHucmanova from '../assets/img/portrety-manazeru/RenataHucmanova.webp';
-import VendulaSkalova from '../assets/img/portrety-manazeru/VendulaSkalova.webp';
-import ViktoriaKocmanova from '../assets/img/portrety-manazeru/ViktoriaKocmanova.webp';
-
-export const teamMemberItems: TTeamMemberItem[] = [
+export const teamMemberItems = [
   {
-    id: 0,
     name: 'Aneta Skácelová',
     position: 'Manažerka projektu',
     email: 'ahoj@culturea.cz',
     img: AnetaSkacelova,
-    phone: '724 919 193',
+    phone: '(+420) 724 919 193',
   },
   {
-    id: 1,
     name: 'Renáta Hucmanová',
     position: 'Manažerka produkce',
     email: 'produkce@culturea.cz',
@@ -27,7 +23,6 @@ export const teamMemberItems: TTeamMemberItem[] = [
     phone: '(+421) 949 357 893',
   },
   {
-    id: 2,
     name: 'Viktória Kocmanová',
     position: 'Manažerka produkce',
     email: 'produkce@culturea.cz',
@@ -35,43 +30,38 @@ export const teamMemberItems: TTeamMemberItem[] = [
     phone: '(+421) 948 233 456',
   },
   {
-    id: 3,
     name: 'Nikol Ungvári',
     position: 'PR manažerka',
     email: 'pr@culturea.cz',
     img: NikolUngvari,
-    phone: '773 249 592',
+    phone: '(+420) 773 249 592',
   },
   {
-    id: 4,
     name: 'Martina Břundová',
     position: 'Promo manažerka',
     email: 'promo@culturea.cz',
     img: MartinaBrundova,
-    phone: '702 543 033',
+    phone: '(+420) 702 543 033',
   },
   {
-    id: 5,
     name: 'Natalie Lambova',
     position: 'Promo manažerka',
     email: 'promo@culturea.cz',
     img: NatalieLambova,
-    phone: '731 063 867',
+    phone: '(+420) 731 063 867',
   },
   {
-    id: 6,
     name: 'Natálie Egartová',
-    position: 'Art manažerka (grafika, videospot)',
+    position: 'Art manažerka',
     email: 'art@culturea.cz',
     img: NatalieEgartova,
-    phone: '731 856 863',
+    phone: '(+420) 731 856 863',
   },
   {
-    id: 7,
     name: 'Vendula Skalová',
-    position: 'Art manažerka (výzdoba, dekorace)',
+    position: 'Art manažerka',
     email: 'art@culturea.cz',
     img: VendulaSkalova,
-    phone: '730 829 330',
+    phone: '(+420) 730 829 330',
   },
 ];

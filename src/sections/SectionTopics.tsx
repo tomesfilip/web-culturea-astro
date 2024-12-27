@@ -5,9 +5,9 @@ import { topicItems } from '../data/topicItems';
 export const SectionTopics = () => {
   return (
     <Section
-      sectionId="temata"
+      id="temata"
       className="pb-20"
-      sectionName="Témata, na která se můžete těšit."
+      title="Témata, na která se můžete těšit."
       headlineClassName="font-bold text-2xl lg:text-5xl pb-8 mx-2"
     >
       <div className="space-y-16 px-4 lg:px-8">

@@ -3,43 +3,19 @@ import { Section } from '../components/shared/Section';
 
 export const SectionLanding = () => {
   return (
-    <>
-      <Section
-        sectionId="landing"
-        className="text-white px-4 p-24 pb-12 lg:px-0 relative"
-      >
-        <div className="absolute left-8 top-1/2 -translate-y-1/2 hidden lg:block">
+    <Section
+      id="landing"
+      className="text-white px-4 p-24 pb-12 lg:px-0 lg:pt-[96px] relative h-[70svh] md:h-[80svh] flex flex-col items-center justify-center bg-[url('/pozadi/hero-mob.svg')] md:bg-[url('/pozadi/hero.svg')] bg-cover bg-right-top md:bg-center bg-no-repeat mt-[80px]"
+    >
+      <div className="flex flex-col items-center mx-auto max-w-[400px] lg:max-w-none text-center">
+        <h1 className="hidden">Irsko a Nový Zéland</h1>
+        <div className="bg-beige text-dark-green max-w-[220px] md:max-w-[340px] py-12 rounded-tr-[400px] rounded-br-[400px] flex flex-col gap-8 md:gap-16 px-8 md:absolute md:bottom-0 md:-translate-x-1/3">
+          <h2 className="text-4xl md:text-6xl text-left font-semibold">
+            Irsko <br />& Nový Zéland
+          </h2>
           <SocialList />
         </div>
-        <div className="flex flex-col items-center mx-auto max-w-[400px] lg:max-w-none text-center">
-          <img
-            src="/ikony/logo-znak.svg"
-            alt="Logo"
-            className="mb-8 w-32 h-auto"
-          />
-          <h1 className="hidden">ODHALENÍ ZEMÍ 13. ROČNÍKU JIŽ BRZY!</h1>
-          <h2 className="text-2xl lg:text-6xl font-bold mb-4">
-            ODHALENÍ ZEMÍ 13. ROČNÍKU JIŽ BRZY!
-          </h2>
-          <div className="text-xl lg:text-3xl flex flex-wrap justify-around gap-5 lg:gap-14 pb-20 mb-20 w-5/5 lg:w-max">
-            <a
-              className="underline"
-              target="_blank"
-              href="https://www.instagram.com/culturea/"
-            >
-              Sleduj nás na Instagramu
-            </a>
-            {/* <p className="order-2 lg:order-1">3. dubna 2024</p>
-            <p className="order1 lg:order-2 w-full lg:max-w-max">
-              14|15 Baťův institut kavárna, Zlín
-            </p>
-            <p className="order-3 lg:order-3">13. ročník</p> */}
-          </div>
-          <div className="block lg:hidden">
-            <SocialList />
-          </div>
-        </div>
-      </Section>
-    </>
+      </div>
+    </Section>
   );
 };

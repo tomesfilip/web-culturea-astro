@@ -64,9 +64,9 @@ export const MapSvg = () => {
   };
 
   return (
-    <div className="map-svg w-full relative justify-center items-center hidden md:flex h-[80vh] overflow-hidden">
+    <div className="map-svg w-full relative justify-center items-center flex h-[80vh] overflow-hidden">
       {countryTooltip && (
-        <h2 className="absolute bottom-[30%] left-1/2 -translate-x-1/2 bg-orange-1 text-white rounded-lg px-6 py-4 z-10 pointer-events-none">
+        <h2 className="absolute bottom-[30%] left-1/2 -translate-x-1/2 bg-orange-1 text-beige bg-dark-green/80 rounded-lg px-6 py-4 z-10 pointer-events-none">
           {countryTooltip}
         </h2>
       )}

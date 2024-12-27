@@ -1,9 +1,7 @@
 import type { TContactItem } from '../lib/types/TContactItem';
-import type { TSocialItem } from '../lib/types/TSocialItem';
 
 import fbLogo from '../assets/img/icons/facebook.svg?url';
 import igLogo from '../assets/img/icons/instagram.svg?url';
-import sfLogo from '../assets/img/icons/spotify.svg?url';
 import ytLogo from '../assets/img/icons/youtube.svg?url';
 
 export const contactItems: TContactItem[] = [
@@ -33,7 +31,7 @@ export const contactItems: TContactItem[] = [
   },
 ];
 
-export const socialItems: TSocialItem[] = [
+export const socialItems = [
   {
     imgSrc: igLogo,
     imgAlt: 'Culturea instagram',
