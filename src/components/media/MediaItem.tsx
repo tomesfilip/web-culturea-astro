@@ -21,7 +21,7 @@ export const MediaItem = ({
       <a
         key={link}
         href={link}
-        className="flex flex-col items-center justify-center media-item xl:flex-row gap-x-4 xl:gap-x-8 gap-y-4 xl:gap-y-0"
+        className="flex flex-col items-center justify-center media-item xl:flex-row gap-x-4 xl:gap-x-8 gap-y-4 xl:gap-y-0 underline text-dark-green"
         target="_blank"
         rel="noopener noreferrer"
       >

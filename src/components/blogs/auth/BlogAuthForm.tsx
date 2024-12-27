@@ -27,12 +27,12 @@ export const BlogAuthForm = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     await login();
-    window.location.href = '/clanky';
+    window.location.href = '/blog';
   };
 
   return (
     <form
-      action="/clanky"
+      action="/blog"
       onSubmit={(e) => handleSubmit(e)}
       className="flex flex-col flex-wrap gap-y-8 w-[90%] max-w-sm bg-white rounded-lg p-4 z-20 mx-auto"
     >

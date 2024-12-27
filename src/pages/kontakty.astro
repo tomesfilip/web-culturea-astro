@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import { Section } from '../components/shared/Section';
+
+import { CULTUREA_YEAR } from '../constants';
+import '../styles/headingStyles.css';
+import { teamMemberItems } from '../data/teamMemberItems';
+import { TeamMemberItem } from '../components/team/TeamMemberItem';
+import { ScrollToTopButton } from '../components/buttons/ScrollTopButton';
+---
+
+<Layout title={`Culturea ${CULTUREA_YEAR} - Kontakty`}>
+  <ScrollToTopButton />
+  <Section
+    id="kontakty"
+    className="mt-12 lg:mt-20 bg-beige"
+    headlineClassName="text-dark-green"
+    title="Kontakty"
+  >
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-stretch gap-4 items-stretch gap-y-4 sm:gap-y-16 md:gap-y-24"
+    >
+      {
+        teamMemberItems.map(({ name, position, email, phone, img }, index) => (
+          <TeamMemberItem
+            isEven={index % 2 === 0}
+            name={name}
+            position={position}
+            email={email}
+            img={img}
+            phone={phone}
+          />
+        ))
+      }
+    </div>
+  </Section>
+</Layout>

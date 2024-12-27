@@ -42,34 +42,7 @@ export const TeamMemberList = ({ teamMembers }: Props) => {
           onClick={() => swiperRef.current?.slideNext()}
           isTopOffset
         />
-        <Swiper
-          onBeforeInit={(swiper) => {
-            swiperRef.current = swiper;
-          }}
-          loop
-          autoHeight
-          grabCursor
-          breakpoints={{
-            640: {
-              slidesPerView: 1,
-            },
-            720: {
-              slidesPerView: 2,
-            },
-            1024: {
-              slidesPerView: 3,
-            },
-            1200: {
-              slidesPerView: 4,
-            },
-          }}
-        >
-          {teamMembers.map((teamMember, index) => (
-            <SwiperSlide key={teamMember.id}>
-              <TeamMemberItemSwiper isEven={index % 2 === 0} {...teamMember} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <TeamMemberItemSwiper isEven={index % 2 === 0} {...teamMember} />
       </div>
     </div>
   );

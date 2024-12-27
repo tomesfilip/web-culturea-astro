@@ -10,7 +10,7 @@ export const menuItems: MenuLinkProps[] = [
   //   title: 'Program',
   // },
   // {
-  //   url: './clanky',
+  //   url: './blog',
   //   title: 'Články',
   // },
   // {

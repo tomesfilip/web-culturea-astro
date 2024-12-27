@@ -6,7 +6,11 @@ import { menuItems } from '../../data/menuItems';
 import { LogoLink } from '../header/LogoLink';
 import { MenuLink } from '../header/MenuLink';
 
-export const Header = () => {
+interface Props {
+  path?: string;
+}
+
+export const Header = ({ path }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuVariants = {
@@ -62,7 +66,7 @@ export const Header = () => {
         <ul className="flex-row items-center hidden space-x-8 xl:flex text-beige">
           {menuItems.map((menuItem) => (
             <motion.li key={menuItem.title} onClick={() => setIsOpen(false)}>
-              <MenuLink {...menuItem} />
+              <MenuLink currPath={path} {...menuItem} />
             </motion.li>
           ))}
           {/* <TicketButton /> */}
