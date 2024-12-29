@@ -34,7 +34,7 @@ export const BlogAuthForm = () => {
     <form
       action="/blog"
       onSubmit={(e) => handleSubmit(e)}
-      className="flex flex-col flex-wrap gap-y-8 w-[90%] max-w-sm bg-white rounded-lg p-4 z-20 mx-auto"
+      className="flex flex-col flex-wrap gap-y-8 w-[90%] max-w-sm bg-beige rounded-lg p-4 z-20 mx-auto"
     >
       <div className="space-y-3">
         <LabelledInput

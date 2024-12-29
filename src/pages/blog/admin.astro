@@ -2,8 +2,11 @@
 import { BlogAuthForm } from '../../components/blogs/auth/BlogAuthForm';
 import { CULTUREA_YEAR } from '../../constants';
 import Layout from '../../layouts/Layout.astro';
+import { Section } from '../../components/shared/Section';
 ---
 
 <Layout title={`Culturea ${CULTUREA_YEAR} - Administrator`}>
-  <BlogAuthForm client:only />
+  <Section id="blog - admin" className="mt-[80px] bg-beige">
+    <BlogAuthForm client:only />
+  </Section>
 </Layout>

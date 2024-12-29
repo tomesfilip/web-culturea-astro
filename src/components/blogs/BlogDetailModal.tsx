@@ -13,7 +13,7 @@ type Props = {
 
 const appear = {
   hidden: {
-    y: '-100vh',
+    y: '-100',
     opacity: 0,
   },
   visible: {
@@ -21,7 +21,7 @@ const appear = {
     opacity: 1,
   },
   exit: {
-    y: '100vh',
+    y: '100',
     opacity: 0,
   },
 };

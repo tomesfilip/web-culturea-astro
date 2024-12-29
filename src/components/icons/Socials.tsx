@@ -13,7 +13,7 @@ export const Instagram = ({ isWhiteFill }: Props) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={clsx(
-        'fill-dark-green size-7 md:size-12',
+        'size-7 md:size-12',
         isWhiteFill ? 'fill-beige' : 'fill-dark-green',
       )}
     >
@@ -33,7 +33,7 @@ export const Facebook = ({ isWhiteFill }: Props) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={clsx(
-        'fill-dark-green size-7 md:size-12',
+        'size-7 md:size-12',
         isWhiteFill ? 'fill-beige' : 'fill-dark-green',
       )}
     >
@@ -51,7 +51,7 @@ export const Youtube = ({ isWhiteFill }: Props) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={clsx(
-        'fill-dark-green size-7 md:size-12',
+        'size-7 md:size-12',
         isWhiteFill ? 'fill-beige' : 'fill-dark-green',
       )}
     >

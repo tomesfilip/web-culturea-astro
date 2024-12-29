@@ -6,7 +6,7 @@ export const UtbLogo = () => {
       viewBox="0 0 380 55"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="w-full max-w-fit"
+      className="w-full lg:w-auto max-w-fit"
     >
       <g clipPath="url(#clip0_1_845)">
         <path
