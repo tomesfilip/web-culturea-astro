@@ -9,7 +9,7 @@ export const SectionLanding = () => {
     >
       <div className="flex flex-col items-center mx-auto max-w-[400px] lg:max-w-none text-center">
         <h1 className="hidden">Irsko a Nový Zéland</h1>
-        <div className="bg-beige text-dark-green max-w-[220px] md:max-w-[340px] py-12 rounded-tr-[400px] rounded-br-[400px] flex flex-col gap-8 md:gap-16 px-8 md:absolute md:bottom-0 md:-translate-x-1/3">
+        <div className="bg-beige text-dark-green max-w-[220px] md:max-w-[340px] py-12 rounded-tr-[400px] rounded-br-[400px] flex flex-col gap-8 md:gap-16 px-8 md:absolute md:bottom-0 md:-translate-x-1/3 xl:-translate-x-[22%]">
           <h2 className="text-4xl md:text-6xl text-left font-semibold">
             Irsko <br />& Nový Zéland
           </h2>

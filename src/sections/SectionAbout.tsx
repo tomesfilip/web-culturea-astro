@@ -8,7 +8,7 @@ import aboutImg3 from '../assets/img/about/about-3.webp';
 export const SectionAbout = () => {
   return (
     <Section id="o-festivalu" className="bg-light-green">
-      <div className="flex flex-col xl:flex-row justify-between text-beige gap-x-24 gap-y-12 py-20">
+      <div className="flex flex-col xl:flex-row justify-between text-beige gap-x-24 gap-y-12 lg:px-20 py-20">
         <div className="w-full max-w-[500px] lg:max-w-[600px]">
           <h3 className="font-bold text-4xl mb-2">O festivalu</h3>
           <AboutTextColumn />

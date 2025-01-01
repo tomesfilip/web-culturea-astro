@@ -1,4 +1,4 @@
-import video from '../../assets/videos/culturea-spot.mp4';
+import video from '../../assets/videos/culturea-2024-aftermovie.mp4';
 
 export const ThisYearVideo = () => {
   return (

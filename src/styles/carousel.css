@@ -1,0 +1,50 @@
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  width: max-content;
+  transform: translateX(0);
+  animation: slide 20s linear infinite;
+}
+
+.carousel > div {
+  flex-shrink: 0;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
+  }
+}
+
+@-moz-keyframes slide {
+  0% {
+    -moz-transform: translateX(0);
+  }
+  100% {
+    -moz-transform: translateX(-50%);
+  }
+}
+
+@-o-keyframes slide {
+  0% {
+    -o-transform: translateX(0);
+  }
+  100% {
+    -o-transform: translateX(-50%);
+  }
+}

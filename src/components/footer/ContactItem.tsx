@@ -7,7 +7,7 @@ interface Props {
 
 export const ContactItem = ({ name, position, mail, phone }: Props) => {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 text-dark-green">
       <h4 className="font-bold mb-4 text-2xl">{name}</h4>
       <div className="">
         <p>{position}</p>
