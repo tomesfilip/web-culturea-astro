@@ -21,14 +21,16 @@ const countries = [
 export const SectionCountries = () => {
   return (
     <Section id="zeme" className="bg-light-green text-beige xl:px-0">
-      <h3 className="px-4 lg:px-20 xl:px-24">Země 2025</h3>
-      {countries.map((country, index) => (
-        <CountryItem
-          key={country.headline}
-          isEven={index % 2 === 0}
-          {...country}
-        />
-      ))}
+      <h3 className="px-4 lg:px-16 mb-8 lg:mb-0">Země 2025</h3>
+      <div className="space-y-12 lg:space-y-0">
+        {countries.map((country, index) => (
+          <CountryItem
+            key={country.headline}
+            isEven={index % 2 === 0}
+            {...country}
+          />
+        ))}
+      </div>
     </Section>
   );
 };

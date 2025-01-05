@@ -25,13 +25,13 @@ export const Section = ({
     <section
       id={id}
       className={clsx(
-        'flex flex-col w-full items-center py-12 lg:py-16',
+        'flex flex-col w-full items-center py-12 lg:py-16 relative',
         noPXDesktop ? '' : 'lg:px-20 xl:px-24',
-        noPXMobile ? '' : 'px-4',
+        noPXMobile ? '' : 'px-6',
         className,
       )}
     >
-      <div className={clsx('w-full', noPXDesktop ? '' : 'max-w-screen-2xl')}>
+      <div className={clsx('w-full', noPXDesktop ? '' : 'max-w-screen-xl')}>
         {title && (
           <h2 className={`mb-8 xl:mb-12 ${headlineClassName}`}>{title}</h2>
         )}

@@ -312,7 +312,7 @@ export const HeroBg = () => {
         xmlns="http://www.w3.org/2000/svg"
         className="w-full h-full md:hidden absolute top-0 left-0"
       >
-        <g clip-path="url(#clip0_58_548)">
+        <g clipPath="url(#clip0_58_548)">
           <path d="M299 368H212V452H299V368Z" fill="#6A984D" />
           <path d="M214 368H0V452H214V368Z" fill="#DDA15E" />
           <path d="M308 136H172V368H308V136Z" fill="#234526" />

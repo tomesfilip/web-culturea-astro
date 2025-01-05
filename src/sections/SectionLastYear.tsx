@@ -12,10 +12,13 @@ export const SectionLastYear = () => {
       className="py-12 lg:py-[120px] xl:py-[160px] bg-dark-brown gap-y-12"
       headlineClassName="text-white"
       noPXDesktop
+      noPXMobile
     >
       <div className="space-y-8">
         <div className="space-y-4">
-          <h3 className="text-white max-w-screen-2xl ml-auto">Minulý ročník</h3>
+          <h3 className="text-white max-w-screen-2xl ml-auto px-6">
+            Minulý ročník
+          </h3>
           <LastYearSlider />
         </div>
         <div className="space-y-8">

@@ -1,11 +1,11 @@
 export const AboutTextColumn = () => {
   return (
     <div className="space-y-8">
-      <p className="text-xl font-bold tracking-wider">
+      <p className="lg:text-xl font-bold tracking-wider">
         Cestování do dalekých krajin může být mnohdy složité, ale co kdyby mohly
         ony dorazit k vám?
       </p>
-      <div className="text-lg lg:text-xl w-full space-y-4">
+      <div className="lg:text-xl w-full space-y-4">
         <p>
           Culturea je festival, který každoročně přináší atmosféru cizích krajin
           do Zlína a umožňuje návštěvníkům jejich poznání všemi smysly. Ať už
