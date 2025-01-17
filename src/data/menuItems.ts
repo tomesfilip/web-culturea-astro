@@ -9,14 +9,14 @@ export const menuItems: MenuLinkProps[] = [
   //   url: '/#program',
   //   title: 'Program',
   // },
-  // {
-  //   url: './blog',
-  //   title: 'Články',
-  // },
-  // {
-  //   url: '/partneri',
-  //   title: 'Partneři',
-  // },
+  {
+    url: '/blog',
+    title: 'Blog',
+  },
+  {
+    url: '/fotogalerie',
+    title: 'Fotogalerie',
+  },
   {
     url: '/kontakty',
     title: 'Kontakty',

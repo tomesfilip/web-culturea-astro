@@ -1,0 +1,56 @@
+---
+import { Image } from 'astro:assets';
+import { Section } from '../../components/shared/Section';
+import { galleryPages } from '../../data/galleryItems';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  return galleryPages.map(({ slug, title, text }) => {
+    return {
+      params: { slug },
+      props: { title, text, slug },
+    };
+  });
+}
+
+const { title, text, slug } = Astro.props;
+---
+
+<Layout title="Fotogalerie">
+  <Section id="fotogalerie" className="bg-beige" noPXDesktop noPXMobile>
+    <div class="px-4 lg:px-20 xl:px-24 space-y-12">
+      <h1 class="text-dark-green text-3xl font-semibold">Fotogalerie</h1>
+      <nav class="w-full">
+        <ul class="flex flex-col lg:flex-row justify-between">
+          {
+            galleryPages.map(({ title, slug }) => (
+              <li>
+                <a
+                  class="flex flex-col gap-2 cursor-pointer items-center font-semibold text-2xl text-dark-green px-2"
+                  href={slug}
+                >
+                  <span>{title}</span>
+                  <span>{slug}</span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+    </div>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 min-h-screen mx-auto gap-4 mt-20"
+    >
+      {
+        Array.from({ length: 12 }).map((_, i) => (
+          <Image
+            src={`/fotogalerie/${slug}/${i + 1}.webp`}
+            width={558}
+            height={372}
+            alt={`Culturea ${slug}- ${i + 1}`}
+          />
+        ))
+      }
+    </div>
+  </Section>
+</Layout>
