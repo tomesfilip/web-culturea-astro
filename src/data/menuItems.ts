@@ -14,7 +14,7 @@ export const menuItems: MenuLinkProps[] = [
     title: 'Blog',
   },
   {
-    url: '/fotogalerie',
+    url: '/fotogalerie/2024',
     title: 'Fotogalerie',
   },
   {
