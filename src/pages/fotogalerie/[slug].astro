@@ -20,7 +20,9 @@ const { title, text, slug } = Astro.props;
 
 <Layout title="Fotogalerie">
   <Section id="fotogalerie" className="bg-beige" noPXDesktop noPXMobile>
-    <div class="px-4 lg:px-20 xl:px-24 space-y-8 lg:space-y-20">
+    <div
+      class="px-4 lg:px-20 xl:px-24 space-y-8 lg:space-y-20 max-w-screen-xl mx-auto"
+    >
       <h1 class="text-dark-green text-3xl font-semibold">Fotogalerie</h1>
       <nav class="w-full">
         <ul class="flex justify-between overflow-x-auto lg:overflow-x-visible">
