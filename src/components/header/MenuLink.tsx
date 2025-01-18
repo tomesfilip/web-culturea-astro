@@ -7,6 +7,8 @@ export interface MenuLinkProps {
 }
 
 export const MenuLink = ({ url, title, currPath }: MenuLinkProps) => {
+  const isFotogalerie = currPath?.startsWith('/fotogalerie/');
+
   return (
     <a
       href={url}

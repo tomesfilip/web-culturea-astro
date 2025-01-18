@@ -23,7 +23,7 @@ const { title, text, slug } = Astro.props;
     <div class="px-4 lg:px-20 xl:px-24 space-y-8 lg:space-y-20">
       <h1 class="text-dark-green text-3xl font-semibold">Fotogalerie</h1>
       <nav class="w-full">
-        <ul class="flex justify-between overflow-x-auto">
+        <ul class="flex justify-between overflow-x-auto lg:overflow-x-visible">
           {
             galleryPages.map(({ title, slug: itemSlug }) => (
               <li class="relative pt-10 lg:pt-0 pb-4">
@@ -35,7 +35,7 @@ const { title, text, slug } = Astro.props;
                 />
                 <a
                   class={clsx(
-                    'flex flex-col gap-2 cursor-pointer items-center font-semibold text-center text-base lg:text-2xl text-dark-green px-2 w-[160px]',
+                    'flex flex-col gap-2 cursor-pointer items-center font-semibold text-center text-base lg:text-2xl text-dark-green px-2 w-[160px] lg:w-fit',
                     slug !== itemSlug && 'underline',
                   )}
                   href={itemSlug}
@@ -59,6 +59,7 @@ const { title, text, slug } = Astro.props;
             width={558}
             height={372}
             alt={`Culturea ${slug}- ${i + 1}`}
+            loading={i <= 6 ? 'eager' : 'lazy'}
           />
         ))
       }
