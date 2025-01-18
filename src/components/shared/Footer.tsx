@@ -4,7 +4,7 @@ import { LogoLink } from '../header/LogoLink';
 
 export const Footer = () => {
   return (
-    <footer id="kontakt" className="bg-dark-green text-beige">
+    <footer id="kontakt" className="bg-dark-green text-beige mt-auto">
       <div className="relative w-full pt-10 pb-4 flex flex-col max-w-screen-lg px-4 lg:px-0 mx-auto gap-y-10">
         <div className="w-full space-y-4">
           <p>
