@@ -32,7 +32,7 @@ export const LastYearSlider = () => {
           {[...images, ...images].map(({ id, src }, index) => (
             <div
               key={`carousel-img-${id}-${index}`}
-              className="max-w-[512px] max-h-[342px] px-4"
+              className="md:max-w-[512px] max-w-[198px] max-h-[128px] md:max-h-[342px] px-4"
               onClick={() => setSelectedImgId(id)}
             >
               <img

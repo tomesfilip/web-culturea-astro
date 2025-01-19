@@ -25,7 +25,9 @@ const { title, text, slug } = Astro.props;
     >
       <h1 class="text-dark-green text-3xl font-semibold">Fotogalerie</h1>
       <nav class="w-full">
-        <ul class="flex justify-between overflow-x-auto lg:overflow-x-visible">
+        <ul
+          class="flex justify-between overflow-x-auto lg:overflow-x-visible gap-x-2"
+        >
           {
             galleryPages.map(({ title, slug: itemSlug }) => (
               <li class="relative pt-10 lg:pt-0 pb-4">
@@ -37,12 +39,12 @@ const { title, text, slug } = Astro.props;
                 />
                 <a
                   class={clsx(
-                    'flex flex-col gap-2 cursor-pointer items-center font-semibold text-center text-base lg:text-2xl text-dark-green px-2 w-[160px] lg:w-fit',
+                    'flex flex-col lg:gap-2 cursor-pointer items-center font-semibold text-center text-base lg:text-2xl text-dark-green px-2 lg:w-fit leading-5',
                     slug !== itemSlug && 'underline',
                   )}
                   href={itemSlug}
                 >
-                  <span>{title}</span>
+                  <span class="inline whitespace-nowrap">{title}</span>
                   <span>{itemSlug}</span>
                 </a>
               </li>
