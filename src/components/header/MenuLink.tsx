@@ -7,10 +7,16 @@ export interface MenuLinkProps {
 }
 
 export const MenuLink = ({ url, title, currPath }: MenuLinkProps) => {
+  const isFotogalerie = currPath?.startsWith('/fotogalerie/');
+
+  const shouldUnderline =
+    currPath === '/' ||
+    (currPath !== url && !(isFotogalerie && url.startsWith('/fotogalerie/')));
+
   return (
     <a
       href={url}
-      className={clsx('text-lg lg:text-2xl', currPath !== url && 'underline')}
+      className={clsx('text-lg lg:text-2xl', shouldUnderline && 'underline')}
     >
       {title}
     </a>

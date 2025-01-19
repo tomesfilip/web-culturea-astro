@@ -1,0 +1,72 @@
+---
+import { Image } from 'astro:assets';
+import { Section } from '../../components/shared/Section';
+import { galleryPages } from '../../data/galleryItems';
+import Layout from '../../layouts/Layout.astro';
+import clsx from 'clsx';
+import { GalleryActiveIcon } from '../../components/icons/GalleryActiveIcon';
+
+export async function getStaticPaths() {
+  return galleryPages.map(({ slug, title, text }) => {
+    return {
+      params: { slug },
+      props: { title, text, slug },
+    };
+  });
+}
+
+const { title, text, slug } = Astro.props;
+---
+
+<Layout title="Fotogalerie">
+  <Section id="fotogalerie" className="bg-beige" noPXDesktop noPXMobile>
+    <div
+      class="px-4 lg:px-20 xl:px-24 space-y-8 lg:space-y-20 max-w-screen-xl mx-auto"
+    >
+      <h1 class="text-dark-green text-3xl font-semibold">Fotogalerie</h1>
+      <nav class="w-full">
+        <ul
+          class="flex justify-between overflow-x-auto lg:overflow-x-visible gap-x-2"
+        >
+          {
+            galleryPages.map(({ title, slug: itemSlug }) => (
+              <li class="relative pt-10 lg:pt-0 pb-4">
+                <GalleryActiveIcon
+                  className={clsx(
+                    'size-16 absolute -top-2 lg:-top-14 left-1/2 -translate-x-1/2 pointer-events-none',
+                    slug === itemSlug ? 'block' : 'hidden',
+                  )}
+                />
+                <a
+                  class={clsx(
+                    'flex flex-col lg:gap-2 cursor-pointer items-center font-semibold text-center text-base lg:text-2xl text-dark-green px-2 lg:w-fit leading-5',
+                    slug !== itemSlug && 'underline',
+                  )}
+                  href={itemSlug}
+                >
+                  <span class="inline whitespace-nowrap">{title}</span>
+                  <span>{itemSlug}</span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+    </div>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 min-h-screen mx-auto gap-4 mt-10 lg:mt-20"
+    >
+      {
+        Array.from({ length: 12 }).map((_, i) => (
+          <Image
+            src={`/fotogalerie/${slug}/${i + 1}.webp`}
+            width={558}
+            height={372}
+            alt={`Culturea ${slug}- ${i + 1}`}
+            loading={i <= 6 ? 'eager' : 'lazy'}
+          />
+        ))
+      }
+    </div>
+  </Section>
+</Layout>

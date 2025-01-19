@@ -77,8 +77,6 @@ export const ProgramIcon1 = ({ className }: Props) => (
 export const ProgramIcon2 = ({ className }: Props) => {
   return (
     <svg
-      width="173"
-      height="270"
       viewBox="0 0 173 270"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

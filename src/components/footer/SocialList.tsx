@@ -11,6 +11,7 @@ export const SocialList = ({ isWhiteColor }: Props) => {
         href="https://www.instagram.com/culturea/"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Instagram link"
       >
         <Instagram isWhiteFill={isWhiteColor} />
       </a>
@@ -18,6 +19,7 @@ export const SocialList = ({ isWhiteColor }: Props) => {
         href="https://www.facebook.com/Culturea"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Facebook link"
       >
         <Facebook isWhiteFill={isWhiteColor} />
       </a>
@@ -25,6 +27,7 @@ export const SocialList = ({ isWhiteColor }: Props) => {
         href="https://www.youtube.com/@jsmeculturea"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Youtube link"
       >
         <Youtube isWhiteFill={isWhiteColor} />
       </a>

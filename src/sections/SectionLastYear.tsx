@@ -14,12 +14,18 @@ export const SectionLastYear = () => {
       noPXDesktop
       noPXMobile
     >
-      <div className="space-y-8">
-        <div className="space-y-4">
+      <div className="space-y-20 md:space-y-4">
+        <div className="space-y-4 relative">
           <h3 className="text-white max-w-screen-2xl ml-auto px-6">
             Minulý ročník
           </h3>
           <LastYearSlider />
+          <a
+            className="bg-light-brown text-beige text-lg md:text-xl font-semibold shadow-lg tracking-wide px-8 py-2 md:py-3 rounded-full z-[2] absolute right-8 md:right-20 -bottom-8"
+            href="/fotogalerie/2024"
+          >
+            Fotogalerie
+          </a>
         </div>
         <div className="space-y-8">
           <div className="w-full text-center text-white">

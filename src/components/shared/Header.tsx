@@ -42,7 +42,7 @@ export const Header = ({ path }: Props) => {
         {isOpen && (
           <AnimatePresence>
             <motion.ul
-              className="flex flex-col items-center justify-center text-beige gap-y-6 xl:hidden absolute w-full bg-dark-green h-[32vh]"
+              className="flex flex-col items-center justify-center text-beige gap-y-6 xl:hidden absolute w-full bg-dark-green h-[38vh]"
               variants={menuVariants}
               initial="hidden"
               animate="visible"
