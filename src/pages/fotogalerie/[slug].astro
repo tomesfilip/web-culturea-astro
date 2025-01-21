@@ -42,7 +42,7 @@ const { title, text, slug } = Astro.props;
                     'flex flex-col lg:gap-2 cursor-pointer items-center font-semibold text-center text-base lg:text-2xl text-dark-green px-2 lg:w-fit leading-5',
                     slug !== itemSlug && 'underline',
                   )}
-                  href={itemSlug}
+                  href={`./${itemSlug}`}
                 >
                   <span class="inline whitespace-nowrap">{title}</span>
                   <span>{itemSlug}</span>
