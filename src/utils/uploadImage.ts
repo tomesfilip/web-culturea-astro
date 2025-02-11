@@ -29,6 +29,7 @@ export const uploadImage = async ({
   }
   try {
     setIsImageUploading(true);
+    if (!storage) return;
     const imageRef = ref(storage, `images/${image.name + v4()}`);
     const res = await uploadBytes(imageRef, image);
     const uploadedImgUrl = await getDownloadURL(res.ref);

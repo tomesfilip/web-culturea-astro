@@ -1,0 +1,30 @@
+---
+import { Section } from '../../components/shared/Section';
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from '../../utils/getBlogs';
+import { BlogDetail } from '../../components/blogs/BlogDetail';
+
+// Fetch all blog posts at build time
+export async function getStaticPaths() {
+  const blogs = await getCollection();
+
+  return blogs.map((blog) => ({
+    params: { id: blog.id }, // Generate /blog/[id]
+    props: { post: blog },
+  }));
+}
+
+// Get the current post from static props
+const { post } = Astro.props;
+
+// If no post is found, show a 404 page
+if (!post) {
+  throw Astro.redirect('/404');
+}
+---
+
+<Layout title={`Blog - ${post.title}`}>
+  <Section id="blog-detail"
+    >{post && <BlogDetail client:only="react" blog={post} />}
+  </Section>
+</Layout>

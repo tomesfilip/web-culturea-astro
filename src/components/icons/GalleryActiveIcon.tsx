@@ -10,7 +10,7 @@ export const GalleryActiveIcon = ({ className }: Props) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_240_202)">
+      <g clipPath="url(#clip0_240_202)">
         <path
           d="M89.1289 0.883789L45.4363 46.3194C70.0466 45.8381 89.6103 25.4979 89.1289 0.883789Z"
           fill="#DDA15E"

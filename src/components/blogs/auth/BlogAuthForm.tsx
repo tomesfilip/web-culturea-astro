@@ -11,6 +11,7 @@ export const BlogAuthForm = () => {
   const [authError, setAuthError] = useState<string>('');
 
   const login = async () => {
+    if (!auth) return;
     try {
       await signInWithEmailAndPassword(auth, email, password);
       setAuthError('');

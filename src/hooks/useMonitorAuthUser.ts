@@ -12,6 +12,7 @@ export const useMonitorAuthUser = () => {
     const abortController = new AbortController();
 
     const monitorUser = async () => {
+      if (!auth) return;
       try {
         onAuthStateChanged(auth, (user) => {
           setLoggedUser(user);
