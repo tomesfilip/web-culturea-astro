@@ -10,6 +10,8 @@ interface Props {
   headlineClassName?: string;
   noPXDesktop?: boolean;
   noPXMobile?: boolean;
+  noPYDesktop?: boolean;
+  noPYMobile?: boolean;
 }
 
 export const Section = ({
@@ -20,14 +22,18 @@ export const Section = ({
   headlineClassName,
   noPXDesktop,
   noPXMobile,
+  noPYDesktop,
+  noPYMobile,
 }: Props) => {
   return (
     <section
       id={id}
       className={clsx(
-        'flex flex-col w-full items-center py-12 lg:py-16 relative',
+        'flex flex-col w-full items-center relative',
         noPXDesktop ? '' : 'lg:px-20 xl:px-24',
         noPXMobile ? '' : 'px-6',
+        noPYDesktop ? '' : 'lg:py-16',
+        noPYMobile ? '' : 'py-12',
         className,
       )}
     >

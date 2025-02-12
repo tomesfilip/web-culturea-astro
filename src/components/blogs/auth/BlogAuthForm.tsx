@@ -6,9 +6,9 @@ import { isAuthModalOpen } from '../../../stores/authModalStore';
 import { LabelledInput } from './LabelledInput';
 
 export const BlogAuthForm = () => {
-  const [email, setEmail] = useState<string>('');
-  const [password, setPassword] = useState<string>('');
-  const [authError, setAuthError] = useState<string>('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [authError, setAuthError] = useState('');
 
   const login = async () => {
     if (!auth) return;

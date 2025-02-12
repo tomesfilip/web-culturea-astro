@@ -1,12 +1,14 @@
+import clsx from 'clsx';
 import { useMonitorAuthUser } from '../../hooks/useMonitorAuthUser';
 import type { TBlogItem } from '../../lib/types/TBlogItem';
 import { Actions } from './admin/Actions';
 
 type Props = {
   blog: TBlogItem;
+  isOdd?: boolean;
 };
 
-export const BlogListItem = ({ blog }: Props) => {
+export const BlogListItem = ({ blog, isOdd }: Props) => {
   const { loggedUser } = useMonitorAuthUser();
 
   return (
@@ -19,7 +21,12 @@ export const BlogListItem = ({ blog }: Props) => {
           width={300}
           height={300}
         />
-        <h3 className="text-xl font-bold absolute bottom-0 w-full pb-6 pt-2 px-3 text-beige underline group-odd:bg-light-green group-even:bg-dark-brown">
+        <h3
+          className={clsx(
+            'text-xl font-bold absolute bottom-0 w-full pb-6 pt-2 px-3 text-beige underline',
+            isOdd ? 'bg-light-green' : 'bg-dark-brown',
+          )}
+        >
           {blog.title}
         </h3>
       </article>

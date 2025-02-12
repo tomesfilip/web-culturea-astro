@@ -33,8 +33,8 @@ export const BlogList = () => {
       )}
       {blogs && blogs.length > 0 && (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
-          {blogs.map((blog: TBlogItem) => (
-            <BlogListItem key={blog.id} blog={blog} />
+          {blogs.map((blog: TBlogItem, index: number) => (
+            <BlogListItem key={blog.id} blog={blog} isOdd={index % 2 === 0} />
           ))}
         </div>
       )}
