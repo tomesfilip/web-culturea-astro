@@ -12,7 +12,7 @@ export const AboutIcon1 = ({ className }: Props) => {
       xmlns="http://www.w3.org/2000/svg"
       className={`w-max h-[70px] md:h-[144px] ${className}`}
     >
-      <g clip-path="url(#clip0_58_370)">
+      <g clipPath="url(#clip0_58_370)">
         <path
           d="M0 1.38818L72.3747 70.9864C71.608 31.7846 39.2079 0.621424 0 1.38818Z"
           fill="#FEFAE0"
@@ -96,11 +96,11 @@ export const AboutIcon3 = ({ className }: Props) => {
       xmlns="http://www.w3.org/2000/svg"
       className={`w-max h-[63px] md:h-[126px] ${className}`}
     >
-      <g clip-path="url(#clip0_58_372)">
+      <g clipPath="url(#clip0_58_372)">
         <path d="M36 31.7161L0 -3.14722e-06L72 0L36 31.7161Z" fill="#234526" />
         <path d="M36 63.0001L0 31.2839L72 31.2839L36 63.0001Z" fill="#234526" />
       </g>
-      <g clip-path="url(#clip1_58_372)">
+      <g clipPath="url(#clip1_58_372)">
         <path d="M37 94.7161L1 63L73 63L37 94.7161Z" fill="#234526" />
         <path d="M37 126L1 94.2839L73 94.2839L37 126Z" fill="#234526" />
       </g>

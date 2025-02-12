@@ -1,8 +1,5 @@
-import { getAnalytics } from 'firebase/analytics';
 import { initializeApp } from 'firebase/app';
-import { getAuth } from 'firebase/auth';
 import { collection, getFirestore } from 'firebase/firestore';
-import { getStorage } from 'firebase/storage';
 
 const firebaseApp = initializeApp({
   apiKey: import.meta.env.PUBLIC_FIREBASE_API_KEY,
@@ -14,8 +11,23 @@ const firebaseApp = initializeApp({
   measurementId: 'G-0B8T16LHMB',
 });
 
-export const analytics = getAnalytics(firebaseApp);
 export const db = getFirestore(firebaseApp);
-export const auth = getAuth(firebaseApp);
-export const storage = getStorage(firebaseApp);
 export const blogCollectionRef = collection(db, 'blogs');
+
+async function loadBrowserServices() {
+  if (typeof window !== 'undefined') {
+    const { getAnalytics } = await import('firebase/analytics');
+    const { getAuth } = await import('firebase/auth');
+    const { getStorage } = await import('firebase/storage');
+
+    return {
+      analytics: getAnalytics(firebaseApp),
+      auth: getAuth(firebaseApp),
+      storage: getStorage(firebaseApp),
+    };
+  }
+  return { analytics: null, auth: null, storage: null };
+}
+
+// Export Firebase browser services (will be null on the server)
+export const { analytics, auth, storage } = await loadBrowserServices();

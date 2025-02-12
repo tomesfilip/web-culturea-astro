@@ -1,0 +1,79 @@
+---
+import { Section } from '../../components/shared/Section';
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from '../../utils/getBlogs';
+import { BlogDetail } from '../../components/blogs/BlogDetail';
+import Image from 'astro/components/Image.astro';
+import { BlogListItem } from '../../components/blogs/BlogListItem';
+
+export async function getStaticPaths() {
+  const blogs = await getCollection();
+
+  return blogs.map((blog) => {
+    const relatedPosts = blogs
+      .filter((b) => b.id !== blog.id)
+      .sort(
+        (a, b) =>
+          new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime(),
+      )
+      .slice(0, 3);
+
+    return {
+      params: { id: blog.id },
+      props: { post: blog, relatedPosts },
+    };
+  });
+}
+
+const { post, relatedPosts } = Astro.props;
+
+if (!post) {
+  throw Astro.redirect('/404');
+}
+---
+
+<Layout title={`Blog - ${post.title}`}>
+  <Section id="blog-detail" noPXDesktop noPXMobile noPYDesktop noPYMobile
+    >{
+      post && (
+        <div class="">
+          <div class="relative w-full max-w-[1600px] h-[400px] lg:h-[800px] overflow-hidden mx-auto">
+            <h1 class="absolute z-[2] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl md:text-5xl lg:text-7xl font-bold text-beige">
+              {post.title}
+            </h1>
+            <div class="size-full z-[1] absolute pointer-events-none bg-black/40" />
+            <Image
+              class="size-full object-cover object-center"
+              src={post.bannerImage}
+              alt={post.title}
+              width={1600}
+              height={800}
+            />
+          </div>
+          <BlogDetail client:only="react" blog={post} />
+        </div>
+      )
+    }
+    <div
+      class="px-4 py-8 mx-auto max-w-screen-lg flex flex-col items-center md"
+    >
+      <div class="flex flex-col gap-y-12 items-center">
+        <div class="flex flex-col items-center lg:items-start gap-y-3">
+          <h2 class="text-2xl lg:text-3xl">Mohlo by Vás zajímat:</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            {
+              relatedPosts.map((post, index) => (
+                <BlogListItem blog={post} isOdd={index % 2 === 0} />
+              ))
+            }
+          </div>
+        </div>
+        <a
+          href="/blogy"
+          class="px-12 py-5 bg-light-brown text-beige shadow-md font-semibold text-lg lg:text-2xl rounded-[70px] block w-fit mx-auto"
+          >Další články</a
+        >
+      </div>
+    </div>
+  </Section>
+</Layout>

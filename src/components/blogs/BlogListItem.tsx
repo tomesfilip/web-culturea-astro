@@ -1,40 +1,36 @@
-import { useState } from 'react';
-
+import clsx from 'clsx';
 import { useMonitorAuthUser } from '../../hooks/useMonitorAuthUser';
 import type { TBlogItem } from '../../lib/types/TBlogItem';
-import { BlogDetailModal } from './BlogDetailModal';
 import { Actions } from './admin/Actions';
 
 type Props = {
   blog: TBlogItem;
+  isOdd?: boolean;
 };
 
-export const BlogListItem = ({ blog }: Props) => {
+export const BlogListItem = ({ blog, isOdd }: Props) => {
   const { loggedUser } = useMonitorAuthUser();
-  const [isDetailModalOpen, setIsDetailModalOpen] = useState(false);
 
   return (
-    <div className="flex flex-col max-w-[350px]">
-      <article
-        onClick={() => setIsDetailModalOpen(true)}
-        className="cursor-pointer"
-      >
-        <h3 className="text-xl mb-1 font-bold px-1">{blog.title}</h3>
+    <a className="flex flex-col max-w-[350px] group" href={`/blog/${blog.id}`}>
+      <article className="cursor-pointer relative overflow-hidden">
         <img
-          className="w-[350px] h-[350px] rounded-lg object-cover"
+          className="w-[350px] h-[350px] object-cover group-hover:scale-105 transition-transform ease-in-out duration-300"
           src={blog.bannerImage}
           alt={blog.title}
           width={300}
           height={300}
         />
+        <h3
+          className={clsx(
+            'text-xl font-bold absolute bottom-0 w-full pb-6 pt-2 px-3 text-beige underline',
+            isOdd ? 'bg-light-green' : 'bg-dark-brown',
+          )}
+        >
+          {blog.title}
+        </h3>
       </article>
       {loggedUser && <Actions blogId={blog.id} />}
-      {isDetailModalOpen && (
-        <BlogDetailModal
-          blog={blog}
-          handleClose={() => setIsDetailModalOpen(false)}
-        />
-      )}
-    </div>
+    </a>
   );
 };
