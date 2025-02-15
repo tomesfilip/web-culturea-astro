@@ -1,4 +1,4 @@
-import { signInWithEmailAndPassword } from 'firebase/auth';
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import { useState } from 'react';
 import { auth } from '../../../config/firebase';
 import { AUTH_ERRORS_MAPPED } from '../../../constants';
@@ -11,7 +11,6 @@ export const BlogAuthForm = () => {
   const [authError, setAuthError] = useState('');
 
   const login = async () => {
-    if (!auth) return;
     try {
       await signInWithEmailAndPassword(auth, email, password);
       setAuthError('');
@@ -28,7 +27,9 @@ export const BlogAuthForm = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     await login();
-    window.location.href = '/blog';
+    setTimeout(() => {
+      window.location.href = '/blog';
+    }, 500);
   };
 
   return (

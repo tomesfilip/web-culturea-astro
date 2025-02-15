@@ -9,14 +9,37 @@ import { getDocRef } from '../../../utils/getBlogRef';
 import 'react-quill-new/dist/quill.snow.css';
 import '../../../styles/blogTextEditor.css';
 
-import ReactQuill from 'react-quill-new';
 import { uploadImage } from '../../../utils/uploadImage';
 import { ModalHeader } from '../../modal/ModalHeader';
 import { Loader } from '../../shared/Loader';
 import { Backdrop } from '../Backdrop';
 import { LabelledInput } from '../auth/LabelledInput';
 
+let ReactQuill: any = null;
+
 export const CreateEditForm = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  const closeModal = () => {
+    isCreateModalOpen.set(false);
+    editBlogStore.set(undefined);
+  };
+
+  if (!isClient) {
+    return (
+      <Backdrop onClick={closeModal}>
+        <div className="text-center">
+          <Loader />
+          <p>Načítání editoru...</p>
+        </div>
+      </Backdrop>
+    );
+  }
+
   const [blog] = useState<any>(editBlogStore.get());
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
@@ -93,11 +116,6 @@ export const CreateEditForm = () => {
       setImgUrl(blog.bannerImage);
     }
   }, []);
-
-  const closeModal = () => {
-    isCreateModalOpen.set(false);
-    editBlogStore.set(undefined);
-  };
 
   return (
     <Backdrop onClick={closeModal}>
