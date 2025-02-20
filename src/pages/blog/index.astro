@@ -1,23 +1,8 @@
 ---
-import { getDocs, limit, orderBy, query } from 'firebase/firestore';
 import { BlogList } from '../../components/blogs/BlogList';
 import { Section } from '../../components/shared/Section';
 import { CULTUREA_YEAR } from '../../constants';
 import Layout from '../../layouts/Layout.astro';
-import { blogCollectionRef } from '../../config/firebase';
-import type { TBlogItem } from '../../lib/types/TBlogItem';
-
-const blogQueryOrderedLimit = query(
-  blogCollectionRef,
-  orderBy('createdAt', 'desc'),
-  limit(20),
-);
-
-const snapshot = await getDocs(blogQueryOrderedLimit);
-const blogs = snapshot.docs.map((doc) => ({
-  id: doc.id,
-  ...doc.data(),
-})) as TBlogItem[];
 ---
 
 <Layout title={`Culturea ${CULTUREA_YEAR} - Blog`}>
@@ -25,6 +10,6 @@ const blogs = snapshot.docs.map((doc) => ({
     <h2 class="text-xl md:text-2xl lg:text-3xl mb-4 md:mb-8 text-center">
       Články
     </h2>
-    <BlogList client:only="react" blogs={blogs ?? []} />
+    <BlogList client:only="react" />
   </Section>
 </Layout>

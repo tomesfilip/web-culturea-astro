@@ -2,11 +2,12 @@ import { getDocs, limit, orderBy, query } from 'firebase/firestore';
 import { useEffect, useState } from 'react';
 
 import { blogCollectionRef } from '../config/firebase';
+import type { TBlogItem } from '../lib/types/TBlogItem';
 
 export const useFetchBlogList = (blogLimit: number = 20) => {
-  const [data, setData] = useState<any>(null);
+  const [data, setData] = useState<TBlogItem[] | []>([]);
   const [error, setError] = useState<string | null>(null);
-  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const abortController = new AbortController();
@@ -22,12 +23,10 @@ export const useFetchBlogList = (blogLimit: number = 20) => {
         const snapshot = await getDocs(blogQueryOrderedLimit);
 
         setData(
-          snapshot.docs.map((doc) => {
-            return {
-              id: doc.id,
-              ...doc.data(),
-            };
-          }),
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            ...doc.data(),
+          })) as TBlogItem[],
         );
 
         setError(null);

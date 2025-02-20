@@ -7,18 +7,19 @@ import { logout } from '../../utils/logout';
 import { BlogListItem } from './BlogListItem';
 import { ActionButton } from './admin/ActionButton';
 import { CreateEditForm } from './admin/CreateEditForm';
+import { useFetchBlogList } from '../../hooks/useFetchBlogList';
+import { LoadingSpinner } from '../shared/LoadingSpinner';
 
-interface Props {
-  blogs: TBlogItem[];
-}
-
-export const BlogList = ({ blogs }: Props) => {
+export const BlogList = () => {
   const $isCreateModalOpen = useStore(isCreateModalOpen);
 
   const { loggedUser } = useMonitorAuthUser();
 
+  const { data: blogs, isLoading, error } = useFetchBlogList();
+
   return (
     <div className="flex flex-col gap-y-6 items-center px-4 lg:px-0">
+      {isLoading && <LoadingSpinner />}
       {loggedUser && isCreateModalOpen.get() && <CreateEditForm />}
       {loggedUser && (
         <>
