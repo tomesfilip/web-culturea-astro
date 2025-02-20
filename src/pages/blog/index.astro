@@ -25,6 +25,6 @@ const blogs = snapshot.docs.map((doc) => ({
     <h2 class="text-xl md:text-2xl lg:text-3xl mb-4 md:mb-8 text-center">
       Články
     </h2>
-    <BlogList client:load blogs={blogs ?? []} />
+    <BlogList client:only="react" blogs={blogs ?? []} />
   </Section>
 </Layout>

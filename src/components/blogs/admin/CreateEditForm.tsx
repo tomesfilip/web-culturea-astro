@@ -1,5 +1,6 @@
 import { addDoc, updateDoc } from 'firebase/firestore';
 import { useEffect, useState } from 'react';
+import ReactQuill from 'react-quill-new';
 
 import { blogCollectionRef } from '../../../config/firebase';
 import { isCreateModalOpen } from '../../../stores/createModalStore';
@@ -15,7 +16,10 @@ import { Loader } from '../../shared/Loader';
 import { Backdrop } from '../Backdrop';
 import { LabelledInput } from '../auth/LabelledInput';
 
-let ReactQuill: any = null;
+const closeModal = () => {
+  isCreateModalOpen.set(false);
+  editBlogStore.set(undefined);
+};
 
 export const CreateEditForm = () => {
   const [isClient, setIsClient] = useState(false);
@@ -24,22 +28,18 @@ export const CreateEditForm = () => {
     setIsClient(true);
   }, []);
 
-  const closeModal = () => {
-    isCreateModalOpen.set(false);
-    editBlogStore.set(undefined);
-  };
-
   if (!isClient) {
-    return (
-      <Backdrop onClick={closeModal}>
-        <div className="text-center">
-          <Loader />
-          <p>Načítání editoru...</p>
-        </div>
-      </Backdrop>
-    );
+    return null;
   }
 
+  return (
+    <Backdrop onClick={closeModal}>
+      <CreateEditFormContent />
+    </Backdrop>
+  );
+};
+
+const CreateEditFormContent = () => {
   const [blog] = useState<any>(editBlogStore.get());
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
@@ -118,52 +118,50 @@ export const CreateEditForm = () => {
   }, []);
 
   return (
-    <Backdrop onClick={closeModal}>
-      <form
-        onSubmit={(e) => handleSubmit(e)}
-        onClick={(e) => e.stopPropagation()}
-        className="flex flex-col flex-wrap gap-y-4 w-[90%] md:w-[60%] lg:w-[40%] max-w-4xl bg-beige rounded-lg p-4 z-50"
-      >
-        <ModalHeader closeModal={closeModal} />
-        <h4 className="text-xl text-center">
-          {blog ? 'Upravit blog' : 'Přidat blog'}
-        </h4>
-        <button className="bg-dark-green px-2 py-1 text-xl text-beige rounded-lg max-w-max self-center">
-          Uveřejnit blog
-        </button>
-        <LabelledInput
-          name="title"
-          type="text"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-          required
-          text="Název"
-        />
-        <div className="grid gap-2">
-          <p>Text</p>
-          <ReactQuill theme="snow" value={body} onChange={setBody} />
+    <form
+      onSubmit={(e) => handleSubmit(e)}
+      onClick={(e) => e.stopPropagation()}
+      className="flex flex-col flex-wrap gap-y-4 w-[90%] md:w-[60%] lg:w-[40%] max-w-4xl bg-beige rounded-lg p-4 z-50"
+    >
+      <ModalHeader closeModal={closeModal} />
+      <h4 className="text-xl text-center">
+        {blog ? 'Upravit blog' : 'Přidat blog'}
+      </h4>
+      <button className="bg-dark-green px-2 py-1 text-xl text-beige rounded-lg max-w-max self-center">
+        Uveřejnit blog
+      </button>
+      <LabelledInput
+        name="title"
+        type="text"
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+        required
+        text="Název"
+      />
+      <div className="grid gap-2">
+        <p>Text</p>
+        <ReactQuill theme="snow" value={body} onChange={setBody} />
+      </div>
+      <LabelledInput
+        name="image"
+        type="file"
+        onChange={(e) => setImage(e.target.files[0])}
+        text="Obrázek"
+      />
+      {isImageUploading && (
+        <div className="flex justify-center">
+          <Loader />
         </div>
-        <LabelledInput
-          name="image"
-          type="file"
-          onChange={(e) => setImage(e.target.files[0])}
-          text="Obrázek"
-        />
-        {isImageUploading && (
-          <div className="flex justify-center">
-            <Loader />
-          </div>
-        )}
-        <LabelledInput
-          name="image url"
-          type="text"
-          value={imgUrl ?? ''}
-          onChange={(e) => setImgUrl(e.target.value)}
-          text="Url obrázku"
-        />
+      )}
+      <LabelledInput
+        name="image url"
+        type="text"
+        value={imgUrl ?? ''}
+        onChange={(e) => setImgUrl(e.target.value)}
+        text="Url obrázku"
+      />
 
-        {error && <p className="text-red-500">{error}</p>}
-      </form>
-    </Backdrop>
+      {error && <p className="text-red-500">{error}</p>}
+    </form>
   );
 };
