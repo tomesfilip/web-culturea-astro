@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import { useMonitorAuthUser } from '../../hooks/useMonitorAuthUser';
 import type { TBlogItem } from '../../lib/types/TBlogItem';
 import { Actions } from './admin/Actions';
+import { selectedBlogStore } from '../../stores/selectedBlogStore';
 
 type Props = {
   blog: TBlogItem;
@@ -11,8 +12,13 @@ type Props = {
 export const BlogListItem = ({ blog, isOdd }: Props) => {
   const { loggedUser } = useMonitorAuthUser();
 
+  const handleSelectBlog = () => {
+    selectedBlogStore.set(blog);
+    window.scrollTo(0, 0);
+  };
+
   return (
-    <div className="space-y-4">
+    <div className="space-y-4" onClick={handleSelectBlog}>
       <div className="flex flex-col max-w-[350px] group">
         <article className="cursor-pointer relative overflow-hidden">
           <img
