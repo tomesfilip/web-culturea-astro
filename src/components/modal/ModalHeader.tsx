@@ -1,5 +1,3 @@
-import closeIcon from '../../assets/img/icons/close-icon.svg';
-
 type Props = {
   closeModal: () => void;
 };

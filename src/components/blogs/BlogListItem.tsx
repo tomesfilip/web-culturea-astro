@@ -13,10 +13,7 @@ export const BlogListItem = ({ blog, isOdd }: Props) => {
 
   return (
     <div className="space-y-4">
-      <a
-        className="flex flex-col max-w-[350px] group"
-        href={`/blog/${blog.id}`}
-      >
+      <div className="flex flex-col max-w-[350px] group">
         <article className="cursor-pointer relative overflow-hidden">
           <img
             className="w-[350px] h-[350px] object-cover group-hover:scale-105 transition-transform ease-in-out duration-300"
@@ -34,7 +31,7 @@ export const BlogListItem = ({ blog, isOdd }: Props) => {
             {blog.title}
           </h3>
         </article>
-      </a>
+      </div>
       {loggedUser && <Actions blogId={blog.id} />}
     </div>
   );
