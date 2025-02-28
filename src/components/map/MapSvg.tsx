@@ -65,7 +65,7 @@ export const MapSvg = () => {
   const handleTouchMove = (e: React.TouchEvent) => {
     const touchDuration = Date.now() - touchStartTime;
 
-    if (touchDuration >= 150) {
+    if (touchDuration >= 100) {
       // Allow panning if the touch has lasted long enough
       setPanning(true);
       const newPointX = e.touches[0].clientX - startPos.x;
