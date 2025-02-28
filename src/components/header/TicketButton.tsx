@@ -1,14 +1,8 @@
-import { useState, useEffect } from 'react';
 import { TICKET_PRE_SALE_DATE } from '../../data/ticketsDate';  // Import the date
 
 export const TicketButton = () => {
-  const [isPreSaleActive, setIsPreSaleActive] = useState(false);
-
-  useEffect(() => {
-    const currentDate = new Date();
-    // Compare the current date with the presale date
-    setIsPreSaleActive(currentDate < TICKET_PRE_SALE_DATE);
-  }, []);
+  const currentDate = new Date();
+  const isPreSaleActive = currentDate < TICKET_PRE_SALE_DATE;
 
   return isPreSaleActive ? (
     <button
