@@ -6,8 +6,8 @@ export const Strip = () => {
       <div className="max-w-screen-2xl w-full text-dark-green flex items-center gap-6 md:gap-14 xl:px-12">
         <StripIcon />
         <div>
-          <h4 className="text-lg md:text-2xl font-semibold">13. ročník</h4>
-          <h3 className="text-2xl md:text-4xl">Zlínský Zámek</h3>
+          <h1 className="text-lg md:text-2xl font-semibold">13. ročník</h1>
+          <h1 className="text-2xl md:text-4xl font-semibold">Zlínský Zámek</h1>
         </div>
       </div>
     </div>

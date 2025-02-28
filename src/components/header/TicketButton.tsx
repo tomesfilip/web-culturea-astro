@@ -1,14 +1,24 @@
+import { TICKET_PRE_SALE_DATE } from '../../data/ticketsDate';  // Import the date
+
 export const TicketButton = () => {
-  return (
+  const currentDate = new Date();
+  const isPreSaleActive = currentDate < TICKET_PRE_SALE_DATE;
+
+  return isPreSaleActive ? (
+    <button
+      className="bg-light-brown text-beige text-lg md:text-xl font-semibold shadow-lg tracking-wide px-6 md:px-8 py-4 rounded-full z-[2]"
+      disabled
+    >
+      Předprodej od 10.&nbsp;3.
+    </button>
+  ) : (
     <a
       href="https://goout.net/cs/culturea-2024-kuba-a-maroko/szvkiyw/?fbclid=IwAR3gnWDZeNbQjYbE_CcB1XF2QyoKacsquY5akQHM_0Ghj5q19ZZ3wB9nSVM"
       target="_blank"
       rel="noopener noreferrer"
-      className="text-white text-center px-5 py-3 text-[20px] xl:text-[24px] 
-      rounded-xl border border-white font-headline 
-      hover:bg-orange-1 hover:border-transparent transition duration-300"
+      className="bg-light-brown text-beige text-lg md:text-xl font-semibold shadow-lg tracking-wide px-6 md:px-8 py-4 rounded-full z-[2] hover:bg-dark-brown transition-colors duration-300"
     >
-      VSTUPENKY ZDE
+      Vstupenky
     </a>
   );
 };

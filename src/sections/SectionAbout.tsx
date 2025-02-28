@@ -27,11 +27,19 @@ export const SectionAbout = () => {
             />
             <AboutIcon1 className="absolute top-0 -left-[36px] md:-left-[70px]" />
           </div>
-          <img
-            src={aboutImg2.src}
-            alt="Culturea 2024"
-            className="w-full max-w-[248px] md:max-w-[430px] -translate-x-8 lg:-translate-x-24"
-          />
+          <div className="relative">
+            <img
+              src={aboutImg2.src}
+              alt="Culturea 2024"
+              className="w-full max-w-[248px] md:max-w-[430px] -translate-x-8 lg:-translate-x-24"
+            />
+            <a
+              className="bg-light-brown text-beige text-lg md:text-xl font-semibold shadow-lg tracking-wide px-12 md:px-16 py-2 md:py-4 rounded-full z-[2] absolute top-0 right-0 translate-x-1/3 md:translate-x-0 -translate-y-1/2"
+              href="/blog"
+            >
+              Blog
+            </a>
+          </div>
           <div className="-mt-6 lg:-mt-20 z-[2] relative">
             <AboutIcon2 className="absolute bottom-0 -left-[32px] md:-left-20" />
             <AboutIcon3 className="absolute -bottom-[62px] md:-bottom-[126px] right-0" />
@@ -46,3 +54,4 @@ export const SectionAbout = () => {
     </Section>
   );
 };
+

@@ -5,6 +5,7 @@ import { Twirl as Hamburger } from './hamburger';
 import { menuItems } from '../../data/menuItems';
 import { LogoLink } from '../header/LogoLink';
 import { MenuLink } from '../header/MenuLink';
+import { TicketButton } from '../header/TicketButton';
 
 interface Props {
   path?: string;
@@ -27,7 +28,7 @@ export const Header = ({ path }: Props) => {
   return (
     <motion.header className="w-full flex justify-center bg-dark-green fixed top-0 z-20">
       <nav className="relative z-10 max-w-screen-2xl w-full flex flex-col items-center xl:flex-row xl:justify-between xl:py-4 xl:px-12">
-        <div className="hidden xl:block">
+        <div className="hidden xl:block pr-8">
           <LogoLink />
         </div>
         <div className="z-20 flex w-full justify-between items-center p-4 xl:hidden">
@@ -54,12 +55,12 @@ export const Header = ({ path }: Props) => {
                   variants={menuVariants}
                   onClick={() => setIsOpen(false)}
                 >
-                  <MenuLink {...menuItem} />
+                  <MenuLink currPath={path} {...menuItem} />
                 </motion.li>
               ))}
-              {/* <motion.li variants={menuVariants} className="mt-6">
+              <motion.li variants={menuVariants} className="mt-6">
                 <TicketButton />
-              </motion.li> */}
+              </motion.li>
             </motion.ul>
           </AnimatePresence>
         )}
@@ -69,7 +70,7 @@ export const Header = ({ path }: Props) => {
               <MenuLink currPath={path} {...menuItem} />
             </motion.li>
           ))}
-          {/* <TicketButton /> */}
+          <TicketButton />
         </ul>
       </nav>
     </motion.header>

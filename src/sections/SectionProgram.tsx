@@ -3,7 +3,7 @@ import { Section } from '../components/shared/Section';
 
 export const SectionProgram = () => {
   return (
-    <Section id="program" title="Program" className="bg-beige pt-20">
+    <Section id="program" title="Program" className="text-dark-green bg-beige pt-20">
       <>
         {/*   width="173"
       height="270" */}
