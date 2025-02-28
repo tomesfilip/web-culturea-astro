@@ -5,6 +5,7 @@ import { galleryPages } from '../../data/galleryItems';
 import Layout from '../../layouts/Layout.astro';
 import clsx from 'clsx';
 import { GalleryActiveIcon } from '../../components/icons/GalleryActiveIcon';
+import { ScrollToTopButton } from '../../components/buttons/ScrollTopButton';
 
 export async function getStaticPaths() {
   return galleryPages.map(({ slug, title, text }) => {
@@ -19,6 +20,7 @@ const { slug } = Astro.props;
 ---
 
 <Layout title="Fotogalerie">
+  <ScrollToTopButton />
   <Section id="fotogalerie" className="bg-beige" noPXDesktop noPXMobile>
     <div
       class="px-4 lg:px-20 xl:px-24 space-y-8 lg:space-y-20 max-w-screen-xl mx-auto"
