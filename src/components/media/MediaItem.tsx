@@ -17,7 +17,7 @@ export const MediaItem = ({
   children,
 }: MediaItemProps) => {
   return (
-    <div className="flex flex-col md:flex-row gap-8 max-w-[320px] w-full">
+    <div className="flex flex-col items-center md:flex-row gap-8 max-w-[320px] w-full mx-auto">
       <img
         src={img.src}
         alt={imgAlt}
