@@ -16,7 +16,7 @@ export const SectionLastYear = () => {
     >
       <div className="space-y-20 md:space-y-4">
         <div className="space-y-4 relative">
-          <h3 className="text-white max-w-screen-2xl ml-auto px-6">
+          <h3 className="text-beige max-w-screen-2xl ml-auto px-6">
             Minulý ročník
           </h3>
           <LastYearSlider />
@@ -28,7 +28,7 @@ export const SectionLastYear = () => {
           </a>
         </div>
         <div className="space-y-8">
-          <div className="w-full text-center text-white">
+          <div className="w-full text-center text-beige">
             <p className="text-xl leading-none lg:text-[45px] uppercase xl:leading-[60px] font-headline">
               Kuba a Maroko
             </p>
