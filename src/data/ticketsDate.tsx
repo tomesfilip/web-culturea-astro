@@ -1,0 +1,1 @@
+export const TICKET_PRE_SALE_DATE = new Date('2025-03-10T09:00:00');

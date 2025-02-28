@@ -7,11 +7,11 @@ export interface MenuLinkProps {
 }
 
 export const MenuLink = ({ url, title, currPath }: MenuLinkProps) => {
-  const isFotogalerie = currPath?.startsWith('/fotogalerie/');
+  // Check if the current path starts with the url or matches the url exactly
+  const isActive = currPath?.startsWith(url) || currPath === url;
 
-  const shouldUnderline =
-    currPath === '/' ||
-    (currPath !== url && !(isFotogalerie && url.startsWith('/fotogalerie/')));
+  // If the link is not the current page, apply underline
+  const shouldUnderline = !isActive;
 
   return (
     <a
