@@ -10,7 +10,7 @@ export const SectionOrganizer = () => {
           <h3 className="text-dark-green">Kontakt</h3>
           <div className="w-full flex flex-col md:flex-row justify-between gap-y-4 gap-x-10">
             <ContactItem
-              name="Aneta Skácelova"
+              name="Aneta Skácelová"
               position="Manažerka projektu"
               mail="ahoj@culturea.cz"
               phone="(+420) 724 919 193"
