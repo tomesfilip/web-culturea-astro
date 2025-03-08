@@ -23,7 +23,7 @@ export const SectionOrganizer = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col md:items-center">
+        <div className="flex flex-col items-center">
           <a
             href="https://fmk.utb.cz/en/"
             target="_blank"
