@@ -17,9 +17,9 @@ export const PartnerList = () => {
   return (
     <div className="flex flex-col items-center text-center space-y-12 py-12 px-4">
       {allPartnerLists.map(({ headline, partners }) => (
-        <div className="space-y-6" key={headline}>
+        <div className="space-y-6 w-full" key={headline}>
           <h3>{headline}</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-8 xl:gap-x-12 gap-y-8 items-center justify-center">
+          <div className="flex flex-wrap justify-center gap-8">
             {partners.map((partnerItem) => (
               <SinglePartnerItem key={partnerItem.img.src} {...partnerItem} />
             ))}
