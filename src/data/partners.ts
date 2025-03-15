@@ -18,15 +18,17 @@ import nadaceTomaseBati from '../assets/img/partners/main/nadace_tomase_bati_log
 import gastroin from '../assets/img/partners/medial/gastro-in-logo.png';
 import hedvabnaStezka from '../assets/img/partners/medial/hedvabna_stezka_logo.png';
 import hexxa from '../assets/img/partners/medial/hexxa_logo.jpg';
-import inZlin from '../assets/img/partners/medial/in-zlin-logo.png';
 import kiss from '../assets/img/partners/medial/kiss_logo.png';
 import knihovnaUtb from '../assets/img/partners/medial/knihovna_utb_logo.png';
 import kudyZNudy from '../assets/img/partners/medial/kudy-z-nudy-logo.png';
 import stamgastGurman from '../assets/img/partners/medial/stamgast-logo.png';
-import turistikaCZ from '../assets/img/partners/medial/turistika-logo.png';
 import zlinCZ from '../assets/img/partners/medial/zlin-logo.png';
 import zlinskoLuhacovisko from '../assets/img/partners/medial/zlinsko_luhacovicko_logo.png';
 import zlinskyKraj from '../assets/img/partners/medial/zlinsky_kraj_logo.png';
+import vychodnimorava from '../assets/img/partners/medial/vychodnimorava.png';
+import primazoom from '../assets/img/partners/medial/prima_zoom.png';
+import studentskelisty from '../assets/img/partners/medial/studentskelisty.png';
+import kultura21 from '../assets/img/partners/medial/kultura21.png';
 
 export const generalPartners: TPartnerList = {
   headline: 'Generální partneři',
@@ -36,16 +38,16 @@ export const generalPartners: TPartnerList = {
       alt: 'Alza',
     },
     {
-      img: vodarnaZlin,
-      alt: 'Vodárna Zlín',
+      img: isProd,
+      alt: 'Is Produkce',
     },
     {
       img: zlinBlack,
       alt: 'Zlín Black',
     },
     {
-      img: isProd,
-      alt: 'Is Produkce',
+      img: vodarnaZlin,
+      alt: 'Vodárna Zlín',
     },
   ],
 };
@@ -54,12 +56,12 @@ export const mainPartners: TPartnerList = {
   headline: 'Hlavní partneři',
   partners: [
     {
-      img: cpic,
-      alt: 'Cpic',
-    },
-    {
       img: nadaceTomaseBati,
       alt: 'Nadace Tomáše Bati',
+    },
+    {
+      img: cpic,
+      alt: 'Cpic',
     },
   ],
 };
@@ -72,40 +74,32 @@ export const medialPartners: TPartnerList = {
       alt: 'Hedvábná stezka',
     },
     {
-      img: zlinskoLuhacovisko,
-      alt: 'Zlínsko-Luhacovicko',
-    },
-    {
       img: zlinskyKraj,
       alt: 'Zlínský kraj',
-    },
-    {
-      img: zlinCZ,
-      alt: 'Zlín.cz',
     },
     {
       img: stamgastGurman,
       alt: 'Stámgast Gurmán',
     },
     {
-      img: gastroin,
-      alt: 'Gastroin',
+      img: zlinskoLuhacovisko,
+      alt: 'Zlínsko-Luhacovicko',
     },
     {
-      img: turistikaCZ,
-      alt: 'Turistika.cz',
+      img: zlinCZ,
+      alt: 'Zlín.cz',
     },
     {
       img: hexxa,
       alt: 'Hexxa',
     },
     {
-      img: knihovnaUtb,
-      alt: 'Knihovna UTB',
+      img: primazoom,
+      alt: 'Prima Zoom',
     },
     {
-      img: inZlin,
-      alt: 'InZlín',
+      img: gastroin,
+      alt: 'Gastroin',
     },
     {
       img: kudyZNudy,
@@ -113,8 +107,24 @@ export const medialPartners: TPartnerList = {
       link: 'https://www.kudyznudy.cz/',
     },
     {
+      img: knihovnaUtb,
+      alt: 'Knihovna UTB',
+    },
+    {
       img: kiss,
       alt: 'Kiss',
+    },
+    {
+      img: vychodnimorava,
+      alt: 'Východní Morava',
+    },
+    {
+      img: studentskelisty,
+      alt: 'Studentské Listy',
+    },
+    {
+      img: kultura21,
+      alt: 'Kultura21.cz',
     },
   ],
 };
@@ -123,28 +133,28 @@ export const basicPartners: TPartnerList = {
   headline: 'Partneři',
   partners: [
     {
-      img: co,
-      alt: 'CO',
-    },
-    {
-      img: dprMetal,
-      alt: 'dpr metal',
+      img: cokoKral,
+      alt: 'Čokoládové Království',
     },
     {
       img: lyoFood,
       alt: 'lyo food',
     },
     {
+      img: dprMetal,
+      alt: 'dpr metal',
+    },
+    {
       img: manucafe,
       alt: 'manucafe',
     },
     {
-      img: cokoKral,
-      alt: 'Čokoládové Království',
-    },
-    {
       img: postaHranic,
       alt: 'Pošta bez hranic',
+    },
+    {
+      img: co,
+      alt: 'CO',
     },
   ],
 };
