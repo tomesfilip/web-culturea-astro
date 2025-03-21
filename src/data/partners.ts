@@ -29,6 +29,8 @@ import vychodnimorava from '../assets/img/partners/medial/vychodnimorava.png';
 import primazoom from '../assets/img/partners/medial/prima_zoom.png';
 import studentskelisty from '../assets/img/partners/medial/studentskelisty.png';
 import kultura21 from '../assets/img/partners/medial/kultura21.png';
+import inzlin from '../assets/img/partners/medial/in-zlin-logo.png';
+import tvs from '../assets/img/partners/medial/tvs.png';
 
 export const generalPartners: TPartnerList = {
   headline: 'Generální partneři',
@@ -79,7 +81,7 @@ export const medialPartners: TPartnerList = {
     },
     {
       img: stamgastGurman,
-      alt: 'Stámgast Gurmán',
+      alt: 'Štamgast & Gurmán',
     },
     {
       img: zlinskoLuhacovisko,
@@ -96,6 +98,14 @@ export const medialPartners: TPartnerList = {
     {
       img: primazoom,
       alt: 'Prima Zoom',
+    },
+    {
+      img: inzlin,
+      alt: 'IN Zlin',
+    },
+    {
+      img: tvs,
+      alt: 'TVS',
     },
     {
       img: gastroin,
