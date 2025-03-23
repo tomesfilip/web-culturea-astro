@@ -1,19 +1,27 @@
 import type { TPartnerList } from '../lib/types/TPartnerItem';
 
-import co from '../assets/img/partners/basic/co_logo.png';
 import cokoKral from '../assets/img/partners/basic/coko_kral_logo.png';
 import dprMetal from '../assets/img/partners/basic/dpr_metal_logo.png';
 import lyoFood from '../assets/img/partners/basic/lyofood_logo.png';
 import manucafe from '../assets/img/partners/basic/manu-cafe-logo.png';
 import postaHranic from '../assets/img/partners/basic/posta_bez_hranic_logo.png';
+import skaceluv_dum from '../assets/img/partners/basic/dum.png';
+import kiwi from '../assets/img/partners/basic/kiwi.png';
+import outdoor from '../assets/img/partners/basic/outdoor.webp';
+import rugby from '../assets/img/partners/basic/rugby.png';
+import ucetnictvi from '../assets/img/partners/basic/ucetnictvi.png';
 
 import alza from '../assets/img/partners/general/alza_logo.png';
 import isProd from '../assets/img/partners/general/is-produkce-logo.png';
 import vodarnaZlin from '../assets/img/partners/general/vodarna_zlin_logo.png';
 import zlinBlack from '../assets/img/partners/general/zlin_black_logo.png';
+import cpic from '../assets/img/partners/general/cpic-logo.png';
+import expat from '../assets/img/partners/general/expat.png';
 
-import cpic from '../assets/img/partners/main/cpic-logo.png';
+
 import nadaceTomaseBati from '../assets/img/partners/main/nadace_tomase_bati_logo.svg';
+import lks from '../assets/img/partners/main/LKS.png';
+import co from '../assets/img/partners/main/co_logo.png';
 
 import gastroin from '../assets/img/partners/medial/gastro-in-logo.png';
 import hedvabnaStezka from '../assets/img/partners/medial/hedvabna_stezka_logo.png';
@@ -36,20 +44,20 @@ export const generalPartners: TPartnerList = {
   headline: 'Generální partneři',
   partners: [
     {
-      img: alza,
-      alt: 'Alza',
+      img: zlinBlack,
+      alt: 'Zlín Black',
     },
     {
       img: isProd,
       alt: 'Is Produkce',
     },
     {
-      img: zlinBlack,
-      alt: 'Zlín Black',
+      img: expat,
+      alt: 'Expat Centre Zlin',
     },
     {
-      img: vodarnaZlin,
-      alt: 'Vodárna Zlín',
+      img: cpic,
+      alt: 'Cpic',
     },
   ],
 };
@@ -62,8 +70,12 @@ export const mainPartners: TPartnerList = {
       alt: 'Nadace Tomáše Bati',
     },
     {
-      img: cpic,
-      alt: 'Cpic',
+      img: lks,
+      alt: 'LKS',
+    },
+    {
+      img: co,
+      alt: 'Cestovatelský obchod',
     },
   ],
 };
@@ -81,7 +93,7 @@ export const medialPartners: TPartnerList = {
     },
     {
       img: stamgastGurman,
-      alt: 'Štamgast & Gurmán',
+      alt: 'Stámgast Gurmán',
     },
     {
       img: zlinskoLuhacovisko,
@@ -143,28 +155,32 @@ export const basicPartners: TPartnerList = {
   headline: 'Partneři',
   partners: [
     {
-      img: cokoKral,
-      alt: 'Čokoládové Království',
-    },
-    {
-      img: lyoFood,
-      alt: 'lyo food',
-    },
-    {
-      img: dprMetal,
-      alt: 'dpr metal',
-    },
-    {
-      img: manucafe,
-      alt: 'manucafe',
-    },
-    {
       img: postaHranic,
       alt: 'Pošta bez hranic',
     },
     {
-      img: co,
-      alt: 'CO',
+      img: cokoKral,
+      alt: 'Čokoládové Království',
+    },
+    {
+      img: skaceluv_dum,
+      alt: 'Skácelův dům',
+    },
+    {
+      img: ucetnictvi,
+      alt: 'Účetnictví Kadlčíková',
+    },
+    {
+      img: kiwi,
+      alt: 'visitkiwi.cz',
+    },
+    {
+      img: rugby,
+      alt: 'Rugby Club Zlín',
+    },
+    {
+      img: outdoor,
+      alt: 'Total outdoor',
     },
   ],
 };
