@@ -61,7 +61,7 @@ const ProgramCard: React.FC<ProgramProps> = ({ time, title, description, expande
       <div className="hidden md:block w-full">
         {expandedDescription && (
           <div
-            className={`absolute left-0 bottom-0 w-full min-h-48 text-left flex items-center bg-white text-dark-green p-6 shadow-2xl transition-all duration-300 ease-in-out ${
+            className={`absolute left-0 bottom-0 w-full min-h-48 text-left flex items-center bg-beige text-dark-green p-6 shadow-2xl transition-all duration-300 ease-in-out ${
               isHovered
                 ? "translate-y-full opacity-100 z-10"
                 : "translate-y-0 opacity-0 z-[-1]"
@@ -86,7 +86,7 @@ const ProgramCard: React.FC<ProgramProps> = ({ time, title, description, expande
         {/* Expanded Description for Mobile */}
         {expandedDescription && (
           <div
-            className={`absolute left-0 bottom-0 w-full min-h-48 text-left flex items-center bg-white text-dark-green p-6 pb-12 shadow-2xl transition-all duration-300 ease-in-out ${
+            className={`absolute left-0 bottom-0 w-full min-h-48 text-left flex items-center bg-beige text-dark-green p-6 pb-12 shadow-2xl transition-all duration-300 ease-in-out ${
               isExpanded
                 ? "translate-x-0 opacity-100 z-10"
                 : "translate-x-full opacity-0 z-[-1]"
