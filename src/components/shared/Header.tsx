@@ -36,9 +36,9 @@ export const Header = ({ path }: Props) => {
         {/* Mobile Layout: Logo, TicketButton, and Hamburger */}
         <div className="z-20 flex w-full justify-between items-center p-4 xl:hidden">
           <LogoLink />
-          <div className="ml-auto pl-2 mr-2">
+          {/* <div className="ml-auto pl-2 mr-2">
             <TicketButton />
-          </div>
+          </div> */}
           <Hamburger rounded toggled={isOpen} toggle={setIsOpen} color="beige" />
         </div>
 
@@ -68,7 +68,7 @@ export const Header = ({ path }: Props) => {
               <MenuLink currPath={path} {...menuItem} />
             </motion.li>
           ))}
-          <TicketButton />
+          {/* <TicketButton /> */}
         </ul>
       </nav>
     </motion.header>
