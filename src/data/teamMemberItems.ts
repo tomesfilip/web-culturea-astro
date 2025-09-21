@@ -1,4 +1,4 @@
-import AnetaSkacelova from '../assets/img/portrety-manazeru/anet-skacelova.webp';
+//import AnetaSkacelova from '../assets/img/portrety-manazeru/anet-skacelova.webp';
 import MartinaBrundova from '../assets/img/portrety-manazeru/martina-brundova.webp';
 import NatalieEgartova from '../assets/img/portrety-manazeru/naty-egartova.webp';
 import NatalieLambova from '../assets/img/portrety-manazeru/naty-lambova.webp';
@@ -6,14 +6,15 @@ import NikolUngvari from '../assets/img/portrety-manazeru/nikol-ungvari.webp';
 import RenataHucmanova from '../assets/img/portrety-manazeru/renat-hucmanova.webp';
 import VendulaSkalova from '../assets/img/portrety-manazeru/vendy-skalova.webp';
 import ViktoriaKocmanova from '../assets/img/portrety-manazeru/viky-kocmanova.webp';
+import noPicture from '../assets/img/portrety-manazeru/no-picture.webp';
 
 export const teamMemberItems = [
   {
-    name: 'Aneta Skácelová',
+    name: 'Kateřina Kutáčová',
     position: 'Manažerka projektu',
-    email: 'ahoj@culturea.cz',
-    img: AnetaSkacelova,
-    phone: '(+420) 724 919 193',
+    email: 'k_kutacova@utb.cz',
+    img: noPicture,
+    phone: '(+420) 605 865 088',
   },
   {
     name: 'Renáta Hucmanová',
